@@ -36,6 +36,18 @@ const allServices = [
         icon: <ShieldCheck size={40} className="text-primary" />,
     },
     {
+        title: "Study Abroad",
+        description: "Your gateway to world-class education in Malaysia. We assist with university applications, student visas, and accommodation.",
+        icon: <GraduationCap size={40} />,
+        link: "/services/study-abroad"
+    },
+    {
+        title: "MM2H Program",
+        description: "Malaysia My Second Home (MM2H) program consultation and application assistance for long-term residency.",
+        icon: <Home size={40} />,
+        link: "/services/mm2h"
+    },
+    {
         title: "Tourist Visa",
         description: "Hassle-free tourist visa processing for your dream vacations.",
         icon: <Plane size={40} className="text-primary" />,

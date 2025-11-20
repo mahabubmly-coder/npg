@@ -118,12 +118,13 @@ export default function MM2H() {
                             whileInView={{ opacity: 1, x: 0, rotate: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-                            className="relative h-[300px] bg-white rounded-2xl shadow-xl border border-gray-100 flex items-center justify-center overflow-hidden"
+                            className="relative h-[300px] rounded-2xl shadow-xl border border-gray-100 overflow-hidden group"
                         >
-                            {/* Placeholder for Malaysia Image */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center group hover:scale-105 transition-transform duration-700">
-                                <Home size={80} className="text-primary/20 group-hover:text-primary/40 transition-colors duration-500" />
-                            </div>
+                            <img
+                                src="/assets/mm2h/mm2h-hero.png"
+                                alt="Malaysia My Second Home"
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            />
                         </motion.div>
                     </div>
                 </div>

@@ -73,12 +73,14 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="relative h-[500px] bg-gray-100 rounded-3xl overflow-hidden shadow-2xl border border-gray-100"
+                        className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-gray-100 group"
                     >
-                        {/* Placeholder for Team/Office Image */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/20 flex items-center justify-center">
-                            <Globe size={120} className="text-primary/20" />
-                        </div>
+                        <img
+                            src="/assets/about/office.png"
+                            alt="NextPath Global Office"
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </motion.div>
                 </div>
             </section>
