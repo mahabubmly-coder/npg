@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
-import { CountryData } from "@/data/countries";
+import { CountryData } from "../../data/countries";
 
 interface CountryPageTemplateProps {
     country: CountryData;
@@ -189,7 +189,7 @@ const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country }) =>
                                     Start Application
                                 </Link>
                                 <Link
-                                    href="https://wa.me/601121006830" // Replace with actual number
+                                    href="https://wa.me/601116695249" // Replace with actual number
                                     target="_blank"
                                     className="block w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                                 >

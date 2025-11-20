@@ -53,10 +53,10 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-bold mb-6 text-primary">Contact</h3>
                         <ul className="space-y-3 text-gray-600">
-                            <li>123 Global Path Street</li>
-                            <li>New York, NY 10001</li>
-                            <li>+1 (555) 123-4567</li>
-                            <li>info@nextpathglobal.com</li>
+                            <li>Vista Tower, The Intermark</li>
+                            <li>Kuala Lumpur, Malaysia</li>
+                            <li>+60 11 1669 5249</li>
+                            <li>hello@nextpathglobal.my</li>
                         </ul>
                     </div>
                 </div>

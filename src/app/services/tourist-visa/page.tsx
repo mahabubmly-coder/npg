@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Globe, Plane } from "lucide-react";
-import { countries } from "@/data/countries";
+import { countries } from "../../../data/countries";
 
 export default function TouristVisaPage() {
     return (

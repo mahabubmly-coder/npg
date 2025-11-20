@@ -221,7 +221,7 @@ const StudyAbroadPage = () => {
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
-                                href="https://wa.me/601121006830"
+                                href="https://wa.me/601116695249"
                                 target="_blank"
                                 className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2"
                             >

@@ -36,7 +36,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold mb-1 text-gray-900">Visit Us</h4>
-                                        <p className="text-gray-600">123 Global Path Street, Suite 400<br />New York, NY 10001</p>
+                                        <p className="text-gray-600">Vista Tower, The Intermark<br />Kuala Lumpur, Malaysia</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
@@ -45,7 +45,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold mb-1 text-gray-900">Call Us</h4>
-                                        <p className="text-gray-600">+1 (555) 123-4567</p>
+                                        <p className="text-gray-600">+60 11 1669 5249</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
@@ -54,7 +54,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold mb-1 text-gray-900">Email Us</h4>
-                                        <p className="text-gray-600">info@nextpathglobal.com</p>
+                                        <p className="text-gray-600">hello@nextpathglobal.my</p>
                                     </div>
                                 </div>
                             </div>
