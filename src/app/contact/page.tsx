@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
     return (
@@ -71,41 +72,8 @@ export default function Contact() {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg"
                     >
-                        <h3 className="text-2xl font-bold mb-6 text-gray-900">Send a Message</h3>
-                        <form className="space-y-6">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-600 mb-2">First Name</label>
-                                    <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="John" />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-600 mb-2">Last Name</label>
-                                    <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="Doe" />
-                                </div>
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">Email Address</label>
-                                <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="john@example.com" />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">Subject</label>
-                                <select className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors">
-                                    <option>Student Visa</option>
-                                    <option>Business Visa</option>
-                                    <option>Immigration</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">Message</label>
-                                <textarea rows={4} className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors" placeholder="How can we help you?"></textarea>
-                            </div>
-                            <button type="submit" className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-4 rounded-lg transition-colors flex items-center justify-center gap-2">
-                                Send Message <Send size={20} />
-                            </button>
-                        </form>
+                        <ContactForm />
                     </motion.div>
                 </div>
             </div>

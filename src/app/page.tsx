@@ -4,6 +4,8 @@ import HeroScene from "@/components/3d/HeroScene";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, GraduationCap, Briefcase, Globe, ShieldCheck, Plane } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const services = [
   {
@@ -306,6 +308,23 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Ready to Start Your Journey?</h2>
+              <p className="text-gray-600">
+                Contact us today for a free consultation. We are here to help you every step of the way.
+              </p>
+            </div>
+            <ContactForm />
+          </div>
+        </div>
+      </section>
+
+      <WhatsAppButton />
     </div>
   );
 }
