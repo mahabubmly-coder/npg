@@ -37,7 +37,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="font-bold mb-1 text-gray-900">Visit Us</h4>
-                                        <p className="text-gray-600">Vista Tower, The Intermark<br />Kuala Lumpur, Malaysia</p>
+                                        <p className="text-gray-600">Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak,<br />Kampung Datuk Keramat, 50400 Kuala Lumpur,<br />Federal Territory of Kuala Lumpur</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
