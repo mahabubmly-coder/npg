@@ -269,46 +269,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats/Why Choose Us */}
-      <section className="py-20 bg-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/assets/grid.svg')] opacity-5"></div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                Why Choose <span className="text-primary">Next Path Global?</span>
-              </h2>
-              <p className="text-gray-600 mb-8 text-lg">
-                We combine years of experience with a personalized approach to ensure your application success. Our dedicated team supports you at every step.
-              </p>
-              <ul className="space-y-4">
-                {[
-                  "98% Visa Success Rate",
-                  "Expert Legal Consultants",
-                  "Transparent Process",
-                  "24/7 Support",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-700">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center text-primary">
-                      ✓
-                    </div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="relative h-[400px] rounded-2xl overflow-hidden border border-gray-200 group shadow-2xl">
-              <img
-                src="/assets/home/why-choose-us.png"
-                alt="Why Choose Us"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
