@@ -130,7 +130,7 @@ export default function MM2H() {
                         MM2H – Malaysia <span className="text-primary">My Second Home</span>
                     </h1>
                     <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-                        Choose from Platinum, Gold, Silver, or SEZ tiers with visa durations from 5 to 20 years. 
+                        Choose from Platinum, Gold, Silver, or SEZ tiers with visa durations from 5 to 20 years.
                         Make Malaysia your second home with our comprehensive residency programme.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -272,7 +272,7 @@ export default function MM2H() {
                         <div>
                             <h4 className="font-bold text-gray-900 mb-2">SEZ/SFZ Special Zones</h4>
                             <p className="text-gray-600 text-sm">
-                                The SEZ/SFZ category offers lower entry requirements with fixed deposits of <strong>USD 65,000</strong> (ages 21-49) or <strong>USD 32,000</strong> (50+). 
+                                The SEZ/SFZ category offers lower entry requirements with fixed deposits of <strong>USD 65,000</strong> (ages 21-49) or <strong>USD 32,000</strong> (50+).
                                 Property must be purchased directly from developers in designated zones like Forest City in Johor.
                             </p>
                         </div>
@@ -644,7 +644,7 @@ export default function MM2H() {
                         className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
                     >
                         {[
-                            "Licensed MM2H Agents",
+                            "Collaborated with Licensed MM2H Agent",
                             "End-to-End Support",
                             "Bank Account Assistance",
                             "Property Guidance",
