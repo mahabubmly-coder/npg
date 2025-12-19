@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Terms & Conditions - Next Path Global",
-    description: "Terms & Conditions for NextPath Global Sdn. Bhd. - Learn about our service terms, policies, and user agreements.",
+    title: "Terms of Service - Next Path Global",
+    description: "Terms of Service for NextPath Global Sdn. Bhd. - Learn about our service terms, policies, and user agreements.",
 };
 
 export default function TermsPage() {
@@ -12,7 +12,7 @@ export default function TermsPage() {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                        Terms &amp; Conditions
+                        Terms of Service
                     </h1>
                     <p className="text-lg text-gray-600">
                         Effective Date: 12th December 2025
@@ -27,7 +27,7 @@ export default function TermsPage() {
                             Welcome to NextPath Global Sdn. Bhd. ("we", "our", "us").
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-3">
-                            By accessing or using our website, you agree to be bound by the following Terms and Conditions.
+                            By accessing or using our website, you agree to be bound by the following Terms of Service.
                             If you do not agree with any part of these terms, please do not use our website or services.
                         </p>
                     </section>
@@ -54,7 +54,7 @@ export default function TermsPage() {
                             By using our website or engaging with our services, you confirm that you:
                         </p>
                         <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                            <li>Have read, understood, and agreed to these Terms &amp; Conditions.</li>
+                            <li>Have read, understood, and agreed to these Terms of Service.</li>
                             <li>Are of legal age (18 years or older) or have parental/guardian consent to use our services.</li>
                         </ul>
                     </section>
@@ -217,7 +217,7 @@ export default function TermsPage() {
                             12. Changes to Terms
                         </h2>
                         <p className="text-gray-700 leading-relaxed mb-3">
-                            We may update these Terms &amp; Conditions periodically.
+                            We may update these Terms of Service periodically.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-3">
                             All revisions will be posted on this page with an updated "Effective Date."
@@ -233,7 +233,7 @@ export default function TermsPage() {
                             13. Governing Law
                         </h2>
                         <p className="text-gray-700 leading-relaxed mb-3">
-                            These Terms &amp; Conditions are governed by and interpreted under the laws of Malaysia.
+                            These Terms of Service are governed by and interpreted under the laws of Malaysia.
                         </p>
                         <p className="text-gray-700 leading-relaxed">
                             Any disputes shall be resolved in the appropriate courts of Kuala Lumpur, Malaysia.
@@ -246,7 +246,7 @@ export default function TermsPage() {
                             14. Contact Information
                         </h2>
                         <p className="text-gray-700 leading-relaxed mb-4">
-                            For any questions or concerns regarding these Terms &amp; Conditions, please contact us at:
+                            For any questions or concerns regarding these Terms of Service, please contact us at:
                         </p>
                         <div className="space-y-3 text-gray-700">
                             <div className="flex items-start">
