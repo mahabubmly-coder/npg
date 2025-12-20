@@ -55,6 +55,8 @@ export const institutions: Institution[] = [
         qsRanking: "#65 World",
         description: "Malaysia's oldest and most prestigious university, consistently ranked as the top university in Malaysia and among the best in Asia.",
         history: "Founded in 1905 in Singapore as the King Edward VII College of Medicine, it merged with Raffles College in 1949 to form the University of Malaya. The Kuala Lumpur campus was established in 1959 and became autonomous in 1962.",
+        logo: "/assets/institutions/um-logo.jpg",
+        coverImage: "/assets/institutions/um-cover.jpg",
         programs: ["Medicine", "Engineering", "Business", "Law", "Arts & Social Sciences", "Science", "Computer Science", "Education", "Dentistry", "Economics"],
         intakes: ["February/March", "September/October"],
         website: "https://www.um.edu.my",

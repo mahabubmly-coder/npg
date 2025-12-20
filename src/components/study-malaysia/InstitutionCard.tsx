@@ -28,26 +28,42 @@ export default function InstitutionCard({ institution, index, baseUrl }: Institu
                     <div
                         className="h-40 relative overflow-hidden"
                         style={{
-                            background: `linear-gradient(135deg, ${colors.from}, ${colors.to})`
+                            background: institution.coverImage ? undefined : `linear-gradient(135deg, ${colors.from}, ${colors.to})`
                         }}
                     >
+                        {/* Actual Cover Image if available */}
+                        {institution.coverImage && (
+                            <img
+                                src={institution.coverImage}
+                                alt={institution.name}
+                                className="absolute inset-0 w-full h-full object-cover"
+                            />
+                        )}
+
+                        {/* Overlay for better text readability on images */}
+                        {institution.coverImage && (
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        )}
+
                         {/* Institution Type Badge */}
-                        <div className="absolute top-3 left-3">
+                        <div className="absolute top-3 left-3 z-10">
                             <span className="bg-white/90 backdrop-blur-sm text-gray-800 text-xs font-medium px-3 py-1 rounded-full">
                                 {institutionTypeLabels[institution.type]}
                             </span>
                         </div>
 
-                        {/* Short Name Overlay */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-white/30 text-6xl font-bold tracking-wider">
-                                {institution.shortName}
-                            </span>
-                        </div>
+                        {/* Short Name Overlay - only show if no cover image */}
+                        {!institution.coverImage && (
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <span className="text-white/30 text-6xl font-bold tracking-wider">
+                                    {institution.shortName}
+                                </span>
+                            </div>
+                        )}
 
                         {/* QS Ranking Badge */}
                         {institution.qsRanking && institution.qsRanking !== "Not ranked" && (
-                            <div className="absolute top-3 right-3">
+                            <div className="absolute top-3 right-3 z-10">
                                 <span className="bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
                                     <Star size={12} className="fill-current" />
                                     {institution.qsRanking}

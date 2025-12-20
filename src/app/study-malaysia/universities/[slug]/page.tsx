@@ -38,20 +38,34 @@ export default function UniversityDetailPage() {
         <div className="min-h-screen bg-gray-50">
             {/* Hero Section */}
             <section className="relative py-24 overflow-hidden">
-                <div
-                    className="absolute inset-0"
-                    style={{
-                        background: `linear-gradient(135deg, ${colors.from}, ${colors.to})`
-                    }}
-                ></div>
-                <div className="absolute inset-0 bg-black/30"></div>
+                {/* Background - either cover image or gradient */}
+                {institution.coverImage ? (
+                    <>
+                        <img
+                            src={institution.coverImage}
+                            alt={institution.name}
+                            className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 bg-black/60"></div>
+                    </>
+                ) : (
+                    <>
+                        <div
+                            className="absolute inset-0"
+                            style={{
+                                background: `linear-gradient(135deg, ${colors.from}, ${colors.to})`
+                            }}
+                        ></div>
+                        <div className="absolute inset-0 bg-black/30"></div>
 
-                {/* Large Short Name Watermark */}
-                <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-                    <span className="text-white/10 text-[20rem] font-bold tracking-wider select-none">
-                        {institution.shortName}
-                    </span>
-                </div>
+                        {/* Large Short Name Watermark - only when no image */}
+                        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+                            <span className="text-white/10 text-[20rem] font-bold tracking-wider select-none">
+                                {institution.shortName}
+                            </span>
+                        </div>
+                    </>
+                )}
 
                 <div className="container mx-auto px-6 relative z-10">
                     {/* Back Button */}
