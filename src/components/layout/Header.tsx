@@ -3,13 +3,28 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const navLinks = [
+interface NavLink {
+    name: string;
+    href: string;
+    subMenu?: { name: string; href: string }[];
+}
+
+const navLinks: NavLink[] = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Study Malaysia", href: "https://nextpathglobal.my/services/study-abroad" },
+    {
+        name: "Study Malaysia",
+        href: "/services/study-abroad",
+        subMenu: [
+            { name: "Overview", href: "/services/study-abroad" },
+            { name: "Universities", href: "/study-malaysia/universities" },
+            { name: "Colleges", href: "/study-malaysia/colleges" },
+            { name: "University Colleges", href: "/study-malaysia/university-colleges" },
+        ]
+    },
     { name: "Tourist Visa", href: "/services/tourist-visa" },
     { name: "MM2H", href: "/services/mm2h" },
     { name: "PVIP", href: "/services/pvip" },
@@ -20,6 +35,8 @@ const navLinks = [
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+    const [mobileExpandedMenu, setMobileExpandedMenu] = useState<string | null>(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -48,13 +65,56 @@ export default function Header() {
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
-                        <Link
+                        <div
                             key={link.name}
-                            href={link.href}
-                            className="text-gray-700 hover:text-primary transition-colors font-medium"
+                            className="relative"
+                            onMouseEnter={() => link.subMenu && setActiveDropdown(link.name)}
+                            onMouseLeave={() => setActiveDropdown(null)}
                         >
-                            {link.name}
-                        </Link>
+                            {link.subMenu ? (
+                                <>
+                                    <button
+                                        className="text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1"
+                                    >
+                                        {link.name}
+                                        <ChevronDown
+                                            size={16}
+                                            className={`transition-transform ${activeDropdown === link.name ? 'rotate-180' : ''}`}
+                                        />
+                                    </button>
+
+                                    {/* Dropdown Menu */}
+                                    <AnimatePresence>
+                                        {activeDropdown === link.name && (
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 10 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, y: 10 }}
+                                                transition={{ duration: 0.2 }}
+                                                className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden"
+                                            >
+                                                {link.subMenu.map((subItem) => (
+                                                    <Link
+                                                        key={subItem.name}
+                                                        href={subItem.href}
+                                                        className="block px-4 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition-colors"
+                                                    >
+                                                        {subItem.name}
+                                                    </Link>
+                                                ))}
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
+                                </>
+                            ) : (
+                                <Link
+                                    href={link.href}
+                                    className="text-gray-700 hover:text-primary transition-colors font-medium"
+                                >
+                                    {link.name}
+                                </Link>
+                            )}
+                        </div>
                     ))}
                     <Link
                         href="/book-appointment"
@@ -80,22 +140,64 @@ export default function Header() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg p-6 md:hidden border-t border-gray-100 shadow-lg"
+                        className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg p-6 md:hidden border-t border-gray-100 shadow-lg max-h-[80vh] overflow-y-auto"
                     >
-                        <nav className="flex flex-col space-y-4">
+                        <nav className="flex flex-col space-y-2">
                             {navLinks.map((link) => (
-                                <Link
-                                    key={link.name}
-                                    href={link.href}
-                                    className="text-gray-700 hover:text-primary text-lg font-medium"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                >
-                                    {link.name}
-                                </Link>
+                                <div key={link.name}>
+                                    {link.subMenu ? (
+                                        <>
+                                            <button
+                                                onClick={() => setMobileExpandedMenu(
+                                                    mobileExpandedMenu === link.name ? null : link.name
+                                                )}
+                                                className="w-full flex items-center justify-between text-gray-700 hover:text-primary text-lg font-medium py-2"
+                                            >
+                                                <span>{link.name}</span>
+                                                <ChevronDown
+                                                    size={20}
+                                                    className={`transition-transform ${mobileExpandedMenu === link.name ? 'rotate-180' : ''}`}
+                                                />
+                                            </button>
+
+                                            <AnimatePresence>
+                                                {mobileExpandedMenu === link.name && (
+                                                    <motion.div
+                                                        initial={{ opacity: 0, height: 0 }}
+                                                        animate={{ opacity: 1, height: 'auto' }}
+                                                        exit={{ opacity: 0, height: 0 }}
+                                                        className="overflow-hidden"
+                                                    >
+                                                        <div className="pl-4 border-l-2 border-primary/20 ml-2 mb-2">
+                                                            {link.subMenu.map((subItem) => (
+                                                                <Link
+                                                                    key={subItem.name}
+                                                                    href={subItem.href}
+                                                                    className="block py-2 text-gray-600 hover:text-primary"
+                                                                    onClick={() => setIsMobileMenuOpen(false)}
+                                                                >
+                                                                    {subItem.name}
+                                                                </Link>
+                                                            ))}
+                                                        </div>
+                                                    </motion.div>
+                                                )}
+                                            </AnimatePresence>
+                                        </>
+                                    ) : (
+                                        <Link
+                                            href={link.href}
+                                            className="block text-gray-700 hover:text-primary text-lg font-medium py-2"
+                                            onClick={() => setIsMobileMenuOpen(false)}
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    )}
+                                </div>
                             ))}
                             <Link
                                 href="/book-appointment"
-                                className="bg-primary text-white text-center py-3 rounded-lg font-medium"
+                                className="bg-primary text-white text-center py-3 rounded-lg font-medium mt-4"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Book Appointment
