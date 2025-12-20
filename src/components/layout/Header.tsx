@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
+    { name: "Study Malaysia", href: "https://nextpathglobal.my/services/study-abroad" },
     { name: "Tourist Visa", href: "/services/tourist-visa" },
     { name: "MM2H", href: "/services/mm2h" },
     { name: "PVIP", href: "/services/pvip" },
