@@ -56,10 +56,10 @@ export default function Header() {
                         </Link>
                     ))}
                     <Link
-                        href="/contact"
+                        href="/book-appointment"
                         className="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105"
                     >
-                        Get Started
+                        Book Appointment
                     </Link>
                 </nav>
 
@@ -93,11 +93,11 @@ export default function Header() {
                                 </Link>
                             ))}
                             <Link
-                                href="/contact"
+                                href="/book-appointment"
                                 className="bg-primary text-white text-center py-3 rounded-lg font-medium"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                Get Started
+                                Book Appointment
                             </Link>
                         </nav>
                     </motion.div>

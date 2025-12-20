@@ -54,3 +54,102 @@ export async function submitContactForm(formData: FormData) {
         return { success: false, error: "Failed to send email" };
     }
 }
+
+const serviceLabels: Record<string, string> = {
+    "mm2h": "MM2H (Malaysia My 2nd Home)",
+    "pvip": "PVIP (Premium Visa Programs)",
+    "professional-visa": "Professional Visa (Employment Pass)",
+    "tourist-visa": "Tourist Visa",
+    "air-ticket": "Air Ticket Booking",
+    "refund": "Refund Request",
+    "general": "General Query",
+};
+
+const meetingModeLabels: Record<string, string> = {
+    "in-person": "In-Person",
+    "zoom": "Zoom Call",
+    "phone": "Phone Call",
+};
+
+export async function submitAppointmentForm(formData: FormData) {
+    const fullName = formData.get("fullName") as string;
+    const email = formData.get("email") as string;
+    const phone = formData.get("phone") as string;
+    const nationality = formData.get("nationality") as string;
+    const address = formData.get("address") as string;
+    const service = formData.get("service") as string;
+    const preferredDate = formData.get("preferredDate") as string;
+    const preferredTime = formData.get("preferredTime") as string;
+    const meetingMode = formData.get("meetingMode") as string;
+
+    if (!fullName || !email || !phone || !nationality || !service || !preferredDate || !preferredTime || !meetingMode) {
+        return { success: false, error: "Missing required fields" };
+    }
+
+    const serviceLabel = serviceLabels[service] || service;
+    const meetingModeLabel = meetingModeLabels[meetingMode] || meetingMode;
+    const formattedDate = new Date(preferredDate).toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    try {
+        // 1. Send email to Admin
+        await resend.emails.send({
+            from: "Next Path Global <onboarding@resend.dev>",
+            to: "yasser30dc@gmail.com",
+            subject: `New Appointment Request from ${fullName} - ${serviceLabel}`,
+            html: `
+        <h2>New Appointment Request</h2>
+        <h3>Personal Details</h3>
+        <p><strong>Full Name:</strong> ${fullName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Nationality:</strong> ${nationality}</p>
+        <p><strong>Address:</strong> ${address || 'Not provided'}</p>
+        
+        <h3>Service Requested</h3>
+        <p><strong>Service Type:</strong> ${serviceLabel}</p>
+        
+        <h3>Appointment Details</h3>
+        <p><strong>Preferred Date:</strong> ${formattedDate}</p>
+        <p><strong>Preferred Time:</strong> ${preferredTime}</p>
+        <p><strong>Meeting Mode:</strong> ${meetingModeLabel}</p>
+      `,
+        });
+
+        // 2. Send confirmation email to Client
+        await resend.emails.send({
+            from: "Next Path Global <onboarding@resend.dev>",
+            to: email,
+            subject: "Appointment Request Received - Next Path Global",
+            html: `
+        <h2>Hi ${fullName},</h2>
+        <p>Thank you for your appointment request! Our team is reviewing your information for <strong>${serviceLabel}</strong>.</p>
+        
+        <h3>Your Requested Appointment</h3>
+        <p><strong>Date:</strong> ${formattedDate}</p>
+        <p><strong>Time:</strong> ${preferredTime}</p>
+        <p><strong>Mode:</strong> ${meetingModeLabel}</p>
+        
+        <p>We will send a confirmation email with your appointment details within 24 hours.</p>
+        
+        <p>If you have an urgent query, please contact us at:</p>
+        <p><strong>+60 11 1669 5249</strong> or <strong>+60 17 462 7457</strong></p>
+        
+        <br />
+        <p>Best regards,</p>
+        <p><strong>Next Path Global Team</strong></p>
+        <p>Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+      `,
+        });
+
+        return { success: true };
+    } catch (error) {
+        console.error("Resend Error:", error);
+        return { success: false, error: "Failed to send email" };
+    }
+}
+
