@@ -73,6 +73,7 @@ export const institutions: Institution[] = [
         qsRanking: "#159 World",
         description: "The National University of Malaysia, established to be the pioneer in using Bahasa Malaysia as the medium of instruction at the tertiary level.",
         history: "Founded on May 18, 1970, UKM was established as a response to the need for a university that uses Bahasa Malaysia. It started with three faculties and has grown to become one of Malaysia's leading research universities.",
+        coverImage: "/assets/institutions/ukm-cover.png",
         programs: ["Medicine", "Engineering", "Science & Technology", "Social Sciences", "Economics", "Education", "Islamic Studies", "Law", "Health Sciences", "Dentistry"],
         intakes: ["February", "September"],
         website: "https://www.ukm.my",
