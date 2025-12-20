@@ -62,9 +62,18 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        {/* Map Placeholder */}
-                        <div className="h-[300px] bg-gray-100 rounded-2xl border border-gray-200 flex items-center justify-center text-gray-500 shadow-inner">
-                            [Google Map Integration]
+                        {/* Google Map */}
+                        <div className="h-[300px] rounded-2xl border border-gray-200 overflow-hidden shadow-lg">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7641889067547!2d101.72279131475766!3d3.1613799977136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d3a837f637%3A0x4a6c3a2a81de0d90!2sThe%20Intermark!5e0!3m2!1sen!2smy!4v1703045999999!5m2!1sen!2smy"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="NextPath Global Office Location"
+                            />
                         </div>
                     </motion.div>
 
