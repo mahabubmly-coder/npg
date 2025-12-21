@@ -844,6 +844,23 @@ export const institutions: Institution[] = [
         website: "https://www.kuc.edu.my",
         highlights: ["Practical education", "Diverse programs", "Industry links", "Accessible location"],
     },
+    {
+        slug: "lincoln-university-college",
+        name: "Lincoln University College",
+        shortName: "LUC",
+        type: "private",
+        category: "university-college",
+        established: 2002,
+        location: "Petaling Jaya, Selangor",
+        qsRanking: "Not ranked",
+        description: "A university college offering diverse programs in business, IT, healthcare, and hospitality with international partnerships.",
+        history: "Lincoln University College was established in 2002 and has grown to offer a wide range of programs with strong industry connections and international collaborations.",
+        coverImage: "/assets/institutions/lincoln-cover.jpg",
+        programs: ["Business", "IT", "Nursing", "Pharmacy", "Hospitality", "Engineering", "Biotechnology", "Mass Communication"],
+        intakes: ["January", "May", "September"],
+        website: "https://www.lincoln.edu.my",
+        highlights: ["International partnerships", "Healthcare programs", "Practical training", "Diverse program offerings"],
+    },
 
     // ============================================
     // COLLEGES
