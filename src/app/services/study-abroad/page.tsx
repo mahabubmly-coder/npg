@@ -72,47 +72,6 @@ const StudyAbroadPage = () => {
                 </div>
             </section>
 
-            {/* Top Universities Table */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Top Institutions in Malaysia</h2>
-                        <p className="text-gray-600">Partnering with the best institutions for your future.</p>
-                    </div>
-
-                    <div className="overflow-x-auto">
-                        <table className="w-full min-w-[800px] bg-white shadow-xl rounded-2xl overflow-hidden">
-                            <thead className="bg-secondary text-white">
-                                <tr>
-                                    <th className="py-4 px-6 text-left">University</th>
-                                    <th className="py-4 px-6 text-left">QS Ranking</th>
-                                    <th className="py-4 px-6 text-left">Popular Programs</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-gray-100">
-                                {[
-                                    { name: "University of Malaya (UM)", rank: "#65 World", programs: "Medicine, Engineering, Business" },
-                                    { name: "Universiti Putra Malaysia (UPM)", rank: "#158 World", programs: "Agriculture, Forestry, Veterinary" },
-                                    { name: "Universiti Kebangsaan Malaysia (UKM)", rank: "#159 World", programs: "Medicine, Engineering, Sciences" },
-                                    { name: "Universiti Sains Malaysia (USM)", rank: "#162 World", programs: "Pharmacy, Medicine, Engineering" },
-                                    { name: "Universiti Teknologi Malaysia (UTM)", rank: "#181 World", programs: "Engineering, IT, Architecture" },
-                                    { name: "Taylor’s University", rank: "#251-300", programs: "Business, Hospitality, Design" },
-                                    { name: "UCSI University", rank: "#300-350", programs: "Music, Engineering, Pharmacy" },
-                                ].map((uni, index) => (
-                                    <tr key={index} className="hover:bg-gray-50 transition-colors">
-                                        <td className="py-4 px-6 font-semibold text-gray-900">{uni.name}</td>
-                                        <td className="py-4 px-6 text-primary font-bold flex items-center gap-2">
-                                            <Star size={16} className="fill-current" /> {uni.rank}
-                                        </td>
-                                        <td className="py-4 px-6 text-gray-600">{uni.programs}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </section>
-
             {/* Programs We Help With */}
             <section className="py-20 bg-secondary text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/assets/pattern.png')] opacity-5"></div>
