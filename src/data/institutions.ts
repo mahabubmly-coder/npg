@@ -945,6 +945,7 @@ export const institutions: Institution[] = [
         qsRanking: "Not ranked",
         description: "A college offering foundation and diploma programs with pathway options.",
         history: "YES College provides accessible foundation and diploma programs leading to degree pathways.",
+        coverImage: "/assets/institutions/yes-college-cover.jpg",
         programs: ["Foundation Studies", "Diploma in Business", "Diploma in IT", "Certificate Programs"],
         intakes: ["January", "May", "September"],
         website: "https://www.yescollege.edu.my",
