@@ -222,28 +222,28 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-6xl mx-auto">
             {[
               {
-                title: "Personalized Guidance",
-                description: "Every student and traveler has unique dreams. We take the time to understand your goals and provide tailored solutions."
+                title: "Experienced & Ethical Consultancy",
+                description: "Built on years of hands-on experience, we follow honest practices and provide guidance that puts your future first — no shortcuts, no false promises."
               },
               {
-                title: "Trusted Expertise",
-                description: "With years of experience in education consultancy and travel services, we ensure your journey is smooth, secure, and successful."
+                title: "Strong University & Visa Knowledge",
+                description: "We stay updated with university requirements and visa policies, ensuring you receive accurate, practical advice that works in today's system."
               },
               {
-                title: "Transparency & Integrity",
-                description: "Honesty is at the heart of everything we do. No hidden costs, no false promises—just clear and reliable support."
+                title: "Transparent Process",
+                description: "From consultation to final outcome, every step is clear, documented, and explained — you always know what's happening and why."
               },
               {
-                title: "Strong Global Network",
-                description: "From top universities to trusted travel partners, our connections open doors to opportunities worldwide."
-              },
-              {
-                title: "Comprehensive Support",
-                description: "Whether it's admission counselling, visa processing, flight arrangements, or travel planning, we stand beside you at every step."
+                title: "Trusted by Students & Professionals",
+                description: "Our reputation is built on real results, long-term relationships, and the trust of students and professionals who choose us with confidence."
               },
               {
                 title: "Commitment to Success",
-                description: "Your growth is our mission. We go beyond paperwork and bookings—we mentor, support, and empower you for the future."
+                description: "We handle every case with dedication and responsibility, staying focused on one goal — achieving the best possible outcome for your journey."
+              },
+              {
+                title: "Comprehensive Support",
+                description: "From your first inquiry to final approval, we provide complete end-to-end support so you're never left guessing at any stage."
               }
             ].map((reason, index) => (
               <motion.div
