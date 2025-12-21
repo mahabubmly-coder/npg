@@ -1,7 +1,7 @@
 import { GraduationCap, Building, Globe, Users, BookOpen, Briefcase, Award, Star } from "lucide-react";
 import React from "react";
 
-export type InstitutionType = 'public' | 'private' | 'college' | 'university-college' | 'foreign-branch';
+export type InstitutionType = 'public' | 'private' | 'college' | 'university-college';
 export type InstitutionCategory = 'university' | 'college' | 'university-college';
 
 export interface Institution {
@@ -29,7 +29,6 @@ export const institutionColors: Record<InstitutionType, { from: string; to: stri
     'private': { from: '#7c3aed', to: '#a78bfa' },
     'college': { from: '#059669', to: '#34d399' },
     'university-college': { from: '#dc2626', to: '#f87171' },
-    'foreign-branch': { from: '#ea580c', to: '#fb923c' },
 };
 
 export const institutionTypeLabels: Record<InstitutionType, string> = {
@@ -37,7 +36,6 @@ export const institutionTypeLabels: Record<InstitutionType, string> = {
     'private': 'Private University',
     'college': 'College',
     'university-college': 'University College',
-    'foreign-branch': 'Foreign Branch Campus',
 };
 
 export const institutions: Institution[] = [
@@ -985,8 +983,4 @@ export function getPublicUniversities(): Institution[] {
 
 export function getPrivateUniversities(): Institution[] {
     return institutions.filter(inst => inst.type === 'private' && inst.category === 'university');
-}
-
-export function getForeignBranchCampuses(): Institution[] {
-    return institutions.filter(inst => inst.type === 'foreign-branch');
 }

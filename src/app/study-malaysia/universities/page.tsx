@@ -18,7 +18,6 @@ export default function UniversitiesPage() {
         { label: "All Universities", value: "all" as const },
         { label: "Public Universities", value: "public" as const },
         { label: "Private Universities", value: "private" as const },
-        { label: "Foreign Branch Campus", value: "foreign-branch" as const },
     ];
 
     return (
