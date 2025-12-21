@@ -294,8 +294,8 @@ export default function Home() {
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-primary font-semibold tracking-wider uppercase text-sm">Testimonials</span>
-            <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-6 text-gray-900">
+            <span className="text-primary font-semibold tracking-wider uppercase text-base">Testimonials</span>
+            <h2 className="text-4xl md:text-6xl font-bold mt-2 mb-6 text-gray-900">
               What Clients Say About Us <br className="hidden md:block" /> and Our Services
             </h2>
           </div>
@@ -323,6 +323,34 @@ export default function Home() {
                 rating: 5,
                 visa: "Thailand Visa",
               },
+              {
+                name: "HELISTAR",
+                role: "Local Guide",
+                quote: "Excellent travel agency in Malaysia! Very professional, friendly service and smooth arrangements. Highly recommended!",
+                rating: 5,
+                visa: "Travel Services",
+              },
+              {
+                name: "Abir Ahmed",
+                role: "Client",
+                quote: "Over All My Experience Excellent Work service .trusted and professional service Thank you for your service mr Mahabub sir",
+                rating: 5,
+                visa: "Professional Service",
+              },
+              {
+                name: "Masud Rana1977",
+                role: "Client",
+                quote: "Mahabub Bhai got me a visa for Thailand, I am very happy and delighted with his service, I am very happy with his behavior.",
+                rating: 5,
+                visa: "Thailand Visa",
+              },
+              {
+                name: "Md. Mahmudul Islam",
+                role: "Client",
+                quote: "I am so happy. Good behave. Polite & helpful service. Thanks.",
+                rating: 5,
+                visa: "Customer Service",
+              },
             ].map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -340,23 +368,23 @@ export default function Home() {
                 </div>
 
                 <div className="mb-6">
-                  <h4 className="text-xl font-bold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500 uppercase tracking-wide">{testimonial.role}</p>
+                  <h4 className="text-2xl font-bold text-gray-900">{testimonial.name}</h4>
+                  <p className="text-base text-gray-500 uppercase tracking-wide">{testimonial.role}</p>
                 </div>
 
-                <p className="text-gray-600 mb-8 leading-relaxed italic">
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed italic">
                   "{testimonial.quote}"
                 </p>
 
                 <div className="flex items-center justify-between mt-auto">
                   <div className="flex gap-1 text-yellow-400">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                      <svg key={i} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                         <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
                       </svg>
                     ))}
                   </div>
-                  <span className="text-sm text-gray-400 font-medium">({testimonial.visa})</span>
+                  <span className="text-base text-gray-400 font-medium">({testimonial.visa})</span>
                 </div>
               </motion.div>
             ))}
