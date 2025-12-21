@@ -44,7 +44,7 @@ export async function submitContactForm(formData: FormData) {
         <br />
         <p>Best regards,</p>
         <p><strong>Next Path Global Team</strong></p>
-        <p>Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+        <p>NextPath Global Sdn Bhd<br />Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
       `,
         });
 
@@ -142,7 +142,7 @@ export async function submitAppointmentForm(formData: FormData) {
         <br />
         <p>Best regards,</p>
         <p><strong>Next Path Global Team</strong></p>
-        <p>Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+        <p>NextPath Global Sdn Bhd<br />Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
       `,
         });
 

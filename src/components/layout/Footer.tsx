@@ -66,6 +66,7 @@ export default function Footer() {
                         <h3 className="text-lg font-bold mb-6 text-primary">Contact</h3>
                         <div className="space-y-4 text-gray-600">
                             <p className="leading-relaxed">
+                                NextPath Global Sdn Bhd<br />
                                 Level 41, The Intermark, Vista Tower,<br />
                                 384, Jln Tun Razak, Kampung Datuk Keramat,<br />
                                 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur

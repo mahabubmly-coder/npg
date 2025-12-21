@@ -243,6 +243,7 @@ export default function PrivacyPolicyPage() {
                                 <span className="mr-2">🏢</span>
                                 <div>
                                     <span className="font-semibold">Address:</span>{" "}
+                                    NextPath Global Sdn Bhd<br />
                                     Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur
                                 </div>
                             </div>
