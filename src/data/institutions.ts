@@ -911,6 +911,7 @@ export const institutions: Institution[] = [
         qsRanking: "Not ranked",
         description: "Part of the Berjaya Corporation, specializing in hospitality, culinary arts, and business programs.",
         history: "Established in 2009 by Berjaya Corporation, one of Malaysia's largest conglomerates, focusing on hospitality and tourism education.",
+        coverImage: "/assets/institutions/berjaya-cover.jpg",
         programs: ["Culinary Arts", "Hospitality Management", "Tourism", "Business", "Retail Management", "Event Management"],
         intakes: ["January", "May", "September"],
         website: "https://www.bfrenchpearce.edu.my",
