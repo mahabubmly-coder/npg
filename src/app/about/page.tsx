@@ -58,6 +58,15 @@ export default function About() {
                         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">Who We Are</h2>
                         <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                             <p>
+                                <span className="font-bold text-gray-900">NEXTPATH GLOBAL SDN BHD (ROC: 1637994-A)</span> is an emerging study abroad consultancy based in Kuala Lumpur, Malaysia. We have established trusted partnerships with reputable universities across Malaysia, enabling us to offer reliable and up-to-date academic pathways for international students.
+                            </p>
+                            <p>
+                                While we are a growing name in the education consultancy sector, our operations are led by an experienced, qualified, and dedicated team committed to delivering professional and ethical guidance.
+                            </p>
+                            <p>
+                                We provide comprehensive counseling, personalized support, and well-informed options for international students seeking to pursue higher education in Malaysia. Our approach focuses on aligning students' aspirations with suitable academic opportunities, ensuring informed decision-making and supporting long-term career development.
+                            </p>
+                            <p>
                                 As a <span className="font-bold text-primary">student consultancy</span>, we guide ambitious learners toward academic excellence and future success. From counselling to admissions and visa assistance, we stand beside our students with honesty, professionalism, and care.
                             </p>
                             <p>
