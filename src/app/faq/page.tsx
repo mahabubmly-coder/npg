@@ -1,12 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import type { Metadata } from "next";
 
 interface FAQItem {
     question: string;
-    answer: string | JSX.Element;
+    answer: string | React.ReactElement;
 }
 
 interface FAQSection {
@@ -171,7 +170,7 @@ const faqData: FAQSection[] = [
 
 function FAQAccordionItem({ question, answer, isOpen, onToggle }: {
     question: string;
-    answer: string | JSX.Element;
+    answer: string | React.ReactElement;
     isOpen: boolean;
     onToggle: () => void;
 }) {
