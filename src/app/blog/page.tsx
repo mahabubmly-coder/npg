@@ -69,28 +69,56 @@ export default function Blog() {
                 </motion.div>
             </section>
 
-            {/* Quick Links Section */}
+            {/* Blog Categories Section */}
             <section className="container mx-auto px-6 mt-16">
                 <div className="max-w-4xl mx-auto">
                     <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">
-                        Explore Our Services
+                        Blog Categories
                     </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {[
-                            { title: "Study Abroad", href: "/services/study-abroad", icon: "🎓" },
-                            { title: "Tourist Visa", href: "/services/tourist-visa", icon: "✈️" },
-                            { title: "MM2H Program", href: "/services/mm2h", icon: "🏠" }
-                        ].map((service, i) => (
-                            <Link
+                            {
+                                title: "Study in Malaysia",
+                                icon: "🎓",
+                                description: "Guides, tips, and insights about studying in Malaysian universities",
+                                color: "from-blue-500 to-blue-600"
+                            },
+                            {
+                                title: "Visa & Immigration",
+                                icon: "✈️",
+                                description: "Everything about visa processes, requirements, and immigration",
+                                color: "from-orange-500 to-orange-600"
+                            },
+                            {
+                                title: "Student Life",
+                                icon: "🌟",
+                                description: "Campus life, accommodation, culture, and student experiences",
+                                color: "from-purple-500 to-purple-600"
+                            },
+                            {
+                                title: "Updates & Announcements",
+                                icon: "📢",
+                                description: "Latest news, policy changes, and important announcements",
+                                color: "from-green-500 to-green-600"
+                            }
+                        ].map((category, i) => (
+                            <motion.div
                                 key={i}
-                                href={service.href}
-                                className="bg-white p-6 rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all text-center group"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                                className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-xl transition-all group cursor-pointer"
                             >
-                                <div className="text-4xl mb-3">{service.icon}</div>
-                                <h4 className="font-bold text-gray-900 group-hover:text-primary transition-colors">
-                                    {service.title}
+                                <div className={`w-16 h-16 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform`}>
+                                    {category.icon}
+                                </div>
+                                <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                                    {category.title}
                                 </h4>
-                            </Link>
+                                <p className="text-gray-600 text-sm">
+                                    {category.description}
+                                </p>
+                            </motion.div>
                         ))}
                     </div>
                 </div>
