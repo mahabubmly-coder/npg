@@ -1,14 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { use } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, User, Share2 } from "lucide-react";
 import { getPostBySlug } from "@/data/blog";
 import ReactMarkdown from "react-markdown";
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-    const post = getPostBySlug(params.slug);
+export default function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = use(params);
+    const post = getPostBySlug(slug);
 
     if (!post) {
         return (
