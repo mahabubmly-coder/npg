@@ -73,6 +73,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Web Banner Section */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-6 flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="w-full max-w-[970px]"
+          >
+            <img
+              src="/assets/home/web-banner.png"
+              alt="10% Discount on Visit Visa Application"
+              className="w-full h-auto rounded-lg shadow-lg"
+              style={{ maxWidth: '970px', height: 'auto', aspectRatio: '970/240' }}
+            />
+          </motion.div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
