@@ -19,7 +19,7 @@ export async function submitContactForm(formData: FormData) {
         // 1. Send email to Admin (You)
         await resend.emails.send({
             from: "Next Path Global <onboarding@resend.dev>", // Use verified domain in production
-            to: "yasser30dc@gmail.com", // Your email
+            to: "nextpathglobal058@gmail.com", // Your email
             subject: `New Contact Form Submission from ${name}`,
             html: `
         <h2>New Contact Request</h2>
@@ -108,7 +108,7 @@ export async function submitAppointmentForm(formData: FormData) {
         // 1. Send email to Admin
         const adminEmailResult = await resend.emails.send({
             from: "Next Path Global <onboarding@resend.dev>",
-            to: "yasser30dc@gmail.com",
+            to: "nextpathglobal058@gmail.com",
             subject: `New Appointment Request from ${fullName} - ${serviceLabel}`,
             html: `
         <h2>New Appointment Request</h2>
