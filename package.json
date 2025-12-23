@@ -7,7 +7,9 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "compress:images": "node scripts/compress-images.js",
+    "generate:webp": "node scripts/generate-webp.js"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -34,6 +36,7 @@
     "eslint-config-next": "16.0.3",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.5.6",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.18",
     "typescript": "^5"
   }
