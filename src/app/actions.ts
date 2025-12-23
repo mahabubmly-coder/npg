@@ -86,6 +86,15 @@ export async function submitAppointmentForm(formData: FormData) {
         return { success: false, error: "Missing required fields" };
     }
 
+    // Check if Resend API key is configured
+    if (!process.env.RESEND_API_KEY) {
+        console.error("RESEND_API_KEY is not configured");
+        return {
+            success: false,
+            error: "Email service is not configured. Please contact the administrator."
+        };
+    }
+
     const serviceLabel = serviceLabels[service] || service;
     const meetingModeLabel = meetingModeLabels[meetingMode] || meetingMode;
     const formattedDate = new Date(preferredDate).toLocaleDateString('en-US', {
@@ -97,7 +106,7 @@ export async function submitAppointmentForm(formData: FormData) {
 
     try {
         // 1. Send email to Admin
-        await resend.emails.send({
+        const adminEmailResult = await resend.emails.send({
             from: "Next Path Global <onboarding@resend.dev>",
             to: "yasser30dc@gmail.com",
             subject: `New Appointment Request from ${fullName} - ${serviceLabel}`,
@@ -120,8 +129,16 @@ export async function submitAppointmentForm(formData: FormData) {
       `,
         });
 
+        if (adminEmailResult.error) {
+            console.error("Admin email error:", adminEmailResult.error);
+            return {
+                success: false,
+                error: "Failed to send notification email. Please try again or contact us directly."
+            };
+        }
+
         // 2. Send confirmation email to Client
-        await resend.emails.send({
+        const clientEmailResult = await resend.emails.send({
             from: "Next Path Global <onboarding@resend.dev>",
             to: email,
             subject: "Appointment Request Received - Next Path Global",
@@ -146,10 +163,38 @@ export async function submitAppointmentForm(formData: FormData) {
       `,
         });
 
+        if (clientEmailResult.error) {
+            console.error("Client email error:", clientEmailResult.error);
+            // Admin email was sent, so we can still consider this a partial success
+            return {
+                success: true,
+                warning: "Your request was received, but we couldn't send a confirmation email. We'll contact you soon."
+            };
+        }
+
         return { success: true };
     } catch (error) {
         console.error("Resend Error:", error);
-        return { success: false, error: "Failed to send email" };
+
+        // Provide more specific error message based on error type
+        if (error instanceof Error) {
+            if (error.message.includes("API key")) {
+                return {
+                    success: false,
+                    error: "Email service configuration error. Please contact the administrator."
+                };
+            }
+            return {
+                success: false,
+                error: "Failed to send email. Please try again or contact us directly at +60 11 1669 5249."
+            };
+        }
+
+        return {
+            success: false,
+            error: "An unexpected error occurred. Please try again or contact us directly."
+        };
     }
 }
+
 
