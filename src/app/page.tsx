@@ -102,6 +102,7 @@ export default function Home() {
                 <Link
                   href={service.link}
                   className="text-primary font-medium flex items-center gap-2 group-hover:gap-3 transition-all"
+                  aria-label={`Learn more about ${service.title}`}
                 >
                   Learn More <ArrowRight size={16} />
                 </Link>
@@ -139,6 +140,7 @@ export default function Home() {
               <Link
                 href="/about"
                 className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-md text-lg font-semibold transition-all inline-flex items-center gap-2 shadow-lg hover:shadow-xl"
+                aria-label="Read more about NextPath Global and who we are"
               >
                 READ MORE <ArrowRight size={20} />
               </Link>
