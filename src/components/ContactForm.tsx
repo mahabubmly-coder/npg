@@ -44,8 +44,8 @@ export default function ContactForm() {
                     </div>
                 </div>
                 <div>
-                    <label className="block text-sm font-medium text-gray-600 mb-2">Service Interest</label>
-                    <select name="service" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors">
+                    <label htmlFor="service" className="block text-sm font-medium text-gray-600 mb-2">Service Interest</label>
+                    <select id="service" name="service" className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors">
                         <option value="Student Visa">Student Visa</option>
                         <option value="Tourist Visa">Tourist Visa</option>
                         <option value="Business Visa">Business Visa</option>

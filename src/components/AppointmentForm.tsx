@@ -196,8 +196,8 @@ export default function AppointmentForm() {
                         <div className="flex flex-col items-center">
                             <div
                                 className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-colors ${step >= num
-                                        ? "bg-primary text-white"
-                                        : "bg-gray-200 text-gray-500"
+                                    ? "bg-primary text-white"
+                                    : "bg-gray-200 text-gray-500"
                                     }`}
                             >
                                 {step > num ? (
@@ -285,10 +285,11 @@ export default function AppointmentForm() {
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-600 mb-2">
+                            <label htmlFor="nationality" className="block text-sm font-medium text-gray-600 mb-2">
                                 Nationality <span className="text-red-500">*</span>
                             </label>
                             <select
+                                id="nationality"
                                 value={formData.nationality}
                                 onChange={(e) => updateField("nationality", e.target.value)}
                                 className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors"
@@ -327,10 +328,11 @@ export default function AppointmentForm() {
                         <h3 className="text-xl font-bold text-gray-900 mb-4">Service Selection</h3>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-600 mb-2">
+                            <label htmlFor="service" className="block text-sm font-medium text-gray-600 mb-2">
                                 Type of Service Requested <span className="text-red-500">*</span>
                             </label>
                             <select
+                                id="service"
                                 value={formData.service}
                                 onChange={(e) => updateField("service", e.target.value)}
                                 className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors"
@@ -385,10 +387,11 @@ export default function AppointmentForm() {
                                 />
                             </div>
                             <div>
-                                <label className="block text-sm font-medium text-gray-600 mb-2">
+                                <label htmlFor="preferredTime" className="block text-sm font-medium text-gray-600 mb-2">
                                     Preferred Time Slot <span className="text-red-500">*</span>
                                 </label>
                                 <select
+                                    id="preferredTime"
                                     value={formData.preferredTime}
                                     onChange={(e) => updateField("preferredTime", e.target.value)}
                                     className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 text-gray-900 focus:border-primary focus:outline-none transition-colors"
@@ -413,8 +416,8 @@ export default function AppointmentForm() {
                                         type="button"
                                         onClick={() => updateField("meetingMode", mode.value)}
                                         className={`p-4 rounded-lg border-2 transition-all font-medium ${formData.meetingMode === mode.value
-                                                ? "border-primary bg-primary/10 text-primary"
-                                                : "border-gray-200 hover:border-gray-300 text-gray-700"
+                                            ? "border-primary bg-primary/10 text-primary"
+                                            : "border-gray-200 hover:border-gray-300 text-gray-700"
                                             }`}
                                     >
                                         {mode.label}
