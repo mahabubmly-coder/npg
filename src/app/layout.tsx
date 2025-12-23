@@ -9,6 +9,7 @@ const inter = Inter({
   variable: "--font-inter",
   display: 'swap',
   preload: true,
+  fallback: ['system-ui', 'arial'],
 });
 
 export const metadata: Metadata = {
