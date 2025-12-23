@@ -18,7 +18,7 @@ export async function submitContactForm(formData: FormData) {
     try {
         // 1. Send email to Admin (You)
         await resend.emails.send({
-            from: "Next Path Global <onboarding@resend.dev>", // Use verified domain in production
+            from: "Next Path Global <noreply@nextpathglobal.my>",
             to: "nextpathglobal058@gmail.com", // Your email
             subject: `New Contact Form Submission from ${name}`,
             html: `
@@ -34,7 +34,7 @@ export async function submitContactForm(formData: FormData) {
 
         // 2. Send confirmation email to User
         await resend.emails.send({
-            from: "Next Path Global <onboarding@resend.dev>",
+            from: "Next Path Global <noreply@nextpathglobal.my>",
             to: email,
             subject: "We received your message! - Next Path Global",
             html: `
@@ -107,7 +107,7 @@ export async function submitAppointmentForm(formData: FormData) {
     try {
         // 1. Send email to Admin
         const adminEmailResult = await resend.emails.send({
-            from: "Next Path Global <onboarding@resend.dev>",
+            from: "Next Path Global <noreply@nextpathglobal.my>",
             to: "nextpathglobal058@gmail.com",
             subject: `New Appointment Request from ${fullName} - ${serviceLabel}`,
             html: `
@@ -139,7 +139,7 @@ export async function submitAppointmentForm(formData: FormData) {
 
         // 2. Send confirmation email to Client
         const clientEmailResult = await resend.emails.send({
-            from: "Next Path Global <onboarding@resend.dev>",
+            from: "Next Path Global <noreply@nextpathglobal.my>",
             to: email,
             subject: "Appointment Request Received - Next Path Global",
             html: `
@@ -174,7 +174,21 @@ export async function submitAppointmentForm(formData: FormData) {
 
         return { success: true };
     } catch (error) {
-        console.error("Resend Error:", error);
+        console.error("=== RESEND API ERROR ===");
+        console.error("Full error object:", error);
+        console.error("Error type:", typeof error);
+        console.error("Error constructor:", error?.constructor?.name);
+
+        if (error && typeof error === 'object') {
+            console.error("Error keys:", Object.keys(error));
+            console.error("Error stringified:", JSON.stringify(error, null, 2));
+        }
+
+        if (error instanceof Error) {
+            console.error("Error message:", error.message);
+            console.error("Error stack:", error.stack);
+        }
+        console.error("=== END ERROR ===");
 
         // Provide more specific error message based on error type
         if (error instanceof Error) {
@@ -186,7 +200,7 @@ export async function submitAppointmentForm(formData: FormData) {
             }
             return {
                 success: false,
-                error: "Failed to send email. Please try again or contact us directly at +60 11 1669 5249."
+                error: `Failed to send email: ${error.message}`
             };
         }
 
