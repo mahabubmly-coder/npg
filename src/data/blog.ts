@@ -2,7 +2,7 @@ export interface BlogPost {
     id: string;
     title: string;
     slug: string;
-    category: "study-in-malaysia" | "visa-immigration" | "student-life" | "updates-announcements";
+    category: "study-in-malaysia" | "visa-immigration" | "student-life" | "updates-announcements" | "travel-tourism";
     excerpt: string;
     content: string;
     author: string;
@@ -129,6 +129,122 @@ Before finalizing travel plans, always confirm the latest visa eligibility rules
 We will keep updating our website with any changes as soon as official information is released.
 
 Thank you for your understanding and for trusting us to keep you informed 🤝
+        `
+    },
+    {
+        id: "3",
+        title: "7 Reasons why Malaysia Should Be on Every International Traveller's Bucket List in 2026",
+        slug: "malaysia-travel-bucket-list-2026",
+        category: "travel-tourism",
+        excerpt: "As global travel rebounds stronger and smarter, international travellers in 2026 are no longer just chasing luxury—they want value, safety, culture, and ease. That's exactly where Malaysia stands out.",
+        author: "NextPath Global Team",
+        date: "2024-12-25",
+        readTime: "8 min read",
+        content: `
+As global travel rebounds stronger and smarter, international travellers in 2026 are no longer just chasing luxury—they want value, safety, culture, and ease. That's exactly where Malaysia stands out.
+
+From rich heritage and world-class food to affordable travel costs and traveller-friendly visa policies, Malaysia is quietly becoming Asia's most underrated travel gem. If you're planning your next international trip, here's why Malaysia deserves a top spot on your bucket list in 2026.
+
+## 1. A Rich Blend of Cultures You Can Experience in One Country
+
+Malaysia is not just a destination—it's a cultural experience.
+
+Few countries in the world offer such a seamless mix of Malay, Chinese, Indian, and Indigenous cultures living side by side. In one day, you can:
+
+- Visit a mosque, temple, and church
+- Experience different festivals throughout the year
+- Hear multiple languages spoken naturally
+
+This multicultural harmony is authentic, not staged—and travellers feel it the moment they arrive.
+
+## 2. Malaysian Food: A Global Favourite Without the Global Price Tag
+
+Ask any seasoned traveller and they'll tell you—Malaysia's food scene is elite.
+
+From street food to fine dining, Malaysia offers:
+
+- Nasi Lemak, Char Kway Teow, Roti Canai, Laksa
+- Michelin-recognised hawker stalls
+- Halal, vegetarian, and international options everywhere
+
+The best part? You can enjoy world-class meals at a fraction of what you'd pay in Europe, Australia, or Japan.
+
+## 3. Travel That's Affordable Without Feeling "Cheap"
+
+In 2026, smart travellers are choosing destinations that offer maximum experience with controlled budgets—and Malaysia delivers.
+
+Compared to many international destinations, Malaysia offers:
+
+- Affordable hotels (from budget to luxury)
+- Reasonably priced transport (Grab, trains, flights)
+- Low daily expenses for food and activities
+
+You get premium experiences without premium stress. That's a win.
+
+## 4. One of the Safest Countries for International Tourists
+
+Safety matters—especially for solo travellers, families, and first-time visitors.
+
+Malaysia consistently ranks as:
+
+- A safe country for tourists
+- Friendly toward international visitors
+- Stable with strong infrastructure and healthcare
+
+Major cities like Kuala Lumpur, Penang, and Johor Bahru are modern, well-connected, and tourist-friendly, making travel smooth and stress-free.
+
+## 5. Easy Visa Policies for International Travellers
+
+Visa hassle can ruin travel plans—but Malaysia keeps it simple.
+
+In 2026, Malaysia continues to offer:
+
+- Visa-free or visa-on-arrival access for many nationalities
+- Straightforward eVisa options
+- Clear and transparent immigration processes
+
+This ease of entry makes Malaysia ideal for short holidays, extended stays, and even digital nomads exploring Southeast Asia.
+
+## 6. Nature, Cities, and Islands—All in One Trip
+
+Malaysia gives you variety without long travel distances.
+
+You can experience:
+
+- Modern skyscrapers in Kuala Lumpur
+- Heritage streets in Melaka and George Town
+- Beaches in Langkawi and Perhentian Islands
+- Rainforests and wildlife in Sabah and Sarawak
+
+Few countries let you switch vibes this fast—and that's perfect for 2026 travellers who want more in less time.
+
+## 7. Friendly People & English-Friendly Environment
+
+Malaysia's people are known for their warmth and hospitality. Add to that:
+
+- Widespread English usage
+- Clear signage and travel support
+- Tourism-focused services
+
+This makes Malaysia especially welcoming for first-time international travellers who want confidence and comfort.
+
+## Final Thoughts: Malaysia Is the Smart Travel Choice for 2026
+
+Malaysia isn't loud about its greatness—and that's exactly why it's special.
+
+In 2026, travellers who value culture, food, affordability, safety, and ease will naturally gravitate toward Malaysia. Whether you're travelling solo, with family, or planning a longer stay, Malaysia offers balance—the kind modern travellers are actively searching for.
+
+Sometimes, the best destinations aren't the most hyped—they're the most complete.
+
+## ✨ Planning to Travel to Malaysia?
+
+At NextPath Global Sdn Bhd, we assist international travellers with:
+
+- Malaysia tourist visas
+- Travel planning & documentation
+- Insurance and flight support
+
+📩 Reach out today and let us help you plan your Malaysia journey with confidence. Feel free to contact us +60 11 1669 5249 or +60 17 462 7457
         `
     }
 ];

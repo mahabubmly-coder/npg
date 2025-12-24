@@ -13,6 +13,7 @@ const categories = [
     { id: "study-in-malaysia" as const, name: "Study in Malaysia", icon: "🎓" },
     { id: "visa-immigration" as const, name: "Visa & Immigration", icon: "✈️" },
     { id: "student-life" as const, name: "Student Life", icon: "🌟" },
+    { id: "travel-tourism" as const, name: "Travel & Tourism in Malaysia", icon: "🌏" },
     { id: "updates-announcements" as const, name: "Updates & Announcements", icon: "📢" }
 ];
 
@@ -60,8 +61,8 @@ export default function Blog() {
                                 key={category.id}
                                 onClick={() => setActiveCategory(category.id)}
                                 className={`px-6 py-3 rounded-full font-semibold transition-all flex items-center gap-2 ${activeCategory === category.id
-                                        ? "bg-primary text-white shadow-lg scale-105"
-                                        : "bg-white text-gray-700 hover:bg-gray-50 border border-gray-200"
+                                    ? "bg-primary text-white shadow-lg scale-105"
+                                    : "bg-white text-gray-700 hover:bg-gray-50 border border-gray-200"
                                     }`}
                             >
                                 <span>{category.icon}</span>

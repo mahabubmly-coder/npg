@@ -5,19 +5,34 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function submitContactForm(formData: FormData) {
+    console.log('=== CONTACT FORM SERVER ACTION CALLED ===');
+    console.log('FormData received');
+
     const name = formData.get("name") as string;
     const email = formData.get("email") as string;
     const phone = formData.get("phone") as string;
     const service = formData.get("service") as string;
     const message = formData.get("message") as string;
 
+    console.log('Form data extracted:', { name, email, phone, service, message });
+
     if (!name || !email || !message) {
+        console.log('Validation failed - missing fields');
         return { success: false, error: "Missing required fields" };
+    }
+
+    // Check if Resend API key is configured
+    if (!process.env.RESEND_API_KEY) {
+        console.error("RESEND_API_KEY is not configured");
+        return {
+            success: false,
+            error: "Email service is not configured. Please contact the administrator."
+        };
     }
 
     try {
         // 1. Send email to Admin (You)
-        await resend.emails.send({
+        const adminEmailResult = await resend.emails.send({
             from: "Next Path Global <noreply@nextpathglobal.my>",
             to: "nextpathglobal058@gmail.com", // Your email
             subject: `New Contact Form Submission from ${name}`,
@@ -32,8 +47,16 @@ export async function submitContactForm(formData: FormData) {
       `,
         });
 
+        if (adminEmailResult.error) {
+            console.error("Admin email error:", adminEmailResult.error);
+            return {
+                success: false,
+                error: "Failed to send notification email. Please try again or contact us directly."
+            };
+        }
+
         // 2. Send confirmation email to User
-        await resend.emails.send({
+        const clientEmailResult = await resend.emails.send({
             from: "Next Path Global <noreply@nextpathglobal.my>",
             to: email,
             subject: "We received your message! - Next Path Global",
@@ -48,10 +71,51 @@ export async function submitContactForm(formData: FormData) {
       `,
         });
 
+        if (clientEmailResult.error) {
+            console.error("Client email error:", clientEmailResult.error);
+            // Admin email was sent, so we can still consider this a partial success
+            return {
+                success: true,
+                warning: "Your message was received, but we couldn't send a confirmation email. We'll contact you soon."
+            };
+        }
+
         return { success: true };
     } catch (error) {
-        console.error("Resend Error:", error);
-        return { success: false, error: "Failed to send email" };
+        console.error("=== CONTACT FORM RESEND API ERROR ===");
+        console.error("Full error object:", error);
+        console.error("Error type:", typeof error);
+        console.error("Error constructor:", error?.constructor?.name);
+
+        if (error && typeof error === 'object') {
+            console.error("Error keys:", Object.keys(error));
+            console.error("Error stringified:", JSON.stringify(error, null, 2));
+        }
+
+        if (error instanceof Error) {
+            console.error("Error message:", error.message);
+            console.error("Error stack:", error.stack);
+        }
+        console.error("=== END ERROR ===");
+
+        // Provide more specific error message based on error type
+        if (error instanceof Error) {
+            if (error.message.includes("API key")) {
+                return {
+                    success: false,
+                    error: "Email service configuration error. Please contact the administrator."
+                };
+            }
+            return {
+                success: false,
+                error: `Failed to send email: ${error.message}`
+            };
+        }
+
+        return {
+            success: false,
+            error: "An unexpected error occurred. Please try again or contact us directly."
+        };
     }
 }
 
