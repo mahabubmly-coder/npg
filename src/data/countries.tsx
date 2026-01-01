@@ -99,6 +99,7 @@ export const countries: CountryData[] = [
             { icon: <Plane size={20} />, document: "Air Ticket", requirement: "Booking a return ticket" },
             { icon: <Briefcase size={20} />, document: "Employment/Study Confirmation Letter", requirement: "From Company, University or College" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, with a minimum end balance of RM 5,000/Equivalent to any other currencies" },
+            { icon: <FileText size={20} />, document: "Invitation Letter/Sponsor Letter/Hotel booking", requirement: "Required" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "2 copy (35 × 45 mm, white background), printed and soft copy" },
         ],
         whyChoose: [
