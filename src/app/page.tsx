@@ -28,10 +28,10 @@ const services = [
     link: "/services",
   },
   {
-    title: "Work Permit",
-    description: "Secure your dream job in international markets.",
+    title: "Employment Pass",
+    description: "Professional work permits for skilled workers in Malaysia.",
     icon: <ShieldCheck size={40} className="text-primary" />,
-    link: "/services",
+    link: "/services/employment-pass",
   },
 ];
 

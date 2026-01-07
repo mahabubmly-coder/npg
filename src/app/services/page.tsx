@@ -31,9 +31,10 @@ const allServices = [
         icon: <Globe size={40} className="text-primary" />,
     },
     {
-        title: "Work Permit",
-        description: "Assistance with securing work permits for skilled professionals in various countries.",
+        title: "Employment Pass",
+        description: "Professional work permits for skilled workers seeking employment in Malaysia.",
         icon: <ShieldCheck size={40} className="text-primary" />,
+        link: "/services/employment-pass"
     },
     {
         title: "Study Abroad",

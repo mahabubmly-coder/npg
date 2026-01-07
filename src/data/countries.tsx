@@ -414,7 +414,7 @@ export const countries: CountryData[] = [
             { icon: <FileText size={20} />, document: "Original Passport", requirement: "Valid for at least 6 months" },
             { icon: <Building size={20} />, document: "Malaysian Visa Copy", requirement: "Valid for at least 6 months" },
             { icon: <FileText size={20} />, document: "NOC", requirement: "No Objection Certificate according to occupation" },
-            { icon: <Briefcase size={20} />, document: "Work Permit/Student Visa", requirement: "Company SSM, Registration & Director's Passport/IC copy" },
+            { icon: <Briefcase size={20} />, document: "Employment Pass/Student Visa", requirement: "Company SSM, Registration & Director's Passport/IC copy" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 6 months, min balance RM 7,000" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "1 copy (1.77 × 1.37 inches, white background)" },
         ],

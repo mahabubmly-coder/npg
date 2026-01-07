@@ -46,7 +46,7 @@ export default function Footer() {
                             <li><Link href="/services/pvip" className="text-gray-600 hover:text-primary transition-colors">PVIP Programme</Link></li>
                             <li><Link href="/services/tourist-visa" className="text-gray-600 hover:text-primary transition-colors">Tourist Visa</Link></li>
                             <li><Link href="/services/study-abroad" className="text-gray-600 hover:text-primary transition-colors">Study Abroad</Link></li>
-                            <li><Link href="/services" className="text-gray-600 hover:text-primary transition-colors">Work Permit</Link></li>
+                            <li><Link href="/services/employment-pass" className="text-gray-600 hover:text-primary transition-colors">Employment Pass</Link></li>
                         </ul>
                     </div>
 
