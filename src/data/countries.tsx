@@ -219,6 +219,7 @@ export const countries: CountryData[] = [
             { icon: <FileText size={20} />, document: "Introduction Letter", requirement: "Issued by the Bangladesh High Commission in Malaysia" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Last 3 months, min balance RM 7,000" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "1 copy (35 × 45 mm, white background)" },
+            { icon: <FileText size={20} />, document: "Marriage Certificate", requirement: "For couple application" },
         ],
         whyChoose: [
             { icon: <Building size={32} />, title: "Business Hub", description: "Asia’s premier financial centre with endless opportunities for growth and innovation" },
