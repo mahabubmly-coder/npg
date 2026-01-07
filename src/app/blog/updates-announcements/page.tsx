@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Clock, Calendar, User } from "lucide-react";
 import { getCategoryPosts } from "@/data/blog";
+import Breadcrumbs from "@/components/navigation/Breadcrumbs";
 
 export default function UpdatesAnnouncementsCategory() {
     const posts = getCategoryPosts("updates-announcements");
@@ -12,6 +13,14 @@ export default function UpdatesAnnouncementsCategory() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-orange-50 pt-24 pb-20">
             <div className="container mx-auto px-6 max-w-6xl">
+                {/* Breadcrumbs */}
+                <Breadcrumbs
+                    items={[
+                        { name: 'Blog', url: '/blog' },
+                        { name: 'Updates & Announcements', url: '/blog/updates-announcements' },
+                    ]}
+                />
+
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

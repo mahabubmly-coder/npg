@@ -20,6 +20,14 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
+  // SEO: Ensure consistent URLs with trailing slashes
+  trailingSlash: false,
+  async redirects() {
+    return [
+      // Add any specific redirects for 404 pages here
+      // Example: { source: '/old-path', destination: '/new-path', permanent: true }
+    ];
+  },
   async headers() {
     return [
       {
@@ -46,6 +54,27 @@ const nextConfig: NextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'origin-when-cross-origin',
           },
         ],
       },
