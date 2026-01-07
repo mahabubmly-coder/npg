@@ -246,6 +246,84 @@ At NextPath Global Sdn Bhd, we assist international travellers with:
 
 📩 Reach out today and let us help you plan your Malaysia journey with confidence. Feel free to contact us +60 11 1669 5249 or +60 17 462 7457
         `
+    },
+    {
+        id: "4",
+        title: "Top Tourist Attractions in Kuala Lumpur for a Perfect Day Trip",
+        slug: "top-tourist-attractions-kuala-lumpur",
+        category: "travel-tourism",
+        excerpt: "Kuala Lumpur, Malaysia's bustling capital, is a vibrant city where modern skyscrapers meet cultural heritage. Discover the best attractions to explore in just one day.",
+        author: "NextPath Global Team",
+        date: "2026-01-07",
+        readTime: "6 min read",
+        content: `
+Kuala Lumpur, Malaysia's bustling capital, is a vibrant city where modern skyscrapers meet cultural heritage. If you're short on time and planning a one-day trip, don't worry—KL is packed with attractions that are easy to explore in a day. Here's a guide to make the most of your visit.
+
+## 1. Petronas Twin Towers
+
+No trip to Kuala Lumpur is complete without seeing the iconic Petronas Twin Towers. Standing at 452 meters, these towers were once the tallest in the world.
+
+**Highlights:**
+- Skybridge and observation deck for panoramic city views
+
+**Tip:** Book your tickets in advance to avoid long queues.
+
+## 2. KLCC Park
+
+Right next to the Twin Towers, KLCC Park is a green oasis in the heart of the city. Perfect for a short stroll or photos with the towers in the background.
+
+**Highlights:**
+- Walking trails, fountains, and a small lake
+
+**Tip:** Visit in the evening to see the musical fountain show.
+
+## 3. Batu Caves
+
+A short 20-minute drive from the city center, Batu Caves is a limestone hill with a series of caves and cave temples.
+
+**Highlights:**
+- The giant golden statue of Lord Murugan
+- 272 colorful steps
+- Stunning cave shrines
+
+**Tip:** Wear comfortable shoes and dress modestly if entering the temples.
+
+## 4. Merdeka Square & Sultan Abdul Samad Building
+
+Step back in time at Merdeka Square, the historical heart of Kuala Lumpur. The area is surrounded by beautiful colonial architecture.
+
+**Highlights:**
+- Sultan Abdul Samad Building
+- The 100-meter-high flagpole
+- Open green spaces
+
+**Tip:** Great for photography, especially in the morning light.
+
+## 5. Central Market & Petaling Street (Chinatown)
+
+Wrap up your day with some shopping and local flavors.
+
+**Central Market:** A heritage building offering handicrafts, souvenirs, and local snacks.
+
+**Petaling Street:** Experience the vibrant Chinatown with street food, markets, and cultural vibes.
+
+**Tip:** Try local delicacies like Hainanese chicken rice, satay, or cendol.
+
+## Bonus: Menara Kuala Lumpur (KL Tower)
+
+If you still have energy, head to KL Tower, another iconic landmark. Its observation deck is slightly higher than the Petronas Skybridge, offering a different perspective of the city skyline.
+
+**Tip:** Sunset or night views are magical here.
+
+## Suggested Day Trip Itinerary
+
+1. **Morning:** Petronas Twin Towers → KLCC Park
+2. **Late Morning:** Batu Caves
+3. **Afternoon:** Merdeka Square & Sultan Abdul Samad Building
+4. **Evening:** Central Market → Petaling Street → KL Tower (optional)
+
+Kuala Lumpur may be a city of modern skyscrapers, but it's also a place full of culture, history, and flavors. Even in just one day, you can experience its highlights, snap iconic photos, and enjoy a taste of local life.
+        `
     }
 ];
 
