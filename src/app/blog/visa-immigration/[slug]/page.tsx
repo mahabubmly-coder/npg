@@ -36,11 +36,11 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
                     className="mb-8"
                 >
                     <Link
-                        href="/blog/travel-tourism"
+                        href="/blog/visa-immigration"
                         className="inline-flex items-center gap-2 text-primary hover:underline"
                     >
                         <ArrowLeft size={20} />
-                        Back to Travel & Tourism in Malaysia
+                        Back to Visa & Immigration
                     </Link>
                 </motion.div>
 
@@ -121,6 +121,38 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
                             strong: ({ children }) => (
                                 <strong className="font-bold text-gray-900">{children}</strong>
                             ),
+                            table: ({ children }) => (
+                                <div className="overflow-x-auto my-8">
+                                    <table className="min-w-full divide-y divide-gray-200 border border-gray-300">
+                                        {children}
+                                    </table>
+                                </div>
+                            ),
+                            thead: ({ children }) => (
+                                <thead className="bg-gray-50">
+                                    {children}
+                                </thead>
+                            ),
+                            tbody: ({ children }) => (
+                                <tbody className="bg-white divide-y divide-gray-200">
+                                    {children}
+                                </tbody>
+                            ),
+                            tr: ({ children }) => (
+                                <tr>
+                                    {children}
+                                </tr>
+                            ),
+                            th: ({ children }) => (
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200 last:border-r-0">
+                                    {children}
+                                </th>
+                            ),
+                            td: ({ children }) => (
+                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200 last:border-r-0">
+                                    {children}
+                                </td>
+                            ),
                         }}
                     >
                         {post.content.replace(/\r\n/g, '\n')}
@@ -134,9 +166,9 @@ export default function BlogPost({ params }: { params: Promise<{ slug: string }>
                     transition={{ delay: 0.3 }}
                     className="mt-16 p-8 bg-gradient-to-r from-primary to-orange-500 rounded-2xl text-white text-center"
                 >
-                    <h3 className="text-2xl font-bold mb-3">Ready to Explore Malaysia?</h3>
+                    <h3 className="text-2xl font-bold mb-3">Ready to Apply for Your Malaysian Visa?</h3>
                     <p className="mb-6 text-white/90">
-                        Contact us today for professional assistance with your Malaysia travel plans.
+                        Contact us today for professional assistance with your visa application and residency planning.
                     </p>
                     <Link
                         href="/contact"

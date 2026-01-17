@@ -1,7 +1,6 @@
 # *
 User-agent: *
 Allow: /
-Allow: /api/health
 Disallow: /api/
 Disallow: /admin/
 
