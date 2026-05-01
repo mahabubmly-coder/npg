@@ -18,9 +18,22 @@ export default function TouristVisaPage() {
     return (
         <div className="min-h-screen bg-gray-50 pb-20">
             {/* Hero Section */}
-            <section className="bg-secondary text-white py-24 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/assets/grid.svg')] opacity-10"></div>
-                <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -mr-20 -mt-20"></div>
+            <section className="bg-secondary text-white py-24 md:py-32 relative overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/assets/tourist-visa-hero.webp"
+                        alt="Tourist Visa Services"
+                        fill
+                        priority
+                        className="object-cover"
+                        sizes="100vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 via-secondary/70 to-secondary/90"></div>
+                </div>
+                
+                <div className="absolute inset-0 bg-[url('/assets/grid.svg')] opacity-10 z-0"></div>
+                <div className="absolute top-0 right-0 w-96 h-96 bg-primary/30 rounded-full blur-3xl -mr-20 -mt-20 z-0"></div>
 
                 <div className="container mx-auto px-6 relative z-10 text-center">
                     <motion.div
