@@ -28,7 +28,6 @@ const navLinks: NavLink[] = [
         ]
     },
     { name: "Tourist Visa", href: "/services/tourist-visa" },
-    { name: "Flights", href: "/flight-booking" },
     {
         name: "Residency Programmes",
         href: "#",
