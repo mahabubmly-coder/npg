@@ -17,8 +17,14 @@ const TikTokIcon = ({ size = 20 }: { size?: number }) => (
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-50 text-gray-900 pt-20 pb-10 border-t border-gray-200">
-            <div className="container mx-auto px-6">
+        <footer className="relative text-gray-900 pt-20 pb-10 border-t border-gray-200 overflow-hidden">
+            <div 
+                className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat fixed"
+                style={{ backgroundImage: "url('/assets/hero-background.webp')", backgroundAttachment: 'fixed' }}
+            ></div>
+            <div className="absolute inset-0 z-0 bg-white/90 backdrop-blur-[2px]"></div>
+
+            <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="relative block w-48 h-16 mb-6">
