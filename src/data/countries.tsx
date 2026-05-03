@@ -1105,7 +1105,7 @@ export const countries: CountryData[] = [
     },
     {
         slug: "uk",
-        name: "United Kingdom",
+        name: "United Kingdom (UK)",
         tagline: "Historic Charm & Modern Elegance",
         description: "Discover the historic charm of the United Kingdom. From the iconic landmarks of London to the scenic landscapes of the Scottish Highlands, the UK offers an unforgettable experience.",
         coverImage: "/assets/countries/uk.png",
