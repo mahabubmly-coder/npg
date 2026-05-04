@@ -29,24 +29,41 @@ export default function Blog() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50 pt-24 pb-20">
-            <div className="container mx-auto px-6 max-w-6xl">
-                {/* Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="text-center mb-12"
-                >
-                    <span className="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-semibold text-sm mb-4">
-                        Stay Informed
-                    </span>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
-                        Our <span className="text-primary">Blog</span>
-                    </h1>
-                    <p className="text-xl text-gray-600 leading-relaxed">
-                        Insights, tips, and updates on study abroad, visa services, and global opportunities.
-                    </p>
-                </motion.div>
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50 pb-20">
+
+            {/* ── Hero Cover Section ── */}
+            <div className="relative w-full h-[420px] md:h-[500px] overflow-hidden">
+                <img
+                    src="/assets/blog-hero.png"
+                    alt="NextPath Global Blog"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                />
+                {/* Overlay: dark top → white bottom */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/80 via-[#0d1b2a]/55 to-white" />
+
+                {/* Hero Content */}
+                <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center pt-16">
+                    <motion.div
+                        initial={{ opacity: 0, y: 28 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.9 }}
+                    >
+                        <span className="inline-block bg-[#c9a84c]/20 border border-[#c9a84c]/40 text-[#f0d485] text-sm font-semibold uppercase tracking-widest px-5 py-2 rounded-full mb-5">
+                            ✍️ Stay Informed
+                        </span>
+                        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+                            Our <span className="text-[#c9a84c]">Blog</span>
+                        </h1>
+                        <p className="text-white/80 max-w-2xl mx-auto text-lg leading-relaxed">
+                            Insights, tips, and updates on study abroad, visa services, and global opportunities.
+                        </p>
+                    </motion.div>
+                </div>
+            </div>
+
+            <div className="container mx-auto px-6 max-w-6xl -mt-4">
+                {/* spacer */}
+                <div className="mb-4" />
 
                 {/* Category Filter Tabs */}
                 <motion.div
