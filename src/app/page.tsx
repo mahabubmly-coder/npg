@@ -123,7 +123,7 @@ export default function Home() {
                            <option value="">Select your destination →</option>
                            <option value="china">China</option>
                            <option value="japan">Japan</option>
-                           <option value="europe">Europe (Schengen)</option>
+                           <option value="schengen">Europe (Schengen)</option>
                            <option value="australia">Australia</option>
                            <option value="usa">USA</option>
                            <option value="uk">United Kingdom</option>
