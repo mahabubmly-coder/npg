@@ -278,6 +278,36 @@ const universities = [
   }
 ];
 
+const universityBranding: Record<string, { domain: string; coverImage?: string; localLogo?: string }> = {
+  "UM": { domain: "um.edu.my", coverImage: "um-cover.webp", localLogo: "/assets/institutions/um-logo.webp" },
+  "UTM": { domain: "utm.my", coverImage: "utm-cover.webp" },
+  "UUM": { domain: "uum.edu.my", coverImage: "uum-cover.webp" },
+  "UR": { domain: "unirazak.edu.my", coverImage: "unirazak-cover.webp" },
+  "UN": { domain: "uniten.edu.my", coverImage: "uniten-cover.webp" },
+  "UZ": { domain: "unisza.edu.my", coverImage: "unisza-cover.webp" },
+  "US": { domain: "unisel.edu.my", coverImage: "unisel-cover.webp" },
+  "UC": { domain: "cyberjaya.edu.my" },
+  "UW": { domain: "umw.edu.my" },
+  "MY": { domain: "unimy.edu.my", coverImage: "unimy-cover.webp" },
+  "KL": { domain: "unikl.edu.my", coverImage: "unikl-cover.webp" },
+  "TU": { domain: "taylors.edu.my", coverImage: "taylors-cover.webp" },
+  "SW": { domain: "sunway.edu.my", coverImage: "sunway-cover.webp" },
+  "SG": { domain: "segi.edu.my", coverImage: "segi-cover.webp" },
+  "NU": { domain: "nilai.edu.my" },
+  "MM": { domain: "mmu.edu.my", coverImage: "mmu-cover.webp" },
+  "LC": { domain: "lincoln.edu.my", coverImage: "lincoln-cover.webp" },
+  "LB": { domain: "lsbf.edu.sg", coverImage: "lsbf-cover.webp" },
+  "II": { domain: "newinti.edu.my", coverImage: "inti-cover.webp" },
+  "IU": { domain: "iium.edu.my", coverImage: "iium-cover.webp" },
+  "CU": { domain: "city.edu.my" },
+  "XM": { domain: "xmu.edu.my", coverImage: "xiamen-cover.webp" },
+  "AP": { domain: "apu.edu.my", coverImage: "apu-cover.webp" },
+  "TH": { domain: "uthm.edu.my", coverImage: "uthm-cover.webp" },
+  "YC": { domain: "yes.edu.my", coverImage: "yes-college-cover.webp" },
+  "MR": { domain: "montroyale.edu.my" },
+  "BI": { domain: "brighton.edu.my" }
+};
+
 function getIconLetter(name: string) {
   return name.split(' ').filter(w => /^[A-Z]/.test(w)).slice(0, 2).map(w => w[0]).join('') || name[0];
 }
@@ -408,8 +438,36 @@ export default function StudyMalaysiaSection() {
                   exit="exit"
                   className={styles.card}
                 >
+                  <div className={styles.cardBanner}>
+                    {universityBranding[u.abbr]?.coverImage ? (
+                      <img 
+                        src={`/assets/institutions/${universityBranding[u.abbr].coverImage}`} 
+                        alt={`${u.name} Campus`} 
+                        className={styles.bannerImg}
+                      />
+                    ) : (
+                      <div className={styles.bannerGradient} />
+                    )}
+                  </div>
+
                   <div className={styles.cardTop}>
-                    <div className={styles.uniIcon}>{getIconLetter(u.name)}</div>
+                    <div className={styles.uniIcon}>
+                      {(() => {
+                        const branding = universityBranding[u.abbr];
+                        const logoSrc = branding?.localLogo || (branding?.domain ? `https://www.google.com/s2/favicons?sz=128&domain=${branding.domain}` : null);
+                        return logoSrc ? (
+                          <img 
+                            src={logoSrc} 
+                            alt={`${u.name} logo`} 
+                            className={styles.uniLogoImg}
+                            onError={(e) => {
+                              (e.currentTarget as HTMLImageElement).style.display = 'none';
+                            }}
+                          />
+                        ) : null;
+                      })()}
+                      <span className={styles.uniIconInitials}>{getIconLetter(u.name)}</span>
+                    </div>
                     <div className={styles.cardHeader}>
                       <div className={styles.cardName}>{u.name}</div>
                       <div className={styles.tagRow}>
