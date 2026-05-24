@@ -1,72 +1,127 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, Briefcase, Globe, ShieldCheck, Plane, FileText, Home, Crown } from "lucide-react";
+import {
+    GraduationCap, Briefcase, Globe, ShieldCheck, Plane, 
+    FileText, Home, Crown, Building2, Ticket, Hotel, 
+    BadgeCheck, FileSignature, ArrowRight
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-const allServices = [
+interface ServiceItem {
+    title: string;
+    description: string;
+    icon: React.ReactNode;
+    link?: string;
+}
+
+interface ServiceCategory {
+    categoryName: string;
+    description: string;
+    services: ServiceItem[];
+}
+
+const serviceCategories: ServiceCategory[] = [
     {
-        title: "Student Visa",
-        description: "Comprehensive support for students aspiring to study abroad. From university selection to visa application.",
-        icon: <GraduationCap size={40} className="text-primary" />,
+        categoryName: "Global Education & Residency",
+        description: "Explore world-class academic institutions and long-term golden residency programs worldwide.",
+        services: [
+            {
+                title: "Student Consultancy",
+                description: "Comprehensive university admission guidance and visa support for top destinations including the UK, Finland, Germany, Malaysia, and China. We handle your entire application process.",
+                icon: <GraduationCap size={32} className="text-[#c9a84c]" />,
+                link: "/services/study-abroad"
+            },
+            {
+                title: "MM2H (Malaysia My Second Home)",
+                description: "Complete advisory and application coordination for Malaysia's prestigious long-term residency program. Live, retire, or invest in Malaysia with our expert immigration guidance.",
+                icon: <Home size={32} className="text-[#c9a84c]" />,
+                link: "/services/mm2h"
+            },
+            {
+                title: "PVIP (Premium Visa Program)",
+                description: "Residency consultation for Malaysia's Premium Visa Program. Secure up to 20 years of elite residency for global investors, entrepreneurs, and high-net-worth individuals.",
+                icon: <Crown size={32} className="text-[#c9a84c]" />,
+                link: "/contact"
+            }
+        ]
     },
     {
-        title: "MM2H (Malaysia My Second Home)",
-        description: "Live, retire, or invest in Malaysia with a 10-year renewable visa. Enjoy tax-free car import, property ownership, and world-class healthcare.",
-        icon: <Home size={40} className="text-primary" />,
+        categoryName: "Corporate Mobility & Work Permits",
+        description: "Professional work permit acquisition and compliant business registration for global professionals and founders.",
+        services: [
+            {
+                title: "Employment Pass",
+                description: "End-to-end work visa sponsorship coordination (EP Category I, II, & III) for expatriates, executives, and skilled corporate talents looking to establish their careers in Malaysia.",
+                icon: <ShieldCheck size={32} className="text-[#c9a84c]" />,
+                link: "/services/employment-pass"
+            },
+            {
+                title: "European Work Permit Process",
+                description: "Fully compliant work permit filing, employer matching guidance, and relocation coordination for major European nations looking for qualified international skilled workforce.",
+                icon: <Globe size={32} className="text-[#c9a84c]" />,
+                link: "/contact"
+            },
+            {
+                title: "Business Set Up",
+                description: "Corporate incorporation services in Malaysia. We assist with company registration (SSM), local corporate banking setups, trade licensing, and foreign ownership compliance.",
+                icon: <Building2 size={32} className="text-[#c9a84c]" />,
+                link: "/contact"
+            }
+        ]
     },
     {
-        title: "PVIP (Premium Visa Programme)",
-        description: "The ultimate 20-year residency for global investors. 100% foreign ownership, no minimum stay, and work/business rights.",
-        icon: <Crown size={40} className="text-primary" />,
+        categoryName: "Travel & Hospitality",
+        description: "Fast-track holiday visas, worldwide hotel bookings, and airline ticketing for seamless journeys.",
+        services: [
+            {
+                title: "Tourist Visa Process",
+                description: "Hassle-free, premium tourist visa documentation and processing for popular destinations worldwide, ensuring maximum approval rates and swift turnaround times.",
+                icon: <Plane size={32} className="text-[#c9a84c]" />,
+                link: "/services/tourist-visa"
+            },
+            {
+                title: "Air Ticket",
+                description: "Competitive worldwide airfares, customized flight routes, and flexible packages with leading commercial airlines for both individual and corporate travels.",
+                icon: <Ticket size={32} className="text-[#c9a84c]" />,
+                link: "/contact"
+            },
+            {
+                title: "Hotel Booking (Worldwide)",
+                description: "Exclusive corporate rates and pre-screened room reservations at top-rated hotels, boutique resorts, and luxury stays across the globe, tailored to your itinerary.",
+                icon: <Hotel size={32} className="text-[#c9a84c]" />,
+                link: "/contact"
+            }
+        ]
     },
     {
-        title: "Business Visa",
-        description: "Facilitating global business travel and expansion with expert visa consulting.",
-        icon: <Briefcase size={40} className="text-primary" />,
-    },
-    {
-        title: "Immigration",
-        description: "Permanent residency and immigration pathways for Canada, Australia, UK, and more.",
-        icon: <Globe size={40} className="text-primary" />,
-    },
-    {
-        title: "Employment Pass",
-        description: "Professional work permits for skilled workers seeking employment in Malaysia.",
-        icon: <ShieldCheck size={40} className="text-primary" />,
-        link: "/services/employment-pass"
-    },
-    {
-        title: "Study Abroad",
-        description: "Your gateway to world-class education in Malaysia. We assist with university applications, student visas, and accommodation.",
-        icon: <GraduationCap size={40} />,
-        link: "/services/study-abroad"
-    },
-    {
-        title: "MM2H Program",
-        description: "Malaysia My Second Home (MM2H) program consultation and application assistance for long-term residency.",
-        icon: <Home size={40} />,
-        link: "/services/mm2h"
-    },
-    {
-        title: "Tourist Visa",
-        description: "Hassle-free tourist visa processing for your dream vacations.",
-        icon: <Plane size={40} className="text-primary" />,
-    },
-    {
-        title: "Document Attestation",
-        description: "Legalization and attestation of documents for international use.",
-        icon: <FileText size={40} className="text-primary" />,
-    },
+        categoryName: "Legal & Attestation Services",
+        description: "Official legalizations, document attestations, and governmental certifications for international use.",
+        services: [
+            {
+                title: "Good Conduct Certificate",
+                description: "Complete assistance in obtaining police clearance certificates, background checks, and official good conduct verifications from global authorities.",
+                icon: <BadgeCheck size={32} className="text-[#c9a84c]" />,
+                link: "/contact"
+            },
+            {
+                title: "Document Attestation",
+                description: "Notarization, legalisation, and Ministry of Foreign Affairs (MOFA) attestation for academic degrees, birth/marriage certificates, and commercial contracts.",
+                icon: <FileSignature size={32} className="text-[#c9a84c]" />,
+                link: "/contact"
+            }
+        ]
+    }
 ];
 
-export default function Services() {
+export default function ServicesPage() {
     return (
-        <div className="min-h-screen bg-white">
-            {/* Hero Cover Section */}
+        <div className="min-h-screen bg-gray-50 pb-24">
+            
+            {/* ── Hero Cover Section ── */}
             <div className="relative w-full h-[480px] md:h-[560px] overflow-hidden">
-                {/* Cover Image */}
                 <Image
                     src="/assets/services-hero.webp"
                     alt="NextPath Global Immigration & Visa Services"
@@ -74,8 +129,8 @@ export default function Services() {
                     className="object-cover object-center"
                     priority
                 />
-                {/* Dark Overlay with fade to white at bottom */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/70 via-[#0d1b2a]/50 to-white" />
+                {/* Modern Dark Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b2a]/75 via-[#0d1b2a]/55 to-gray-50" />
 
                 {/* Hero Content */}
                 <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center pt-20">
@@ -84,45 +139,99 @@ export default function Services() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.9 }}
                     >
-                        <p className="text-[#c9a84c] font-semibold text-sm uppercase tracking-widest mb-3">
+                        <span className="inline-block bg-[#c9a84c]/20 border border-[#c9a84c]/40 text-[#f0d485] text-sm font-semibold uppercase tracking-widest px-5 py-2 rounded-full mb-6">
                             Expert Guidance, Global Reach
-                        </p>
-                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-5 drop-shadow-lg">
+                        </span>
+                        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg leading-tight">
                             Our <span className="text-[#c9a84c]">Services</span>
                         </h1>
-                        <p className="text-white/80 max-w-2xl mx-auto text-lg leading-relaxed">
-                            We offer a wide range of immigration and visa consulting services to meet your specific needs.
+                        <p className="text-white/85 max-w-2xl mx-auto text-lg leading-relaxed">
+                            Comprehensive immigration, visa, residency, and relocation consulting designed to fulfill your global aspirations.
                         </p>
                     </motion.div>
                 </div>
             </div>
 
-            {/* Services Grid */}
-            <div className="container mx-auto px-6 pb-20 -mt-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {allServices.map((service, index) => (
+            {/* ── Services Layout ── */}
+            <div className="container mx-auto px-6 -mt-16 relative z-25 max-w-5xl">
+                
+                {serviceCategories.map((category, catIdx) => (
+                    <div key={catIdx} className="mb-16">
+                        
+                        {/* Category Title Banner */}
                         <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-white border border-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 group"
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            transition={{ duration: 0.6 }}
+                            className="border-l-4 border-[#c9a84c] pl-4 mb-8"
                         >
-                            <div className="mb-6 bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center text-primary transition-colors">
-                                {service.icon}
-                            </div>
-                            <h3 className="text-2xl font-bold mb-4 text-gray-900">{service.title}</h3>
-                            <p className="text-gray-600 mb-8 leading-relaxed">{service.description}</p>
-                            <Link
-                                href="/contact"
-                                className="text-primary font-medium hover:text-white transition-colors"
-                            >
-                                Get Consultation &rarr;
-                            </Link>
+                            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
+                                {category.categoryName}
+                            </h2>
+                            <p className="text-gray-500 text-sm mt-1">
+                                {category.description}
+                            </p>
                         </motion.div>
-                    ))}
-                </div>
+
+                        {/* Grid list of services */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {category.services.map((service, idx) => (
+                                <motion.div
+                                    key={idx}
+                                    initial={{ opacity: 0, y: 24 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, margin: "-60px" }}
+                                    transition={{ duration: 0.5, delay: idx * 0.05 }}
+                                    className="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between"
+                                >
+                                    <div>
+                                        {/* Icon Container */}
+                                        <div className="mb-6 bg-[#0d1b2a]/5 w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 border border-gray-50 shadow-sm">
+                                            {service.icon}
+                                        </div>
+                                        <h3 className="text-xl font-bold mb-3 text-gray-900 tracking-tight leading-snug">
+                                            {service.title}
+                                        </h3>
+                                        <p className="text-gray-600 text-sm mb-8 leading-relaxed">
+                                            {service.description}
+                                        </p>
+                                    </div>
+                                    
+                                    {/* Action Button */}
+                                    <Link
+                                        href={service.link || "/contact"}
+                                        className="text-[#c9a84c] font-semibold text-sm hover:text-[#b8943d] transition-colors inline-flex items-center gap-2 group"
+                                    >
+                                        Enquire Now <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                                    </Link>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
+
+            {/* ── Bottom Call to Action ── */}
+            <section className="container mx-auto px-6 mt-12 max-w-5xl">
+                <div className="bg-[#0d1b2a] rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden shadow-xl">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#0d1b2a] via-[#1a3355] to-[#0d1b2a] opacity-90" />
+                    <div className="relative z-10 max-w-2xl mx-auto">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                            Ready to Start Your <span className="text-[#c9a84c]">Global Journey?</span>
+                        </h2>
+                        <p className="text-white/70 mb-8 text-base leading-relaxed">
+                            Schedule a free advisory session with our certified experts to map out your immigration, work, or study pathways compliantly.
+                        </p>
+                        <Link
+                            href="/contact"
+                            className="bg-[#c9a84c] hover:bg-[#b8943d] text-white font-bold py-3.5 px-10 rounded-full transition-all inline-flex items-center gap-2 hover:-translate-y-0.5 shadow-md"
+                        >
+                            <GraduationCap size={18} /> Schedule Free Consultation
+                        </Link>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
