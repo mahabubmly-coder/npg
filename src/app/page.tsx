@@ -127,6 +127,8 @@ export default function Home() {
                            <option value="australia">Australia</option>
                            <option value="usa">USA</option>
                            <option value="uk">United Kingdom</option>
+                           <option value="germany">Germany</option>
+                           <option value="iceland">Iceland</option>
                            <option value="india">India</option>
                          </select>
                       </div>
