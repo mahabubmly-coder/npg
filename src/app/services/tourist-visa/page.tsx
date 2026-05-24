@@ -10,10 +10,12 @@ import { countries } from "../../../data/countries";
 export default function TouristVisaPage() {
     const [searchQuery, setSearchQuery] = useState("");
 
-    // Filter countries based on search query
-    const filteredCountries = countries.filter(country =>
-        country.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    // Filter and sort countries alphabetically based on search query
+    const filteredCountries = countries
+        .filter(country =>
+            country.name.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+        .sort((a, b) => a.name.localeCompare(b.name));
 
     return (
         <div className="min-h-screen bg-gray-50 pb-20">
