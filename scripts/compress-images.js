@@ -93,8 +93,9 @@ async function compressImage(filePath) {
             fs.copyFileSync(filePath, backupPath);
         }
 
-        // Load image
-        const image = sharp(filePath);
+        // Load image from buffer to avoid file locking on Windows
+        const fileBuffer = fs.readFileSync(filePath);
+        const image = sharp(fileBuffer);
         const metadata = await image.metadata();
 
         // Compress original format
@@ -119,7 +120,8 @@ async function compressImage(filePath) {
 
         // Create WebP version
         const webpPath = filePath.replace(ext, '.webp');
-        const webpBuffer = await sharp(backupPath)
+        const backupBuffer = fs.readFileSync(backupPath);
+        const webpBuffer = await sharp(backupBuffer)
             .webp({ quality: CONFIG.webpQuality })
             .toBuffer();
 
