@@ -78,6 +78,20 @@ const testimonials = [
         rating: 5,
         visa: "MM2H",
     },
+    {
+        name: "information of the world deal",
+        role: "Client",
+        quote: "very good service .sotti vaiya der service onek valo..amader visa korsi..tq..vai jan",
+        rating: 5,
+        visa: "Visa Services",
+    },
+    {
+        name: "Arif Islam",
+        role: "Client",
+        quote: "I had a great experience with Nextpath Global Sdn Bhd. The service was excellent from start to finish. Everything was explained clearly and handled on time, making the whole process smooth and hassle-free. I received my Thailand e-visa very fast, which I really appreciate. A special thanks to Mahabub Hasan Vaiya for his dedication and support. He was very helpful throughout and made the entire process easy and stress-free. Highly recommended.",
+        rating: 5,
+        visa: "Thailand Visa",
+    },
 ];
 
 export default function TouristVisaPage() {
