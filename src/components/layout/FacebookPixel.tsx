@@ -26,7 +26,7 @@ export default function FacebookPixel() {
   useEffect(() => {
     if (!FB_PIXEL_ID) return;
 
-    // Defer loading until first user scroll, mouse move, touch, or a 3.5-second timeout
+    // Defer loading until first user scroll, touch, click, or an 8-second timeout
     const loadPixel = () => {
       setShouldLoad(true);
       cleanup();
@@ -34,15 +34,15 @@ export default function FacebookPixel() {
 
     const cleanup = () => {
       window.removeEventListener("scroll", loadPixel);
-      window.removeEventListener("mousemove", loadPixel);
       window.removeEventListener("touchstart", loadPixel);
+      window.removeEventListener("click", loadPixel);
     };
 
-    const timer = setTimeout(loadPixel, 3500);
+    const timer = setTimeout(loadPixel, 8000);
 
     window.addEventListener("scroll", loadPixel, { passive: true });
-    window.addEventListener("mousemove", loadPixel, { passive: true });
     window.addEventListener("touchstart", loadPixel, { passive: true });
+    window.addEventListener("click", loadPixel, { passive: true });
 
     return () => {
       clearTimeout(timer);
