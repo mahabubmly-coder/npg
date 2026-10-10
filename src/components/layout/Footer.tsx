@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="col-span-1 md:col-span-1">
-                        <Link href="/" className="relative block w-48 h-16 mb-6">
+                        <Link href="/" className="relative block w-52 h-14 mb-6">
                             <Image
                                 src="/assets/logo-transparent.png"
                                 alt="Next Path Global"
