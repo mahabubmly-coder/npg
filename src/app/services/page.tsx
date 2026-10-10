@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {
     GraduationCap, Briefcase, Globe, ShieldCheck, Plane, 
     FileText, Home, Crown, Building2, Ticket, Hotel, 
-    BadgeCheck, FileSignature, ArrowRight
+    BadgeCheck, FileSignature, ArrowRight, Rocket
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -66,6 +66,12 @@ const serviceCategories: ServiceCategory[] = [
                 description: "Official MDEC Malaysia Nomad Pass processing for digital freelancers, independent contractors, and remote workers to live and work in Malaysia for up to 24 months.",
                 icon: <Globe size={32} className="text-[#c9a84c]" />,
                 link: "/services/de-rantau-digital-nomad-visa"
+            },
+            {
+                title: "MTEP / Tech Entrepreneur Pass",
+                description: "Premier MDEC-backed pass for global tech founders, innovators, and startup entrepreneurs to establish 100% foreign-owned digital companies in Malaysia for 1 to 5 years.",
+                icon: <Rocket size={32} className="text-[#c9a84c]" />,
+                link: "/services/mtep"
             },
             {
                 title: "European Work Permit Process",

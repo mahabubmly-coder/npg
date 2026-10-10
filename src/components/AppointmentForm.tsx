@@ -38,6 +38,7 @@ const services = [
     { value: "pvip", label: "PVIP (Premium Visa Programs)" },
     { value: "professional-visa", label: "Professional Visa (Employment Pass)" },
     { value: "de-rantau-digital-nomad", label: "De Rantau / Digital Nomad Visa" },
+    { value: "mtep", label: "MTEP (Malaysia Tech Entrepreneur Programme)" },
     { value: "study-malaysia", label: "Study Malaysia" },
     { value: "europe-work-permit", label: "Europe Work Permit" },
     { value: "tourist-visa", label: "Tourist Visa" },

@@ -21,7 +21,8 @@ import {
     UserCheck,
     Clock,
     HelpCircle,
-    Download
+    Download,
+    Rocket
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -517,6 +518,35 @@ export default function DeRantauDigitalNomadVisa() {
                                     </li>
                                 ))}
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* MTEP Discovery Section */}
+            <section className="py-16 bg-gradient-to-r from-blue-900 via-indigo-950 to-gray-900 text-white relative overflow-hidden">
+                <div className="container mx-auto px-6 relative z-10">
+                    <div className="max-w-5xl mx-auto bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-white/20 flex flex-col md:flex-row items-center justify-between gap-8">
+                        <div className="space-y-4 max-w-2xl">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary text-gray-950 rounded-full text-xs font-black uppercase tracking-wider">
+                                <Rocket size={14} />
+                                Startup Visa Pathway
+                            </div>
+                            <h3 className="text-2xl md:text-3xl font-extrabold text-white">
+                                Looking to Launch a Tech Startup or Register a Company?
+                            </h3>
+                            <p className="text-white/80 text-base leading-relaxed">
+                                While DE Rantau is designed for remote freelancers without local business registration, the <strong>Malaysia Tech Entrepreneur Programme (MTEP)</strong> empowers founders to establish 100% foreign-owned digital companies in Malaysia with <strong>1-Year to 5-Year residence passes</strong>.
+                            </p>
+                        </div>
+                        <div className="shrink-0 w-full md:w-auto">
+                            <Link
+                                href="/services/mtep"
+                                className="w-full md:w-auto bg-secondary hover:bg-yellow-400 text-gray-950 font-extrabold py-4 px-8 rounded-full transition-all shadow-xl hover:shadow-yellow-400/20 text-base flex items-center justify-center gap-2"
+                            >
+                                <span>Explore MTEP Pass</span>
+                                <ArrowRight size={18} />
+                            </Link>
                         </div>
                     </div>
                 </div>

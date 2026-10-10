@@ -42,6 +42,7 @@ const navLinks: NavLink[] = [
             { name: "PVIP", href: "/services/pvip" },
             { name: "Employment Pass", href: "/services/employment-pass" },
             { name: "De Rantau / Digital Nomad Visa", href: "/services/de-rantau-digital-nomad-visa" },
+            { name: "MTEP / Tech Entrepreneur Pass", href: "/services/mtep" },
         ]
     },
     { name: "About Us", href: "/about" },
@@ -112,7 +113,7 @@ export default function Header() {
                                                 animate={{ opacity: 1, y: 0 }}
                                                 exit={{ opacity: 0, y: 10 }}
                                                 transition={{ duration: 0.2 }}
-                                                className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden"
+                                                className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden"
                                             >
                                                 {link.subMenu.map((subItem) => (
                                                     <Link
