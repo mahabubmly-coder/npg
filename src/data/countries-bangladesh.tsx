@@ -1775,5 +1775,468 @@ export const bangladeshCountries: BangladeshCountryData[] = [
             "+8801410237495",
         ],
     },
+    {
+        slug: "turkey",
+        name: "Turkey",
+        visaType: "Sticker Visa",
+        tagline: "Where East Meets West",
+        description: "From the majestic domes of Istanbul to the surreal fairy chimneys of Cappadocia and thermal pools of Pamukkale. Apply for your Turkey Tourist Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/turkey.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-30 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,000 BDT" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 03 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (Size: 2 x 2)",
+                    "Bank statement & Solvency (Last 06 months) — Hard Copy",
+                    "TIN certificate, Tax certificate (Last 3 years) — Hard Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                    "Insurance — Hard Copy",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                    "Salary certificate / Pay slip — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                    "Memorandum for limited company page XII — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Rich Crossroads History", description: "Hagia Sophia, Blue Mosque, Topkapi Palace, and ancient Roman ruins of Ephesus" },
+            { icon: <Mountain size={32} />, title: "Surreal Landscapes", description: "Hot air ballooning over Cappadocia valleys and terraces of Pamukkale" },
+            { icon: <Utensils size={32} />, title: "Renowned Cuisine", description: "Authentic Turkish kebabs, baklava, Turkish coffee, and bustling spice bazaars" },
+            { icon: <Sun size={32} />, title: "Turquoise Coast", description: "Gorgeous Mediterranean beaches and sailing routes along Antalya, Bodrum, and Fethiye" },
+        ],
+        destinations: [
+            { name: "Istanbul", highlights: "Hagia Sophia, Blue Mosque, Grand Bazaar, Bosphorus Cruise", image: "/assets/destinations/istanbul.webp" },
+            { name: "Cappadocia", highlights: "Hot Air Balloons, Goreme Open-Air Museum, Fairy Chimneys, Underground Cities", image: "/assets/destinations/cappadocia.webp" },
+            { name: "Antalya", highlights: "Kaleiçi Old Town, Duden Waterfalls, Konyaaltı Beach, Ancient Aspendos", image: "/assets/destinations/antalya.webp" },
+            { name: "Pamukkale", highlights: "White Travertine Terraces, Hierapolis Ruins, Cleopatra's Antique Pool", image: "/assets/destinations/pamukkale.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Doctor, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport, 2x2 photos, 6-month bank solvency, tax certificates & category documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your Turkey Sticker Visa submission — receive approval in 15-30 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "china",
+        name: "China",
+        visaType: "Sticker Visa",
+        tagline: "The Middle Kingdom",
+        description: "Explore the ancient wonders of the Great Wall, futuristic skylines of Shanghai, vibrant mega-cities, and spectacular natural landscapes. Apply for your China Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/china.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-20 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Starting from 10,000 BDT" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry: 03 Months | Multiple Entry: 02 Years" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Single / Multiple Entry - 30 Days (Each Stay)" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (White background only, photo size 33 mm X 48 mm)",
+                    "Bank statement & Solvency (Last 06 months, minimum balance 3,00,000 per person) — Hard Copy",
+                    "TIN certificate / Tax return",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (Both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (If applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "GO And verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+            {
+                category: "Advocate / Lawyer",
+                documents: [
+                    "BAR council certificate — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Timeless Wonders", description: "The Great Wall, Forbidden City, Terracotta Army, and Summer Palace" },
+            { icon: <Globe size={32} />, title: "Futuristic Mega-Cities", description: "Shanghai Bund, Shenzhen innovation hub, Guangzhou, and Beijing" },
+            { icon: <Mountain size={32} />, title: "Breathtaking Nature", description: "Zhangjiajie Avatar Mountains, Li River karst peaks of Guilin, and Jiuzhaigou lakes" },
+            { icon: <Utensils size={32} />, title: "Diverse Culinary Culture", description: "Peking Duck, Dim Sum, Sichuan hotpot, and regional gastronomy" },
+        ],
+        destinations: [
+            { name: "Beijing", highlights: "The Great Wall, Forbidden City, Temple of Heaven, Summer Palace", image: "/assets/destinations/beijing.webp" },
+            { name: "Shanghai", highlights: "The Bund, Oriental Pearl Tower, Yu Garden, Nanjing Road", image: "/assets/destinations/shanghai.webp" },
+            { name: "Guangzhou", highlights: "Canton Tower, Pearl River Cruise, Shamian Island, Wholesale Markets", image: "/assets/destinations/guangzhou.webp" },
+            { name: "Zhangjiajie", highlights: "Avatar Hallelujah Mountain, Tianmen Mountain Glass Walkway, Grand Canyon", image: "/assets/destinations/zhangjiajie.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Lawyer, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport, 33x48mm photo, 6-month bank statement (min 300,000 BDT) & category documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your China Sticker Visa submission — receive approval in 15-20 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "egypt",
+        name: "Egypt",
+        visaType: "Sticker Visa",
+        tagline: "The Cradle of Ancient Civilization",
+        description: "Stand before the Great Pyramids of Giza, cruise the majestic Nile River, explore Karnak and the Valley of the Kings, and relax along the Red Sea. Apply for your Egypt Tourist Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/egypt.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-30 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,000 BDT (Visa Fee: 9,200 BDT)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 03 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (Size: 35 x 45)",
+                    "Bank statement & Solvency (Last 06 months) — Hard Copy",
+                    "TIN certificate, Tax certificate",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                    "Salary certificate / Pay slip — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                    "Memorandum for limited company page XII — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Ancient Pyramids & Sphinx", description: "Marvel at the Pyramids of Giza, the only surviving ancient wonder of the world" },
+            { icon: <Globe size={32} />, title: "Nile River Cruises", description: "Sail historic waterways connecting Luxor, Aswan, and iconic pharaonic temples" },
+            { icon: <Sun size={32} />, title: "Red Sea Resorts", description: "World-class coral reef diving, kitesurfing, and relaxation in Sharm El Sheikh and Hurghada" },
+            { icon: <Camera size={32} />, title: "Valley of the Kings", description: "Discover Tutankhamun's tomb, Abu Simbel colossal statues, and ancient hieroglyphs" },
+        ],
+        destinations: [
+            { name: "Cairo & Giza", highlights: "Pyramids of Giza, Great Sphinx, Egyptian Museum, Khan el-Khalili Bazaar", image: "/assets/destinations/cairo.webp" },
+            { name: "Luxor", highlights: "Karnak Temple, Valley of the Kings, Luxor Temple, Hot Air Balloon Rides", image: "/assets/destinations/luxor.webp" },
+            { name: "Aswan", highlights: "Philae Temple, Abu Simbel, High Dam, Nubian Villages, Nile Felucca", image: "/assets/destinations/aswan.webp" },
+            { name: "Sharm El Sheikh", highlights: "Ras Mohammed National Park, Red Sea Coral Reefs, Naama Bay Resorts", image: "/assets/destinations/sharm.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Student, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport, 35x45 photos, 6-month bank statement & category documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your Egypt Sticker Visa — receive approval in 15-30 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "zimbabwe",
+        name: "Zimbabwe",
+        visaType: "E-Visa",
+        tagline: "The Smoke That Thunders",
+        description: "Home to the mighty Victoria Falls, incredible big five safari game reserves, and ancient stone ruins. Apply for your Zimbabwe Tourist E-Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/zimbabwe.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "03-07 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "3,500 BDT (Single: 30 USD | Double: 45 USD)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single / Double Entry - 03 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passport's biopage, visa seal, entry exit seal — Hard / Scan Copy",
+                    "Picture (Soft copy - size: 45mm x 35mm)",
+                    "Bank statement & Solvency (Last 06 months) — Hard / Scan Copy",
+                    "TIN certificate, Tax return (last 03 years) — Hard / Scan Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                    "Family NID / Birth certificate (If applicable)",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard / Scan Copy",
+                    "Employee ID card — Hard / Scan Copy",
+                    "Salary certificate / Pay slip — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard / Scan Copy",
+                    "Company pad — Hard / Scan Copy",
+                    "Memorandum for limited company page XII — Hard / Scan Copy",
+                    "Certificate of Incorporation (for ltd. company)",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard / Scan Copy",
+                    "NOC from institution — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard / Scan Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Sun size={32} />, title: "Victoria Falls", description: "One of the Seven Natural Wonders of the World, creating majestic spray and rainbows" },
+            { icon: <Leaf size={32} />, title: "Big Five Safaris", description: "Hwange National Park and Mana Pools offering authentic African wildlife encounters" },
+            { icon: <Landmark size={32} />, title: "Great Zimbabwe Ruins", description: "Explore the enigmatic medieval stone city of Great Zimbabwe, a UNESCO World Heritage Site" },
+            { icon: <Mountain size={32} />, title: "Lake Kariba Sunsets", description: "Houseboat cruises, tiger fishing, and spectacular sunsets across Lake Kariba" },
+        ],
+        destinations: [
+            { name: "Victoria Falls", highlights: "Devil's Pool, Zambezi River Sunset Cruise, Flight of Angels, Bungee Jump", image: "/assets/destinations/victoria-falls.webp" },
+            { name: "Hwange National Park", highlights: "Elephant Herds, Big Five Safari, Wilderness Game Drives, Walking Safaris", image: "/assets/destinations/hwange.webp" },
+            { name: "Harare", highlights: "National Gallery, Chapungu Sculpture Park, Mbare Musika Market, Botanical Gardens", image: "/assets/destinations/harare.webp" },
+            { name: "Matobo National Park", highlights: "Balancing Rocks, Rhino Tracking, Ancient San Rock Art, World's View", image: "/assets/destinations/matobo.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Student, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport bio page, 45x35 photo, 6-month bank statement & category documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We submit your Zimbabwe E-Visa application — receive approval in 03-07 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "usa",
+        name: "USA",
+        visaType: "Sticker Visa",
+        tagline: "The Land of Opportunity",
+        description: "From the bright lights of New York City and Hollywood to the majestic Grand Canyon and world-famous theme parks. Apply for your USA B1/B2 Visitor Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/usa.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "07-10 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Multiple Entry)", value: "10,500 BDT (Visa Fee: 185 USD)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Multiple Entry - 05 Years" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 180 Days (Maximum)" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passport's biopage, visa seal, entry exit seal — Hard / Scan Copy",
+                    "Picture (Soft + hard copy - size: 2x2)",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                    "Family NID / Birth certificate (Parents, Spouse)",
+                    "Last education certificate copy",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard / Scan Copy",
+                    "Employee ID card — Hard / Scan Copy",
+                    "Salary certificate / Pay slip — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard / Scan Copy",
+                    "Company pad — Hard / Scan Copy",
+                    "Memorandum for limited company page XII — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard / Scan Copy",
+                    "NOC from institution — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard / Scan Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "World-Famous Landmarks", description: "Statue of Liberty, Times Square, Golden Gate Bridge, and Capitol Hill" },
+            { icon: <Mountain size={32} />, title: "Epic National Parks", description: "Grand Canyon, Yellowstone, Yosemite, and Zion's awe-inspiring natural beauty" },
+            { icon: <Globe size={32} />, title: "Entertainment Capital", description: "Hollywood, Broadway theater, Disney World, Universal Studios, and sports arenas" },
+            { icon: <Sun size={32} />, title: "Coast to Coast Vibrancy", description: "Sunny California beaches, Hawaiian tropical islands, and vibrant southern culture" },
+        ],
+        destinations: [
+            { name: "New York City", highlights: "Times Square, Central Park, Empire State Building, Statue of Liberty", image: "/assets/destinations/nyc.webp" },
+            { name: "Los Angeles & California", highlights: "Hollywood Walk of Fame, Santa Monica Pier, Beverly Hills, Universal Studios", image: "/assets/destinations/la.webp" },
+            { name: "Las Vegas & Grand Canyon", highlights: "The Strip, Bellagio Fountains, Hoover Dam, Grand Canyon South Rim", image: "/assets/destinations/las-vegas.webp" },
+            { name: "Miami & Orlando", highlights: "South Beach, Walt Disney World, Everglades, Little Havana", image: "/assets/destinations/miami.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Doctor, etc.)" },
+            { step: 2, title: "Prepare Documents & DS-160", description: "Gather passport, 2x2 photos, civil records, educational proof and financial documentation" },
+            { step: 3, title: "Make Payment & Book Interview", description: "Pay visa fee, service fee, and schedule your US Embassy interview appointment in Dhaka" },
+            { step: 4, title: "Attend Interview & Receive Visa", description: "Complete interview preparation with our experts and receive your 5-year multiple entry visa" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
 ];
+
 
