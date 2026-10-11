@@ -1115,4 +1115,290 @@ export const bangladeshCountries: BangladeshCountryData[] = [
             "+8801410237495",
         ],
     },
+    {
+        slug: "india",
+        name: "India",
+        visaType: "Sticker Visa",
+        tagline: "Incredible India",
+        description: "Experience the vibrant culture, ancient heritage, stunning landscapes, and culinary diversity of India – from the Taj Mahal to Kerala's backwaters. Apply for your India Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/india.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single/Multiple Entry)", value: "6,000 BDT" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "01 / 03 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current Passport (Valid At Least 06 Months), Previous All Passports",
+                    "Last India Visa Copy and Entry-Exit Date",
+                    "Personal Bank Statement & Solvency (Last 06 Months, Minimum Balance BDT 60,000)",
+                    "Photo (02×02) (No Sunglass, No Cap or Tupi)",
+                    "Visiting Card",
+                    "NID/Birth Certificate",
+                    "Utility Bill",
+                    "Marriage Certificate/Nikah Nama (For Married Person)",
+                    "Medical Documents (Last 06 Month-Prescription & Reports — If Medical Visa)",
+                    "Business Invitation Letter (If Business Visa)",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC From Current Organization — Hard Copy",
+                    "Salary Certificate — Hard Copy",
+                    "Office ID Card — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Valid Trade License — Hard Copy",
+                    "Company Letterhead Pad — Hard Copy",
+                    "Business Bank Statement & Solvency Certificate (Last 06 Months - Optional)",
+                    "Memorandum For Limited Company Page XII (For Share Holders) — Hard Copy",
+                    "BIN, ERC, IRC, LC, Work Order Or Any Relevant Documents — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC Or Higher Certificate — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O (Government Order) — Hard Copy",
+                ],
+            },
+            {
+                category: "Advocate / Lawyer",
+                documents: [
+                    "BAR Council Certificate — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "Student ID Copy — Hard Copy",
+                    "Father's Professional Details And Bank Details As Above — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Iconic Monuments", description: "Taj Mahal, Red Fort, Jaipur's palaces, and centuries of architectural marvels" },
+            { icon: <Utensils size={32} />, title: "Culinary Diversity", description: "From biryani to dosa, street food to fine dining – a food lover's paradise" },
+            { icon: <Mountain size={32} />, title: "Diverse Landscapes", description: "Himalayas, beaches of Goa, deserts of Rajasthan, and lush Kerala backwaters" },
+            { icon: <Globe size={32} />, title: "Rich Culture", description: "Festivals, spirituality, yoga, Bollywood, and incredible warmth of the people" },
+        ],
+        destinations: [
+            { name: "Delhi", highlights: "Red Fort, India Gate, Qutub Minar, Chandni Chowk, Shopping", image: "/assets/destinations/delhi.webp" },
+            { name: "Agra", highlights: "Taj Mahal, Agra Fort, Fatehpur Sikri, Mehtab Bagh", image: "/assets/destinations/agra.webp" },
+            { name: "Jaipur", highlights: "Amber Fort, Hawa Mahal, City Palace, Pink City Markets", image: "/assets/destinations/jaipur.webp" },
+            { name: "Mumbai", highlights: "Gateway of India, Marine Drive, Bollywood, Street Food", image: "/assets/destinations/mumbai.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Student, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all required common and category-specific documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your Sticker Visa — receive approval in 10-15 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "japan",
+        name: "Japan",
+        visaType: "Sticker Visa",
+        tagline: "Land of the Rising Sun",
+        description: "Discover Japan – where ancient tradition meets cutting-edge technology. From serene temples and cherry blossoms to neon-lit cities and world-class cuisine. Apply for your Japan Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/japan.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "7-10 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,000 BDT" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 3 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (Size: 45 x 45) — Hard Copy",
+                    "Bank statement & Solvency (Last 06 months) — Hard Copy",
+                    "TIN certificate, (Last 3 years tax return + certificate) — Hard Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                    "Salary certificate / Pay slip — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                    "Memorandum for limited company page XII — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Ancient Temples", description: "Kyoto's golden pavilions, Nara's sacred deer park, and centuries-old shrines" },
+            { icon: <Lightbulb size={32} />, title: "Modern Innovation", description: "Tokyo's neon skyline, bullet trains, robotics, and cutting-edge technology" },
+            { icon: <Utensils size={32} />, title: "World-Class Cuisine", description: "Sushi, ramen, wagyu beef, and more Michelin stars than any other country" },
+            { icon: <Leaf size={32} />, title: "Natural Beauty", description: "Cherry blossoms, Mount Fuji, hot springs, and stunning seasonal landscapes" },
+        ],
+        destinations: [
+            { name: "Tokyo", highlights: "Shibuya Crossing, Senso-ji Temple, Akihabara, Tsukiji Market", image: "/assets/destinations/tokyo.webp" },
+            { name: "Kyoto", highlights: "Fushimi Inari, Kinkaku-ji, Bamboo Grove, Geisha District", image: "/assets/destinations/kyoto.webp" },
+            { name: "Osaka", highlights: "Osaka Castle, Dotonbori, Street Food Capital, Universal Studios", image: "/assets/destinations/osaka.webp" },
+            { name: "Mount Fuji", highlights: "Iconic Peak, Hakone Hot Springs, Lake Kawaguchi, Scenic Views", image: "/assets/destinations/mount-fuji.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Student, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all required common and category-specific documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your Sticker Visa — receive approval in 7-10 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "morocco",
+        name: "Morocco",
+        visaType: "Sticker Visa",
+        tagline: "Gateway to Africa",
+        description: "Explore the enchanting world of Morocco – vibrant souks, majestic Sahara dunes, ancient medinas, and stunning coastal cities. Apply for your Morocco Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/morocco.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-30 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,000 BDT (Visa Fee: 9,500 BDT)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 3 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (Size: Passport Size) — Hard Copy",
+                    "Bank statement & Solvency (Last 06 months) — Hard Copy",
+                    "TIN certificate, Tax certificate (Last 3 years) — Hard Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "Birth certificate",
+                    "Travel Insurance",
+                    "Family Picture (If applicable)",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                    "Salary certificate / Pay slip — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                    "Memorandum for limited company page XII — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Ancient Medinas", description: "Explore UNESCO-listed Fez and Marrakech medinas with vibrant souks and riads" },
+            { icon: <Sun size={32} />, title: "Sahara Desert", description: "Camel treks, desert camps under starlit skies, and golden sand dunes" },
+            { icon: <Utensils size={32} />, title: "Exotic Cuisine", description: "Tagine, couscous, mint tea, and a fusion of Berber, Arab, and French flavors" },
+            { icon: <Globe size={32} />, title: "Cultural Mosaic", description: "A unique blend of African, Arab, and European influences across stunning landscapes" },
+        ],
+        destinations: [
+            { name: "Marrakech", highlights: "Jemaa el-Fnaa, Majorelle Garden, Souks, Bahia Palace", image: "/assets/destinations/marrakech.webp" },
+            { name: "Fez", highlights: "Ancient Medina, Tanneries, Bou Inania Madrasa, Crafts", image: "/assets/destinations/fez.webp" },
+            { name: "Chefchaouen", highlights: "Blue City, Mountain Views, Artisan Shops, Photography", image: "/assets/destinations/chefchaouen.webp" },
+            { name: "Sahara Desert", highlights: "Merzouga Dunes, Camel Treks, Desert Camps, Stargazing", image: "/assets/destinations/sahara.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Student, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all required common and category-specific documents including travel insurance" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your Sticker Visa — receive approval in 15-30 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
 ];
