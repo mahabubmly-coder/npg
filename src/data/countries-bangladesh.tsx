@@ -651,5 +651,468 @@ export const bangladeshCountries: BangladeshCountryData[] = [
             "+8801410237495",
         ],
     },
+    {
+        slug: "armenia",
+        name: "Armenia",
+        visaType: "E-Visa",
+        tagline: "Land of Ancient Heritage",
+        description: "Discover Armenia – one of the world's oldest civilizations with stunning monasteries, breathtaking mountain landscapes, and warm hospitality. Apply for your Armenia E-Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/armenia.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-10 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,000 BDT" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 21 Days" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Single Entry - 21 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current biopage, visa seal, entry exit seal",
+                    "Picture (soft copy - size: Passport size)",
+                    "Bank statement & Solvency (Last 06 months) — Hard/Scan Copy",
+                    "Invitation letter — Hard/Scan Copy",
+                    "Visiting card",
+                    "NID / Birth certificate",
+                    "Family NID/Birth certificate (If applicable)",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard/Scan Copy",
+                    "Employee ID card — Hard/Scan Copy",
+                    "Salary certificate / Pay slip — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard/Scan Copy",
+                    "Company pad — Hard/Scan Copy",
+                    "Memorandum for limited company page XII — Hard/Scan Copy",
+                    "Certificate of Incorporation (for ltd. company) — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard/Scan Copy",
+                    "NOC from institution — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard/Scan Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Ancient Monasteries", description: "UNESCO World Heritage sites including Geghard and Haghpat monasteries" },
+            { icon: <Mountain size={32} />, title: "Mountain Landscapes", description: "Stunning views of Mount Ararat, Dilijan National Park, and Lake Sevan" },
+            { icon: <Utensils size={32} />, title: "Culinary Traditions", description: "Delicious Armenian cuisine with lavash bread, khorovats, and fine wines" },
+            { icon: <Globe size={32} />, title: "Rich Culture", description: "One of the oldest civilizations with a unique alphabet and vibrant traditions" },
+        ],
+        destinations: [
+            { name: "Yerevan", highlights: "Republic Square, Cascade Complex, Vernissage Market, Cafés", image: "/assets/destinations/yerevan.webp" },
+            { name: "Lake Sevan", highlights: "Sevanavank Monastery, Crystal Blue Waters, Beaches", image: "/assets/destinations/lake-sevan.webp" },
+            { name: "Dilijan", highlights: "National Park, Haghartsin Monastery, Lush Forests", image: "/assets/destinations/dilijan.webp" },
+            { name: "Tatev", highlights: "Tatev Monastery, Wings of Tatev Cable Car, Gorges", image: "/assets/destinations/tatev.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Student, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all required common and category-specific documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your E-Visa — receive approval in 5-10 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "hong-kong",
+        name: "Hong Kong",
+        visaType: "E-Visa",
+        tagline: "Asia's World City",
+        description: "Experience the dazzling skyline, vibrant street markets, world-class cuisine, and rich cultural heritage of Hong Kong. Apply for your Hong Kong E-Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/hong-kong.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "30 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,500 BDT (Visa Fee: 330 HKD)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 3 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (Size: 35 x 45)",
+                    "Bank statement & Solvency (Last 06 months) — Hard/Scan Copy",
+                    "TIN certificate, Tax certificate (Last 03 years) — Hard/Scan Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID/Birth certificate",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard/Scan Copy",
+                    "Employee ID card — Hard/Scan Copy",
+                    "Salary certificate / Pay slip — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard/Scan Copy",
+                    "Company pad — Hard/Scan Copy",
+                    "Memorandum for limited company page XII — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard/Scan Copy",
+                    "NOC from institution — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard/Scan Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Building size={32} />, title: "Iconic Skyline", description: "Victoria Harbour, towering skyscrapers, and the dazzling Symphony of Lights" },
+            { icon: <Utensils size={32} />, title: "Food Paradise", description: "Dim sum, roast goose, egg waffles, and Michelin-starred street food" },
+            { icon: <DollarSign size={32} />, title: "Shopping Capital", description: "World-class malls, night markets, and duty-free electronics" },
+            { icon: <Landmark size={32} />, title: "Cultural Fusion", description: "East meets West – temples, colonial architecture, and vibrant traditions" },
+        ],
+        destinations: [
+            { name: "Victoria Peak", highlights: "Panoramic Views, Peak Tram, Sky Terrace 428", image: "/assets/destinations/victoria-peak.webp" },
+            { name: "Tsim Sha Tsui", highlights: "Avenue of Stars, Harbour Views, Shopping, Museums", image: "/assets/destinations/tsim-sha-tsui.webp" },
+            { name: "Lantau Island", highlights: "Tian Tan Buddha, Ngong Ping 360, Tai O Fishing Village", image: "/assets/destinations/lantau.webp" },
+            { name: "Mong Kok", highlights: "Temple Street Night Market, Ladies' Market, Street Food", image: "/assets/destinations/mong-kok.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all required common and category-specific documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your E-Visa — receive approval in approximately 30 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "australia",
+        name: "Australia",
+        visaType: "E-Visa",
+        tagline: "Land Down Under",
+        description: "Explore the vast beauty of Australia – from the Great Barrier Reef and Sydney Opera House to stunning outback landscapes and diverse wildlife. Apply for your Australia E-Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/australia.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-30 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Multiple Entry)", value: "10,500 BDT (Visa Fee: 253.50 AUD)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Multiple Entry - 3 Years" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 90 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passport's biopage, visa seal, entry exit seal",
+                    "Bank statement & Solvency (Last 06 months) — Hard/Scan Copy",
+                    "TIN certificate, Tax return (last 03 years) — Hard/Scan Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                    "Family NID/Birth certificate (Parents, Siblings, Spouse, Children)",
+                    "Summary of bank, properties & other financial assets",
+                    "Family Picture (Any Occasion {tour/celebration})",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard/Scan Copy",
+                    "Employee ID card — Hard/Scan Copy",
+                    "Salary certificate / Pay slip — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard/Scan Copy",
+                    "Company pad — Hard/Scan Copy",
+                    "Memorandum for limited company page XII — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard/Scan Copy",
+                    "NOC from institution — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard/Scan Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Anchor size={32} />, title: "Great Barrier Reef", description: "World's largest coral reef system with incredible marine biodiversity" },
+            { icon: <Landmark size={32} />, title: "Iconic Landmarks", description: "Sydney Opera House, Harbour Bridge, and Uluru (Ayers Rock)" },
+            { icon: <Leaf size={32} />, title: "Unique Wildlife", description: "Kangaroos, koalas, platypus, and the world's most unique animals" },
+            { icon: <Sun size={32} />, title: "Stunning Beaches", description: "Bondi Beach, Gold Coast, and thousands of pristine coastal stretches" },
+        ],
+        destinations: [
+            { name: "Sydney", highlights: "Opera House, Harbour Bridge, Bondi Beach, Darling Harbour", image: "/assets/destinations/sydney.webp" },
+            { name: "Melbourne", highlights: "Street Art, Coffee Culture, Great Ocean Road, Sports Capital", image: "/assets/destinations/melbourne.webp" },
+            { name: "Gold Coast", highlights: "Surfers Paradise, Theme Parks, Hinterland, Nightlife", image: "/assets/destinations/gold-coast.webp" },
+            { name: "Great Barrier Reef", highlights: "Snorkeling, Diving, Marine Life, Island Hopping", image: "/assets/destinations/great-barrier-reef.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all required common and category-specific documents including financial summaries" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your E-Visa — receive approval in 10-30 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "canada",
+        name: "Canada",
+        visaType: "Sticker Visa",
+        tagline: "True North Strong and Free",
+        description: "Experience Canada's breathtaking natural beauty – from the Rocky Mountains and Niagara Falls to vibrant multicultural cities. Apply for your Canada Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/canada.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-30 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Multiple Entry)", value: "10,500 BDT (Visa Fee: 185 CAD)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Multiple Entry - 10 Years" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 180 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passport's biopage, visa seal, entry exit seal",
+                    "Picture (soft copy - size: 31 mm x 36mm)",
+                    "Bank statement & Solvency (Last 06 months) — Hard/Scan Copy",
+                    "TIN certificate, Tax return (last 03 years) — Hard/Scan Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                    "Family NID/Birth certificate (Parents, Siblings, Spouse, Children)",
+                    "Summary of bank, properties & other financial assets",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard/Scan Copy",
+                    "Employee ID card — Hard/Scan Copy",
+                    "Salary certificate / Pay slip — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard/Scan Copy",
+                    "Company pad — Hard/Scan Copy",
+                    "Memorandum for limited company page XII — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard/Scan Copy",
+                    "NOC from institution — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard/Scan Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard/Scan Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Mountain size={32} />, title: "Rocky Mountains", description: "Stunning Banff, Jasper National Parks with world-class skiing and hiking" },
+            { icon: <Globe size={32} />, title: "Multicultural Cities", description: "Toronto, Vancouver, Montreal – diverse, safe, and vibrant urban experiences" },
+            { icon: <Leaf size={32} />, title: "Natural Wonders", description: "Niagara Falls, Northern Lights, and vast pristine wilderness" },
+            { icon: <Shield size={32} />, title: "Safe & Welcoming", description: "One of the world's safest and most welcoming countries for visitors" },
+        ],
+        destinations: [
+            { name: "Toronto", highlights: "CN Tower, Niagara Falls, Royal Ontario Museum, Multicultural Neighborhoods", image: "/assets/destinations/toronto.webp" },
+            { name: "Vancouver", highlights: "Stanley Park, Granville Island, Mountains & Ocean, Whistler", image: "/assets/destinations/vancouver.webp" },
+            { name: "Banff", highlights: "Rocky Mountains, Lake Louise, Hot Springs, Wildlife", image: "/assets/destinations/banff.webp" },
+            { name: "Montreal", highlights: "Old Montreal, Notre-Dame Basilica, Festivals, French Culture", image: "/assets/destinations/montreal.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all required common and category-specific documents including financial summaries" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your Sticker Visa — receive approval in 10-30 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "brunei",
+        name: "Brunei",
+        visaType: "Sticker Visa",
+        tagline: "Abode of Peace",
+        description: "Discover the hidden gem of Southeast Asia – Brunei offers pristine rainforests, golden-domed mosques, and a peaceful atmosphere of royal heritage. Apply for your Brunei Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/brunei.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-7 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,000 BDT (Visa Fee: 20 BND)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 3 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (passport size)",
+                    "Bank statement & Solvency (Last 06 months) — Hard Copy",
+                    "TIN certificate — Hard Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID, Birth certificate",
+                    "Bank checkbook",
+                    "ATM card (if applicable)",
+                    "Confirm air ticket",
+                    "Invitation letter (if applicable) — (passport copy, professional documents, bank, utility bill)",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                    "Salary certificate / Pay slip — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                    "Memorandum for limited company page XII — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Royal Heritage", description: "Sultan Omar Ali Saifuddien Mosque and the magnificent Royal Regalia Museum" },
+            { icon: <Leaf size={32} />, title: "Pristine Rainforests", description: "Ulu Temburong National Park with untouched ancient rainforest canopy walks" },
+            { icon: <Shield size={32} />, title: "Safe & Peaceful", description: "One of the safest countries in Southeast Asia with a welcoming culture" },
+            { icon: <Anchor size={32} />, title: "Water Village", description: "Kampong Ayer – the world's largest water village settlement on stilts" },
+        ],
+        destinations: [
+            { name: "Bandar Seri Begawan", highlights: "Omar Ali Saifuddien Mosque, Royal Regalia Museum, Kampong Ayer", image: "/assets/destinations/bandar-seri-begawan.webp" },
+            { name: "Ulu Temburong", highlights: "National Park, Canopy Walk, Pristine Rainforest, Waterfalls", image: "/assets/destinations/ulu-temburong.webp" },
+            { name: "Jerudong", highlights: "Jerudong Park, Empire Hotel, Beach Resorts", image: "/assets/destinations/jerudong.webp" },
+            { name: "Tutong", highlights: "Tasek Merimbun Heritage Park, Beaches, Nature Reserves", image: "/assets/destinations/tutong.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all required common and category-specific documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your Sticker Visa — receive approval in 5-7 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
 ];
-
