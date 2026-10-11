@@ -1401,4 +1401,379 @@ export const bangladeshCountries: BangladeshCountryData[] = [
             "+8801410237495",
         ],
     },
+    {
+        slug: "new-zealand",
+        name: "New Zealand",
+        visaType: "E-Visa",
+        tagline: "The Land of the Long White Cloud",
+        description: "Discover breathtaking fjords, snow-capped alpine peaks, lush rolling meadows, and Maori culture. Apply for your New Zealand Visitor E-Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/new-zealand.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-30 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Multiple Entry)", value: "10,500 BDT (Visa Fee: 441 NZD)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry: 18 Months | Multiple Entry: 12 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Single Entry: 09 Months | Multiple Entry: 06 Months (Each Stay)" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passport's biopage, visa seal, entry exit seal — Hard / Scan Copy",
+                    "Picture (Soft copy - passport size)",
+                    "Bank statement & solvency (Last 06 months) — Hard / Scan Copy",
+                    "TIN Certificate, Tax return (Last 03 years) — Hard / Scan Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                    "Summary of Bank, properties & other financial assets",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard / Scan Copy",
+                    "Employee ID card — Hard / Scan Copy",
+                    "Salary certificate / Pay slip — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard / Scan Copy",
+                    "Company pad — Hard / Scan Copy",
+                    "Memorandum for limited company page XII — Hard / Scan Copy",
+                    "BIN certificate (If available)",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (Both side) — Hard / Scan Copy",
+                    "NOC from institution — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (If applicable) — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "GO And verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard / Scan Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Mountain size={32} />, title: "Spectacular Nature", description: "Milford Sound, Southern Alps, geothermal wonders, and pristine glacial lakes" },
+            { icon: <Sun size={32} />, title: "Outdoor Adventure", description: "World-class hiking, skydiving, skiing, and thrilling road trips" },
+            { icon: <Globe size={32} />, title: "Rich Maori Culture", description: "Experience indigenous traditions, haka performances, and warm Kiwi hospitality" },
+            { icon: <Camera size={32} />, title: "Iconic Landscapes", description: "Explore the magical filming locations of Hobbiton and the Lord of the Rings" },
+        ],
+        destinations: [
+            { name: "Queenstown", highlights: "Adventure Capital, Lake Wakatipu, Milford Sound, Remarkables", image: "/assets/destinations/queenstown.webp" },
+            { name: "Auckland", highlights: "Sky Tower, Waiheke Island, Viaduct Harbour, Volcanic Cones", image: "/assets/destinations/auckland.webp" },
+            { name: "Rotorua", highlights: "Geothermal Geysers, Mud Pools, Maori Cultural Villages, Redwoods", image: "/assets/destinations/rotorua.webp" },
+            { name: "Christchurch", highlights: "Garden City, Avon River Punting, TranzAlpine Train, Port Hills", image: "/assets/destinations/christchurch.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather all common and category-specific financial and civil documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We submit your New Zealand E-Visa application — receive decision in 15-30 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "russia",
+        name: "Russia",
+        visaType: "Sticker Visa",
+        tagline: "The Realm of Imperial Splendor",
+        description: "From the grand palaces of Saint Petersburg to Moscow's iconic Red Square and the endless vistas of Siberia. Apply for your Russia Tourist Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/russia.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-20 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,000 BDT (Visa Fee: 6,800 BDT)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 03 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (Size: 35 x 45) — Hard Copy",
+                    "Bank statement & Solvency (Last 06 months) — Hard Copy",
+                    "TIN certificate, Tax certificate (Last 03 years) — Hard Copy",
+                    "Visiting card",
+                    "Travel Insurance",
+                    "NID / Birth certificate",
+                    "Confirm Hotel, air ticket, invitation letter copy",
+                    "Family Picture",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                    "Salary certificate / Pay slip — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                    "Memorandum for limited company page XII — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Iconic Architecture", description: "Kremlin, Saint Basil's Cathedral, Hermitage Museum, and Winter Palace" },
+            { icon: <Globe size={32} />, title: "Rich Cultural Legacy", description: "World-class ballet, classical music, literature, and imperial heritage" },
+            { icon: <Sun size={32} />, title: "White Nights of St. Petersburg", description: "Experience summer midnight sun, illuminated bridges, and grand canal boat tours" },
+            { icon: <Mountain size={32} />, title: "Vast Natural Wonders", description: "Lake Baikal, Kamchatka volcanoes, Caucasus mountains, and picturesque taiga" },
+        ],
+        destinations: [
+            { name: "Moscow", highlights: "Red Square, Kremlin, Saint Basil's, Bolshoi Theatre, Arbat Street", image: "/assets/destinations/moscow.webp" },
+            { name: "Saint Petersburg", highlights: "The Hermitage, Peterhof Palace, Church of the Savior on Spilled Blood, Nevsky Prospect", image: "/assets/destinations/saint-petersburg.webp" },
+            { name: "Kazan", highlights: "Kazan Kremlin, Qol Sharif Mosque, Millennium Bridge, Volga River", image: "/assets/destinations/kazan.webp" },
+            { name: "Sochi", highlights: "Black Sea Coast, Rosa Khutor Alpine Resort, Olympic Park, Waterfalls", image: "/assets/destinations/sochi.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport, bank solvency, travel insurance, invitation letter & category documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process your Russia Sticker Visa — receive approval in 15-20 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "philippines",
+        name: "Philippines",
+        visaType: "E-Visa",
+        tagline: "Pearl of the Orient Seas",
+        description: "Explore 7,000+ tropical islands with powdery white beaches, turquoise lagoons, world-class diving spots, and vibrant festive culture. Apply for your Philippines E-Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/philippines.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-20 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,000 BDT (Visa Fee: 8,550 BDT)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 03 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Single Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (Size: 2x2)",
+                    "Bank statement & Solvency (Last 03 months, minimum balance 2,00,000 per person) — Hard Copy",
+                    "TIN certificate",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license notarized — Hard Copy",
+                    "Company pad — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID Card (Both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (If applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "GO And verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+            {
+                category: "Advocate / Lawyer",
+                documents: [
+                    "BAR council certificate — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Sun size={32} />, title: "Paradise Beaches", description: "Boracay, Palawan, and Siargao boasting world-renowned white sands and crystal waters" },
+            { icon: <Leaf size={32} />, title: "Island Hopping", description: "Over 7,000 tropical islands featuring hidden lagoons, limestone cliffs, and coral reefs" },
+            { icon: <Globe size={32} />, title: "Warm Hospitality", description: "English-speaking locals known globally for their infectious warmth and cheerful spirit" },
+            { icon: <Utensils size={32} />, title: "Unique Cuisine", description: "Savor flavorful dishes like Adobo, Lechon, Halo-Halo, and fresh tropical seafood" },
+        ],
+        destinations: [
+            { name: "Boracay", highlights: "White Beach, Willy's Rock, Sunset Paraw Sailing, Nightlife", image: "/assets/destinations/boracay.webp" },
+            { name: "Palawan (El Nido)", highlights: "Big & Small Lagoons, Nacpan Beach, Limestone Karsts, Scuba Diving", image: "/assets/destinations/palawan.webp" },
+            { name: "Cebu", highlights: "Kawasan Falls, Whale Sharks in Oslob, Magellan's Cross, Bantayan Island", image: "/assets/destinations/cebu.webp" },
+            { name: "Manila", highlights: "Intramuros, Rizal Park, San Agustin Church, BGC Skyline", image: "/assets/destinations/manila.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Lawyer, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport, 2x2 photo, 3-month bank statement (min 200,000 BDT) and category documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We submit your Philippines E-Visa application — receive approval in 15-20 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "schengen",
+        name: "Schengen",
+        visaType: "Sticker Visa",
+        tagline: "Explore 29 European Nations",
+        description: "Travel freely across 29 European countries with a single visa. Explore iconic landmarks, historic cities, alpine wonders, and cultural capitals. Apply for your Schengen Tourist Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/schengen.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "14 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "8,500 BDT (Visa Fees: Depends on Country)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single / Multiple Entry - 05 to 730 Days" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Single / Multiple Entry - 05 to 90 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passport's biopage, visa seal, entry exit seal — Hard Copy",
+                    "Picture (Size: 35x45)",
+                    "Bank statement & Solvency (Last 06 months) — Hard Copy",
+                    "TIN Certificate, Tax return (Last 03 years) — Hard Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth Certificate",
+                    "Summary of bank, properties & other financial assets",
+                    "Insurance — Hard Copy",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                    "Salary certificate / Pay slip — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                    "Memorandum for limited company page XII — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (Both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (If applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "GO And verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Globe size={32} />, title: "29 Countries in One", description: "Seamless borderless travel across France, Germany, Italy, Switzerland, Spain, and more" },
+            { icon: <Landmark size={32} />, title: "World Heritage & Culture", description: "Eiffel Tower, Colosseum, Sagrada Familia, Louvre, and timeless historic capitals" },
+            { icon: <Mountain size={32} />, title: "Alpine Landscapes", description: "Swiss Alps, Norwegian fjords, Mediterranean coastlines, and fairy-tale castles" },
+            { icon: <Utensils size={32} />, title: "Culinary Excellence", description: "Savor world-renowned cuisines, from Italian pasta and French pastries to Spanish tapas" },
+        ],
+        destinations: [
+            { name: "Paris, France", highlights: "Eiffel Tower, Louvre Museum, Champs-Élysées, Notre-Dame", image: "/assets/destinations/paris.webp" },
+            { name: "Rome, Italy", highlights: "Colosseum, Vatican City, Trevi Fountain, Pantheon", image: "/assets/destinations/rome.webp" },
+            { name: "Zurich & Interlaken, Switzerland", highlights: "Swiss Alps, Jungfraujoch, Lake Zurich, scenic train routes", image: "/assets/destinations/switzerland.webp" },
+            { name: "Barcelona, Spain", highlights: "Sagrada Familia, Park Güell, Gothic Quarter, Barceloneta Beach", image: "/assets/destinations/barcelona.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Doctor, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport, financial proof, travel insurance, assets & category documents" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We assist with Schengen appointment booking & dossier processing — receive decision in approx. 14 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
 ];
+
