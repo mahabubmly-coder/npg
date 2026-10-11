@@ -35,7 +35,7 @@ const navLinks: NavLink[] = [
         ]
     },
     {
-        name: "Residency Programmes",
+        name: "Residency",
         href: "#",
         subMenu: [
             { name: "MM2H", href: "/services/mm2h" },
@@ -43,6 +43,13 @@ const navLinks: NavLink[] = [
             { name: "Employment Pass", href: "/services/employment-pass" },
             { name: "De Rantau / Digital Nomad Visa", href: "/services/de-rantau-digital-nomad-visa" },
             { name: "MTEP / Tech Entrepreneur Pass", href: "/services/mtep" },
+        ]
+    },
+    {
+        name: "Citizenship",
+        href: "/turkish-citizenship-by-investment",
+        subMenu: [
+            { name: "Turkish Citizenship by Investment", href: "/turkish-citizenship-by-investment" },
         ]
     },
     { name: "About Us", href: "/about" },
@@ -86,7 +93,7 @@ export default function Header() {
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className="hidden xl:flex items-center gap-4 2xl:gap-6 text-sm font-medium">
+                <nav className="hidden xl:flex items-center gap-3.5 2xl:gap-5 text-sm font-medium">
                     {navLinks.map((link) => (
                         <div
                             key={link.name}

@@ -16,7 +16,13 @@ const searchData = [
         ]
     },
     {
-        category: "Residency Programs",
+        category: "Citizenship by Investment",
+        items: [
+            { name: "Turkish Citizenship by Investment", description: "Second passport for your whole family through a USD 400,000 Turkish property", href: "/turkish-citizenship-by-investment", keywords: ["turkish", "turkey", "citizenship", "cbi", "passport", "second passport", "istanbul", "investment", "dual citizenship"] },
+        ]
+    },
+    {
+        category: "Residency",
         items: [
             { name: "MM2H Programme", description: "Malaysia My Second Home - Long-term residency with 5-20 year visa options", href: "/services/mm2h", keywords: ["mm2h", "malaysia my second home", "residency", "retirement", "long term"] },
             { name: "PVIP Programme", description: "Premium Visa Programme - 20-year residency for global investors", href: "/services/pvip", keywords: ["pvip", "premium", "investor", "investment", "20 year"] },

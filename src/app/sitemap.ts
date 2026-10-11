@@ -117,6 +117,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/turkish-citizenship-by-investment`,
+            lastModified: new Date('2026-10-11'),
+            changeFrequency: 'weekly',
+            priority: 0.95,
+        },
+        {
             url: `${baseUrl}/services/mm2h`,
             lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly',

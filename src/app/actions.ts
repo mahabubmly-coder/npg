@@ -488,6 +488,58 @@ export async function submitFreeRegistrationForm(formData: FormData) {
     }
 }
 
+export async function submitTurkishCitizenshipForm(formData: FormData) {
+    console.log("=== TURKISH CITIZENSHIP CONSULTATION FORM CALLED ===");
 
+    const name = formData.get("name") as string;
+    const citizenship = formData.get("citizenship") as string;
+    const residence = formData.get("residence") as string;
+    const whatsapp = formData.get("whatsapp") as string;
+    const familyMembers = formData.get("familyMembers") as string;
+    const budget = formData.get("budget") as string;
+    const office = formData.get("office") as string;
+    const email = (formData.get("email") as string) || "";
 
+    if (!name || !citizenship || !whatsapp) {
+        return { success: false, error: "Missing required fields. Please provide your name, nationality, and WhatsApp number." };
+    }
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
+    try {
+        const adminEmailResult = await resend.emails.send({
+            from: "Next Path Global <noreply@nextpathglobal.my>",
+            to: "nextpathglobal058@gmail.com",
+            subject: `New Turkish Citizenship Consultation Lead: ${name}`,
+            html: `
+                <h2>New Turkish Citizenship Consultation Request</h2>
+                <p><strong>Full Name:</strong> ${name}</p>
+                <p><strong>Country of Citizenship:</strong> ${citizenship}</p>
+                <p><strong>Country of Residence:</strong> ${residence || "Not specified"}</p>
+                <p><strong>WhatsApp Number:</strong> ${whatsapp}</p>
+                <p><strong>Family Members Applying:</strong> ${familyMembers || "Not specified"}</p>
+                <p><strong>Budget Range:</strong> ${budget || "Not specified"}</p>
+                <p><strong>Preferred Office:</strong> ${office || "Not specified"}</p>
+                ${email ? `<p><strong>Email:</strong> ${email}</p>` : ""}
+                <br />
+                <p>Submitted via Next Path Global website: Turkish Citizenship by Investment Landing Page.</p>
+            `,
+        });
+
+        if (adminEmailResult.error) {
+            console.error("Admin email error:", adminEmailResult.error);
+            return {
+                success: false,
+                error: "Failed to send consultation notification. Please connect directly via WhatsApp."
+            };
+        }
+
+        return { success: true };
+    } catch (error) {
+        console.error("=== TURKISH CITIZENSHIP RESEND ERROR ===", error);
+        return {
+            success: false,
+            error: error instanceof Error ? error.message : "An error occurred while submitting. Please message us on WhatsApp."
+        };
+    }
+}
