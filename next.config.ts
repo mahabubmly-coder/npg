@@ -92,6 +92,16 @@ const nextConfig: NextConfig = {
         destination: '/services/study-abroad',
         permanent: true,
       },
+      {
+        source: '/blog/turkish-citizenship-by-investment-2026-guide',
+        destination: '/blog/visa-immigration/turkish-citizenship-by-investment-2026-guide',
+        permanent: true,
+      },
+      {
+        source: '/blog/turkish-citizenship-by-investment-2026-guide/',
+        destination: '/blog/visa-immigration/turkish-citizenship-by-investment-2026-guide',
+        permanent: true,
+      },
     ];
   },
   async headers() {

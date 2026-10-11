@@ -136,14 +136,29 @@ export default function BlogPostContent({
                             ),
                             tr: ({ children }) => <tr>{children}</tr>,
                             th: ({ children }) => (
-                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200 last:border-r-0">
+                                <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider bg-gray-50 border-r border-gray-200 last:border-r-0">
                                     {children}
                                 </th>
                             ),
                             td: ({ children }) => (
-                                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 border-r border-gray-200 last:border-r-0">
+                                <td className="px-6 py-4 text-sm text-gray-700 border-r border-gray-200 last:border-r-0 align-top">
                                     {children}
                                 </td>
+                            ),
+                            blockquote: ({ children }) => (
+                                <blockquote className="border-l-4 border-amber-500 bg-amber-50/60 rounded-r-xl p-5 my-6 text-gray-800 italic">
+                                    {children}
+                                </blockquote>
+                            ),
+                            a: ({ href, children }) => (
+                                <a
+                                    href={href}
+                                    target={href?.startsWith("http") ? "_blank" : undefined}
+                                    rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
+                                    className="text-primary hover:underline font-semibold"
+                                >
+                                    {children}
+                                </a>
                             ),
                         }}
                     >
