@@ -10,6 +10,7 @@ export const siteConfig = {
         facebook: 'https://www.facebook.com/nextpathglobal.bd',
         instagram: 'https://www.instagram.com/nextpathglobal.my',
         tiktok: 'https://www.tiktok.com/@nextpathglobal.my',
+        threads: 'https://www.threads.com/@nextpathglobal.my',
     },
 };
 
@@ -105,6 +106,7 @@ export function generateOrganizationSchema() {
             siteConfig.links.facebook,
             siteConfig.links.instagram,
             siteConfig.links.tiktok,
+            siteConfig.links.threads,
         ],
         contactPoint: {
             '@type': 'ContactPoint',
