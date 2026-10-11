@@ -49,7 +49,7 @@ const navLinks: NavLink[] = [
         name: "Citizenship",
         href: "/turkish-citizenship-by-investment",
         subMenu: [
-            { name: "Turkish Citizenship by Investment", href: "/turkish-citizenship-by-investment" },
+            { name: "Turkey", href: "/turkish-citizenship-by-investment" },
         ]
     },
     { name: "About Us", href: "/about" },
