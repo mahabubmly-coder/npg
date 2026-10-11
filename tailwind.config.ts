@@ -12,8 +12,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#1E3A8A", // Deep Blue
-          hover: "#1E40AF",
+          DEFAULT: "#0256C6", // NextPath Royal Blue (matches brand logo)
+          hover: "#0146A3",
         },
         secondary: {
           DEFAULT: "#D4AF37", // Gold

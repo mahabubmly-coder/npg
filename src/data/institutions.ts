@@ -25,7 +25,7 @@ export interface Institution {
 
 // Color themes for placeholder gradients based on institution type
 export const institutionColors: Record<InstitutionType, { from: string; to: string }> = {
-    'public': { from: '#1e40af', to: '#3b82f6' },
+    'public': { from: '#0256c6', to: '#3b82f6' },
     'private': { from: '#7c3aed', to: '#a78bfa' },
     'college': { from: '#059669', to: '#34d399' },
     'university-college': { from: '#dc2626', to: '#f87171' },
