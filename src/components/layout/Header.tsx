@@ -67,22 +67,26 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "py-4 glass shadow-sm" : "py-6 bg-transparent"
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "py-3.5 glass shadow-sm" : "py-5 bg-transparent"
                 }`}
         >
-            <div className="container mx-auto px-6 flex items-center justify-between">
-                <Link href="/" className="relative w-44 h-12">
+            <div className="w-full max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4 lg:gap-8">
+                <Link
+                    href="/"
+                    className="relative shrink-0 flex items-center w-48 sm:w-52 h-11 sm:h-12 mr-3 lg:mr-6 xl:mr-8 transition-transform hover:opacity-95"
+                    aria-label="NextPath Global Home"
+                >
                     <Image
                         src="/assets/logo-transparent.webp"
-                        alt="Next Path Global"
+                        alt="NextPath Global"
                         fill
-                        className="object-contain"
+                        className="object-contain object-left"
                         priority
                     />
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center space-x-6">
+                <nav className="hidden xl:flex items-center gap-4 2xl:gap-6 text-sm font-medium">
                     {navLinks.map((link) => (
                         <div
                             key={link.name}
@@ -96,12 +100,12 @@ export default function Header() {
                                         type="button"
                                         aria-haspopup="true"
                                         aria-expanded={activeDropdown === link.name}
-                                        className="text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1"
+                                        className="text-gray-700 hover:text-primary transition-colors flex items-center gap-1 py-1 whitespace-nowrap"
                                     >
-                                        {link.name}
+                                        <span>{link.name}</span>
                                         <ChevronDown
-                                            size={16}
-                                            className={`transition-transform ${activeDropdown === link.name ? 'rotate-180' : ''}`}
+                                            size={15}
+                                            className={`transition-transform duration-200 ${activeDropdown === link.name ? 'rotate-180' : ''}`}
                                         />
                                     </button>
 
@@ -109,11 +113,11 @@ export default function Header() {
                                     <AnimatePresence>
                                         {activeDropdown === link.name && (
                                             <motion.div
-                                                initial={{ opacity: 0, y: 10 }}
+                                                initial={{ opacity: 0, y: 8 }}
                                                 animate={{ opacity: 1, y: 0 }}
-                                                exit={{ opacity: 0, y: 10 }}
-                                                transition={{ duration: 0.2 }}
-                                                className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden"
+                                                exit={{ opacity: 0, y: 8 }}
+                                                transition={{ duration: 0.15 }}
+                                                className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50"
                                             >
                                                 {link.subMenu.map((subItem) => (
                                                     <Link
@@ -131,7 +135,7 @@ export default function Header() {
                             ) : (
                                 <Link
                                     href={link.href}
-                                    className="text-gray-700 hover:text-primary transition-colors font-medium"
+                                    className="text-gray-700 hover:text-primary transition-colors py-1 whitespace-nowrap"
                                 >
                                     {link.name}
                                 </Link>
@@ -142,29 +146,45 @@ export default function Header() {
                     <button
                         type="button"
                         onClick={() => setIsSearchOpen(true)}
-                        className="text-gray-700 hover:text-primary transition-colors p-2 hover:bg-gray-100 rounded-full"
+                        className="text-gray-700 hover:text-primary transition-colors p-2 hover:bg-gray-100/80 rounded-full shrink-0"
+                        aria-label="Search"
+                    >
+                        <Search size={19} />
+                    </button>
+                    <Link
+                        href="/book-appointment"
+                        className="bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-full font-medium whitespace-nowrap shrink-0 transition-all transform hover:scale-105 shadow-sm"
+                    >
+                        Book Appointment
+                    </Link>
+                </nav>
+
+                {/* Mobile / Tablet Actions */}
+                <div className="flex items-center gap-2 sm:gap-3 xl:hidden">
+                    <button
+                        type="button"
+                        onClick={() => setIsSearchOpen(true)}
+                        className="text-gray-700 hover:text-primary transition-colors p-2 hover:bg-gray-100/80 rounded-full"
                         aria-label="Search"
                     >
                         <Search size={20} />
                     </button>
                     <Link
                         href="/book-appointment"
-                        className="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105"
+                        className="hidden sm:inline-flex bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all shadow-sm"
                     >
                         Book Appointment
                     </Link>
-                </nav>
-
-                {/* Mobile Menu Button */}
-                <button
-                    type="button"
-                    aria-expanded={isMobileMenuOpen}
-                    className="md:hidden text-gray-700"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    aria-label="Toggle mobile menu"
-                >
-                    {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-                </button>
+                    <button
+                        type="button"
+                        aria-expanded={isMobileMenuOpen}
+                        className="text-gray-700 p-2 hover:text-primary transition-colors hover:bg-gray-100/80 rounded-lg"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        aria-label="Toggle mobile menu"
+                    >
+                        {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Nav */}
@@ -174,7 +194,7 @@ export default function Header() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg p-6 md:hidden border-t border-gray-100 shadow-lg max-h-[80vh] overflow-y-auto"
+                        className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg p-6 xl:hidden border-t border-gray-100 shadow-lg max-h-[80vh] overflow-y-auto"
                     >
                         <nav className="flex flex-col space-y-2">
                             {navLinks.map((link) => (
