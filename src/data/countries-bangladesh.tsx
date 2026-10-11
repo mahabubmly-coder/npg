@@ -2237,6 +2237,192 @@ export const bangladeshCountries: BangladeshCountryData[] = [
             "+8801410237495",
         ],
     },
+    {
+        slug: "uk",
+        name: "United Kingdom",
+        visaType: "Sticker Visa",
+        tagline: "Historic Heritage & Global Prestige",
+        description: "From iconic London landmarks and Oxford university colleges to the rugged Scottish Highlands and historic castles. Apply for your UK Standard Visitor Sticker Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/uk.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Multiple Entry)", value: "10,500 BDT (Short-Term: 135 GBP | 2-Yr: 506 GBP | 5-Yr: 903 GBP | 10-Yr: 1,128 GBP)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Multiple Entry - 06 Months / 02 / 05 / 10 Years" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 180 Days (Maximum)" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passport's biopage, visa seal, entry exit seal — Hard / Scan Copy",
+                    "Picture (Soft + hard copy - size: 35x45 mm)",
+                    "Bank statement & Solvency (Last 06 months) — Hard / Scan Copy",
+                    "TIN certificate, Tax return (last 03 years) — Hard / Scan Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                    "Family NID / Birth certificate (Parents, Siblings, Children)",
+                    "Summary of bank, properties & other financial assets",
+                    "Last education certificate copy",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard / Scan Copy",
+                    "Employee ID card — Hard / Scan Copy",
+                    "Salary certificate / Pay slip — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard / Scan Copy",
+                    "Company pad — Hard / Scan Copy",
+                    "Memorandum for limited company page XII — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard / Scan Copy",
+                    "NOC from institution — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard / Scan Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard / Scan Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "World-Renowned Landmarks", description: "Big Ben, Tower of London, Buckingham Palace, Windsor Castle, and Westminster Abbey" },
+            { icon: <Globe size={32} />, title: "Rich History & Culture", description: "British Museum, West End theatre district, Oxford and Cambridge university heritage" },
+            { icon: <Mountain size={32} />, title: "Scenic Countryside", description: "Scottish Highlands, Edinburgh Castle, Lake District national park, and Giant's Causeway" },
+            { icon: <Briefcase size={32} />, title: "Long-Term Visa Options", description: "Flexible standard visitor options with 6-month, 2-year, 5-year, and 10-year validity" },
+        ],
+        destinations: [
+            { name: "London", highlights: "Big Ben, London Eye, Tower Bridge, British Museum, Hyde Park", image: "/assets/destinations/london.webp" },
+            { name: "Edinburgh, Scotland", highlights: "Edinburgh Castle, Royal Mile, Arthur's Seat, Holyroodhouse", image: "/assets/destinations/edinburgh.webp" },
+            { name: "Manchester & Liverpool", highlights: "Old Trafford, Etihad Stadium, The Beatles Story, Albert Dock", image: "/assets/destinations/manchester.webp" },
+            { name: "Oxford & Cambridge", highlights: "Historic Colleges, Bodleian Library, River Cam Punting, King's College Chapel", image: "/assets/destinations/oxford.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Student, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport, financial proof, property valuation, civil and professional records" },
+            { step: 3, title: "Submit Online & Pay", description: "Complete UKVI online visa application, pay consular and service fees, book VFS Global biometric appointment" },
+            { step: 4, title: "Biometrics & Receive", description: "Attend VFS Dhaka/Sylhet for biometric submission and passport handover — receive visa in 20-25 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
+    {
+        slug: "south-korea",
+        name: "South Korea",
+        visaType: "E-Visa",
+        tagline: "The Land of the Morning Calm",
+        description: "Immerse yourself in K-culture, futuristic Seoul skylines, ancient royal palaces, and scenic volcanic Jeju Island. Apply for your South Korea Tourist E-Visa with NextPath Global from Bangladesh.",
+        coverImage: "/assets/countries/south-korea.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "07-10 Working Days (Estimated only)" },
+            { icon: <DollarSign size={20} />, label: "Fee (Single Entry)", value: "4,500 BDT (Visa Fee: 5,000 BDT)" },
+            { icon: <Calendar size={20} />, label: "Visa Duration", value: "Single Entry - 03 Months" },
+            { icon: <Plane size={20} />, label: "Stay Duration", value: "Each Entry - 30 Days" },
+        ],
+        documentCategories: [
+            {
+                category: "Common Documents (All Applicants)",
+                documents: [
+                    "Current & previous passports",
+                    "Picture (Size: 35 x 45)",
+                    "Bank statement & Solvency (Last 06 months) — Hard Copy",
+                    "TIN certificate, (Last 3 years tax return + certificate) — Hard Copy",
+                    "Visiting card",
+                    "Marriage certificate / Nikahnama (If applicable)",
+                    "NID / Birth certificate",
+                ],
+            },
+            {
+                category: "Job Holder",
+                documents: [
+                    "NOC from employer — Hard Copy",
+                    "Employee ID card — Hard Copy",
+                    "Salary certificate / Pay slip — Hard Copy",
+                ],
+            },
+            {
+                category: "Businessman",
+                documents: [
+                    "Trade license — Hard Copy",
+                    "Company pad — Hard Copy",
+                    "Memorandum for limited company page XII — Hard Copy",
+                ],
+            },
+            {
+                category: "Student",
+                documents: [
+                    "School/College/University ID card (both side) — Hard Copy",
+                    "NOC from institution — Hard Copy",
+                ],
+            },
+            {
+                category: "Doctor",
+                documents: [
+                    "BMDC certificate for doctor (if applicable) — Hard Copy",
+                ],
+            },
+            {
+                category: "Govt. Employee",
+                documents: [
+                    "G.O. and verbal or letter of introduction LOI (Issued by foreign ministry of Bangladesh office) — Hard Copy",
+                ],
+            },
+        ],
+        whyChoose: [
+            { icon: <Landmark size={32} />, title: "Royal Palaces & Tradition", description: "Gyeongbokgung Palace, Bukchon Hanok Village, and colorful traditional tea houses" },
+            { icon: <Globe size={32} />, title: "Global K-Wave & Tech", description: "K-pop, K-drama filming locations, Gangnam nightlife, and ultra-modern smart cities" },
+            { icon: <Mountain size={32} />, title: "Jeju Island & Mountains", description: "UNESCO volcanic landscapes, Seongsan Ilchulbong, and Nami Island's autumn foliage" },
+            { icon: <Utensils size={32} />, title: "Dynamic Street Food", description: "Korean BBQ, Kimchi, Tteokbokki, and bustling culinary markets of Myeongdong" },
+        ],
+        destinations: [
+            { name: "Seoul", highlights: "Gyeongbokgung Palace, N Seoul Tower, Myeongdong, Gangnam District", image: "/assets/destinations/seoul.webp" },
+            { name: "Busan", highlights: "Haeundae Beach, Gamcheon Culture Village, Jagalchi Fish Market", image: "/assets/destinations/busan.webp" },
+            { name: "Jeju Island", highlights: "Hallasan Volcano, Manjanggul Lava Tube, Cheonjiyeon Waterfall, Sunrise Peak", image: "/assets/destinations/jeju.webp" },
+            { name: "Incheon & Nami Island", highlights: "Songdo Central Park, Nami Island scenic tree paths, Petite France", image: "/assets/destinations/incheon.webp" },
+        ],
+        process: [
+            { step: 1, title: "Select Category", description: "Choose your applicant category (Job Holder, Businessman, Student, etc.)" },
+            { step: 2, title: "Prepare Documents", description: "Gather passport, 35x45 photos, 6-month bank statement, 3-year tax documents & category files" },
+            { step: 3, title: "Make Payment", description: "Complete payment then contact our Visa department" },
+            { step: 4, title: "Submit & Receive", description: "We process and file your South Korea E-Visa — receive approval in 07-10 working days" },
+        ],
+        importantNotes: [
+            "Visa fees and conditions may change anytime as per Embassy / High Commission's decisions.",
+            "Please contact the Visa department for Document processing after the payment.",
+            "Visa rate may change without any prior notice.",
+        ],
+        whatsappNumbers: [
+            "+8801410232265",
+            "+8801410237493",
+            "+8801410237495",
+        ],
+    },
 ];
+
 
 
