@@ -7,7 +7,7 @@ export const siteConfig = {
     url: 'https://nextpathglobal.my',
     ogImage: 'https://nextpathglobal.my/og-image.jpg',
     links: {
-        facebook: 'https://www.facebook.com/nextpathglobal.my',
+        facebook: 'https://www.facebook.com/nextpathglobal.bd',
         instagram: 'https://www.instagram.com/nextpathglobal.my',
         tiktok: 'https://www.tiktok.com/@nextpathglobal.my',
     },
