@@ -16,11 +16,11 @@ interface FAQSection {
 
 const faqData: FAQSection[] = [
     {
-        title: "About NextPath Global Sdn Bhd",
+        title: "About NextPath Global",
         icon: "📍",
         items: [
             {
-                question: "Q1. What is NextPath Global Sdn Bhd?",
+                question: "Q1. What is NextPath Global?",
                 answer: "NextPath Global Sdn Bhd is a Malaysia-based consultancy and travel service company specializing in student admission support, visa processing, and professional migration programs."
             },
             {

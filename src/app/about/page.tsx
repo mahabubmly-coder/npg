@@ -76,7 +76,7 @@ export default function About() {
                             Your Trusted Global Partner
                         </span>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-lg leading-tight">
-                            <span className="text-secondary">NextPath Global</span> Sdn Bhd
+                            <span className="text-secondary">NextPath Global</span>
                         </h1>
                         <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto drop-shadow-md">
                             A premier cross-border consultancy specializing in Global Education, Residency by Investment (MM2H & PVIP), Turkish Citizenship, Digital Nomad & Tech Passes, Corporate Mobility, and Worldwide Visa Solutions.
@@ -935,7 +935,7 @@ export default function About() {
                                     </div>
                                     <div>
                                         <span className="text-xs font-bold text-primary uppercase tracking-wider">Malaysia Headquarters</span>
-                                        <h3 className="text-xl font-bold text-gray-900">NextPath Global Sdn Bhd</h3>
+                                        <h3 className="text-xl font-bold text-gray-900">NextPath Global</h3>
                                     </div>
                                 </div>
                                 <p className="text-sm text-gray-600 mb-4 flex items-start gap-2">
