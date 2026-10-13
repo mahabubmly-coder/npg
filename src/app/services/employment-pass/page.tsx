@@ -523,14 +523,6 @@ export default function EmploymentPass() {
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            href="https://wa.me/60178823135"
-                            className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
-                        >
-                            <MessageCircle size={24} /> +60 17 882 3135
-                        </motion.a>
-                        <motion.a
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
                             href="https://wa.me/60172965249"
                             className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                         >

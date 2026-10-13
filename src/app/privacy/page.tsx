@@ -254,9 +254,6 @@ export default function PrivacyPolicyPage() {
                                             <a href="https://wa.me/601116695249" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
                                                 <span>💬 +60 11 1669 5249</span>
                                             </a>
-                                            <a href="https://wa.me/60178823135" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
-                                                <span>💬 +60 17 882 3135</span>
-                                            </a>
                                             <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
                                                 <span>💬 +60 17 296 5249</span>
                                             </a>
