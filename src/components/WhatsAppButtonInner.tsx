@@ -10,7 +10,8 @@ export default function WhatsAppButtonInner() {
   const contacts = [
     { name: "Corporate Office (Malaysia)", phone: "+60 11 1669 5249", url: "https://wa.me/601116695249" },
     { name: "Corporate Office (Malaysia)", phone: "+60 17 296 5249", url: "https://wa.me/60172965249" },
-    { name: "Bangladesh Office", phone: "+88 014 1023 7495", url: "https://wa.me/8801410237495" },
+    { name: "Dhaka Office (Bangladesh)", phone: "+880 1402 179802", url: "https://wa.me/8801402179802" },
+    { name: "Dhaka Office (Bangladesh)", phone: "+88 014 1023 7495", url: "https://wa.me/8801410237495" },
   ];
 
   return (

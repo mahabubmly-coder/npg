@@ -200,8 +200,11 @@ export default function AppointmentForm() {
                         <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline flex items-center gap-1">
                             <span>💬 +60 17 296 5249</span>
                         </a>
+                        <a href="https://wa.me/8801402179802" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline flex items-center gap-1">
+                            <span>💬 +880 1402 179802 (Dhaka Office)</span>
+                        </a>
                         <a href="https://wa.me/8801410237495" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary hover:underline flex items-center gap-1">
-                            <span>💬 +88 014 1023 7495 (Bangladesh Office)</span>
+                            <span>💬 +88 014 1023 7495 (Dhaka Office)</span>
                         </a>
                     </div>
                 </div>

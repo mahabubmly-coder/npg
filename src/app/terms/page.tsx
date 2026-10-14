@@ -282,6 +282,9 @@ export default function TermsPage() {
                                         <span className="font-bold text-gray-900">Bangladesh Office:</span><br />
                                         House No- 18, Road No- 11, Dhaka- 1229, Bangladesh.
                                         <div className="flex flex-col gap-1 mt-2">
+                                            <a href="https://wa.me/8801402179802" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
+                                                <span>💬 +880 1402 179802</span>
+                                            </a>
                                             <a href="https://wa.me/8801410237495" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
                                                 <span>💬 +88 014 1023 7495</span>
                                             </a>

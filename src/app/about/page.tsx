@@ -992,6 +992,14 @@ export default function About() {
                             </div>
                             <div className="pt-4 border-t border-gray-100 flex flex-wrap gap-3">
                                 <a
+                                    href="https://wa.me/8801402179802"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xs font-bold text-gray-800 hover:text-primary bg-gray-50 hover:bg-gray-100 px-3 py-2 rounded-lg flex items-center gap-1.5 transition-colors"
+                                >
+                                    <MessageCircle size={14} className="text-[#25D366]" /> +880 1402 179802
+                                </a>
+                                <a
                                     href="https://wa.me/8801410237495"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -1050,6 +1058,14 @@ export default function About() {
                                     className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-5 rounded-full transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-sm"
                                 >
                                     <MessageCircle size={18} className="text-[#25D366]" /> +60 17 296 5249
+                                </a>
+                                <a
+                                    href="https://wa.me/8801402179802"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-5 rounded-full transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-sm"
+                                >
+                                    <MessageCircle size={18} className="text-[#25D366]" /> +880 1402 179802
                                 </a>
                                 <a
                                     href="https://wa.me/8801410237495"

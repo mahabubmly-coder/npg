@@ -84,6 +84,9 @@ export default function Contact() {
                                             House No- 18, Road No- 11, Dhaka- 1229, Bangladesh.
                                         </p>
                                         <div className="flex flex-col gap-1.5 text-sm">
+                                            <a href="https://wa.me/8801402179802" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1.5 font-medium">
+                                                <span>💬 +880 1402 179802</span>
+                                            </a>
                                             <a href="https://wa.me/8801410237495" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1.5 font-medium">
                                                 <span>💬 +88 014 1023 7495</span>
                                             </a>
