@@ -525,7 +525,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/indonesia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 750" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1500" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone can apply from anywhere in the world" },
@@ -534,7 +534,6 @@ export const countries: CountryData[] = [
             { icon: <FileText size={20} />, document: "Passport", requirement: "Clear scanned copy of the information/bio-data page" },
             { icon: <Building size={20} />, document: "Visa Copy", requirement: "Required if currently residing outside your home country" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (35 × 45 mm, white background)" },
-            { icon: <Shield size={20} />, document: "Please Note", requirement: "As of May 2026, citizens of Bangladesh, Syria, Nigeria, and Afghanistan are currently not eligible to apply for this visa." },
         ],
         whyChoose: [
             { icon: <Mountain size={32} />, title: "Diverse Landscapes", description: "Volcanoes, tropical beaches, rice terraces, and rainforests" },
