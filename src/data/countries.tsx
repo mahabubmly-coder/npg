@@ -2,7 +2,7 @@
 import {
     Clock, CreditCard, Calendar, Plane, Users, FileText, Building, Camera,
     MapPin, Utensils, Landmark, DollarSign, Shield, GraduationCap, Globe,
-    Leaf, Anchor, Mountain, Sun, Briefcase, Lightbulb
+    Leaf, Anchor, Mountain, Sun, Briefcase, Lightbulb, Hotel
 } from "lucide-react";
 import React from "react";
 
@@ -455,6 +455,7 @@ export const countries: CountryData[] = [
             { icon: <FileText size={20} />, document: "Passport", requirement: "Original passport, must be presented at the time of application" },
             { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Clear and legible copy" },
             { icon: <Plane size={20} />, document: "Return Air Ticket", requirement: "Confirmed and fully booked return flight ticket" },
+            { icon: <Hotel size={20} />, document: "Hotel Booking", requirement: "Confirmed hotel booking" },
             { icon: <Briefcase size={20} />, document: "Employment / Enrollment Confirmation Letter", requirement: "Issued by your employer, university, or college on official letterhead" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Covering the last 3 months, with a minimum closing balance of RM 7,000" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (35 × 45 mm, white background)" },
