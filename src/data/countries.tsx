@@ -677,7 +677,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/azerbaijan.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "5-7 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees RM110\nService Charge RM250" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees RM120\nService Charge RM250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a Long Term visa (PLKS Holder and Visit visa holder are not eligible to apply)" },
