@@ -278,8 +278,8 @@ export default function TouristVisaFromMalaysiaPage() {
                                             </p>
 
                                             <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-100">
-                                                <span className="text-secondary font-bold text-lg">
-                                                    {country.quickFacts.find(f => f.label === "Fee")?.value}
+                                                <span className="text-secondary font-bold text-sm md:text-base whitespace-pre-line leading-tight">
+                                                    {country.quickFacts.find(f => f.label === "Fee" || f.label === "Fees" || f.label === "Service Charge")?.value}
                                                 </span>
                                                 <span className="text-primary font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
                                                     View Details <ArrowRight size={16} />

@@ -1232,7 +1232,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/australia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 3000" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees AUD 250 (Approx RM720)\nService Charge RM450" },
             { icon: <Calendar size={20} />, label: "Validity", value: "1 Year" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long-term visa" },

@@ -121,13 +121,13 @@ const CountryPageTemplate: React.FC<CountryPageTemplateProps> = ({ country, back
                         <motion.div
                             key={index}
                             variants={itemVariants}
-                            className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all text-center"
+                            className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all text-center flex flex-col items-center justify-center"
                         >
                             <div className="text-primary mb-3 flex justify-center">{fact.icon}</div>
                             <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">
                                 {fact.label}
                             </h3>
-                            <p className="text-lg font-bold text-gray-900">{fact.value}</p>
+                            <p className="text-base lg:text-lg font-bold text-gray-900 whitespace-pre-line leading-snug">{fact.value}</p>
                         </motion.div>
                     ))}
                 </motion.div>
