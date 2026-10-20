@@ -46,7 +46,6 @@ export default function TouristVisaSelector() {
                 <option value="iceland">Iceland</option>
                 <option value="india">India</option>
                 <option value="kenya">Kenya</option>
-                <option value="netherlands">Netherlands</option>
                 <option value="new-zealand">New Zealand</option>
                 <option value="qatar">Qatar</option>
                 <option value="schengen">Schengen (Europe)</option>
