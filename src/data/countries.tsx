@@ -323,7 +323,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/china.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 829" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Visa Fees RM179\nDocumentation & Service Charge RM450" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single/Double Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a Long Term visa" },
