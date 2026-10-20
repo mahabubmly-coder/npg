@@ -949,7 +949,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/hong-kong.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "20-25 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees RM180\nService Charge RM250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Anyone can apply from anywhere in the world" },
