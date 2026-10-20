@@ -870,10 +870,10 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/japan.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 250" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees FOC\nService Charge RM250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "1 Year or Longer" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
-            { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long-term & Multiple Entry Visa (MEV) (Applicants need to submit by themselves)" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long-term & Multiple Entry Visa (MEV)" },
         ],
         requirements: [
             { icon: <FileText size={20} />, document: "Passport", requirement: "Minimum validity of 6 months from the date of travel" },
