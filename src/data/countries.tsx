@@ -446,7 +446,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/brunei.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 200" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees RM69\nService Charge RM100" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long-term visa (Applicant need to submit by themself)" },
