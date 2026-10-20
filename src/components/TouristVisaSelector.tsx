@@ -42,7 +42,6 @@ export default function TouristVisaSelector() {
                 <option value="canada">Canada</option>
                 <option value="usa">USA</option>
                 <option value="uk">United Kingdom</option>
-                <option value="germany">Germany</option>
                 <option value="iceland">Iceland</option>
                 <option value="india">India</option>
                 <option value="kenya">Kenya</option>
