@@ -869,7 +869,7 @@ export const countries: CountryData[] = [
         description: "Where ancient tradition meets cutting-edge innovation. Experience cherry blossoms, Mount Fuji, traditional temples, and futuristic cities in this fascinating island nation.",
         coverImage: "/assets/countries/japan.webp",
         quickFacts: [
-            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days (Estimated only)" },
+            { icon: <Clock size={20} />, label: "Processing Time", value: "5-7 Working Days (Estimated only)" },
             { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees FOC\nService Charge RM250" },
             { icon: <Calendar size={20} />, label: "Validity", value: "1 Year or Longer" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
@@ -899,7 +899,7 @@ export const countries: CountryData[] = [
             { step: 1, title: "Prepare Documents", description: "Gather all required documents" },
             { step: 2, title: "Submit Application", description: "Send to NextPath Global" },
             { step: 3, title: "Processing", description: "We handle your visa application" },
-            { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 10-15 days" },
+            { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 5-7 working days" },
         ],
     },
     {
