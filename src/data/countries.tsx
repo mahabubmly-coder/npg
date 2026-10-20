@@ -334,7 +334,6 @@ export const countries: CountryData[] = [
             { icon: <Briefcase size={20} />, document: "Employment / Enrollment Confirmation Letter", requirement: "Issued by employer, university, or college on official letterhead" },
             { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Covering last 3 months, minimum closing balance of RM 10,000" },
             { icon: <Plane size={20} />, document: "Travel History", requirement: "Copies of previous visas or entry and exit stamps as proof of prior travel" },
-            { icon: <FileText size={20} />, document: "National Identity Card (NID)", requirement: "Clear copy of applicant's national identity card" },
             { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (35 × 45 mm, white background)" },
         ],
         whyChoose: [
