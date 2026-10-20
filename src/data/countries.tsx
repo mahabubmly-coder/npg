@@ -1306,6 +1306,47 @@ export const countries: CountryData[] = [
             { step: 4, title: "Get Your Visa", description: "Receive your approved Canadian visa in 15-25 working days" },
         ],
     },
+    {
+        slug: "schengen",
+        name: "Schengen",
+        tagline: "France / Netherlands / Poland / Iceland / Germany / Italy",
+        description: "Travel freely across 29 European countries with a single Schengen visit visa. Experience iconic landmarks, romantic capitals, alpine peaks, and world-class culture across France, the Netherlands, Germany, Italy, and beyond.",
+        coverImage: "/assets/countries/schengen.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "10-15 Working Days" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees €90 (About RM420)\nService Charge RM450" },
+            { icon: <Calendar size={20} />, label: "Validity", value: "Up to 90 Days" },
+            { icon: <Plane size={20} />, label: "Entry Type", value: "Single / Multiple Entry" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long-term visa" },
+        ],
+        requirements: [
+            { icon: <FileText size={20} />, document: "Passport", requirement: "Minimum 6 months validity from the date of travel" },
+            { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Minimum 6 months validity" },
+            { icon: <Shield size={20} />, document: "Travel Insurance", requirement: "Coverage valid for a minimum of 6 months" },
+            { icon: <Briefcase size={20} />, document: "Employment / Enrollment Confirmation Letter", requirement: "Issued by your employer, university, or college on official letterhead" },
+            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Covering the last 6 months, with a minimum closing balance of RM 10,000" },
+            { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (35 × 45 mm, white background)" },
+            { icon: <Lightbulb size={20} />, document: "Tip", requirement: "A minimum travel history of 5 to 7 countries would significantly improve your chances of visa approval." },
+        ],
+        whyChoose: [
+            { icon: <Globe size={32} />, title: "29 Countries, One Visa", description: "Seamless borderless travel across France, Germany, Italy, Netherlands, Switzerland, and more" },
+            { icon: <Landmark size={32} />, title: "World Heritage & Culture", description: "Eiffel Tower, Colosseum, Reichstag, canals of Amsterdam, and historic European capitals" },
+            { icon: <Mountain size={32} />, title: "Diverse Landscapes", description: "From the Swiss Alps and Mediterranean beaches to historic fairytale castles and vineyards" },
+            { icon: <Utensils size={32} />, title: "Culinary & Lifestyle", description: "World-class dining, fashion, art museums, and unforgettable European experiences" },
+        ],
+        destinations: [
+            { name: "Paris, France", highlights: "Eiffel Tower, Louvre Museum, Arc de Triomphe, Seine River Cruise", image: "/assets/destinations/paris.webp" },
+            { name: "Amsterdam, Netherlands", highlights: "Canal Ring, Rijksmuseum, Van Gogh Museum, Tulip Gardens", image: "/assets/destinations/amsterdam.webp" },
+            { name: "Berlin, Germany", highlights: "Brandenburg Gate, Reichstag Building, Museum Island, Berlin Wall", image: "/assets/destinations/berlin.webp" },
+            { name: "Rome, Italy", highlights: "Colosseum, Vatican City, Trevi Fountain, Roman Forum", image: "/assets/destinations/rome.webp" },
+        ],
+        process: [
+            { step: 1, title: "Prepare Documents", description: "Gather all required personal, financial, and employment documents" },
+            { step: 2, title: "Submit Application", description: "Send to NextPath Global for thorough review and itinerary planning" },
+            { step: 3, title: "Appointment & Biometrics", description: "We assist with Schengen appointment booking and document file preparation" },
+            { step: 4, title: "Get Your Visa", description: "Receive your approved Schengen visit visa in 10-15 working days" },
+        ],
+    },
 
     {
         slug: "east-timor",
