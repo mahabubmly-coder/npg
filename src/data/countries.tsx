@@ -1676,7 +1676,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/south-korea.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "5-10 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 1850" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees RM160\nService Charge RM450" },
             { icon: <Calendar size={20} />, label: "Validity", value: "90 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long term visa/Pass" },
