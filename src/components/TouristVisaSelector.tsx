@@ -39,6 +39,7 @@ export default function TouristVisaSelector() {
                 <option value="japan">Japan</option>
                 <option value="uae">United Arab Emirates (UAE)</option>
                 <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
                 <option value="usa">USA</option>
                 <option value="uk">United Kingdom</option>
                 <option value="germany">Germany</option>

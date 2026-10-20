@@ -1265,6 +1265,47 @@ export const countries: CountryData[] = [
             { step: 4, title: "Get Your Visa", description: "Receive an approved visa in 20-25 working days" },
         ],
     },
+    {
+        slug: "canada",
+        name: "Canada",
+        tagline: "The Great White North",
+        description: "Experience Canada's breathtaking natural beauty, magnificent Rocky Mountains, iconic Niagara Falls, and vibrant multicultural cities. From Banff's turquoise lakes to Toronto's skyline, adventure awaits.",
+        coverImage: "/assets/countries/canada.webp",
+        quickFacts: [
+            { icon: <Clock size={20} />, label: "Processing Time", value: "15-25 Working Days" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees CAD 185 (About RM540)\nService Charge RM450" },
+            { icon: <Calendar size={20} />, label: "Validity", value: "Up to 10 Years" },
+            { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
+            { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a long-term visa" },
+        ],
+        requirements: [
+            { icon: <FileText size={20} />, document: "Passport", requirement: "Minimum 6 months validity from the date of travel" },
+            { icon: <Building size={20} />, document: "Malaysian Visa", requirement: "Minimum 6 months validity" },
+            { icon: <Shield size={20} />, document: "Travel Insurance", requirement: "Coverage valid for a minimum of 6 months" },
+            { icon: <Briefcase size={20} />, document: "Employment / Enrollment Confirmation Letter", requirement: "Issued by your employer, university, or college on official letterhead" },
+            { icon: <Landmark size={20} />, document: "Bank Statement", requirement: "Covering the last 6 months, with a minimum closing balance of RM 10,000" },
+            { icon: <Camera size={20} />, document: "Photograph", requirement: "1 recent passport-sized photo (35 × 45 mm, white background)" },
+            { icon: <Lightbulb size={20} />, document: "Tip", requirement: "A minimum travel history of 5 to 7 countries would significantly improve your chances of visa approval." },
+        ],
+        whyChoose: [
+            { icon: <Mountain size={32} />, title: "Majestic Nature", description: "Banff National Park, the Canadian Rockies, and turquoise glacial lakes" },
+            { icon: <Sun size={32} />, title: "World-Famous Wonders", description: "Niagara Falls, CN Tower, and UNESCO World Heritage sites" },
+            { icon: <Building size={32} />, title: "Vibrant Cities", description: "Toronto, Vancouver, Montreal, and Ottawa with rich culture and dining" },
+            { icon: <Globe size={32} />, title: "Safe & Welcoming", description: "Globally acclaimed for safety, diversity, and warm Canadian hospitality" },
+        ],
+        destinations: [
+            { name: "Toronto", highlights: "CN Tower, Royal Ontario Museum, Toronto Islands, Distillery District", image: "/assets/destinations/toronto.webp" },
+            { name: "Banff National Park", highlights: "Lake Louise, Moraine Lake, Rocky Mountains, Icefields Parkway", image: "/assets/destinations/banff.webp" },
+            { name: "Niagara Falls", highlights: "Horseshoe Falls, Hornblower Boat Cruise, Clifton Hill, Niagara Parks", image: "/assets/destinations/niagara.webp" },
+            { name: "Vancouver", highlights: "Stanley Park, Granville Island, Capilano Suspension Bridge, English Bay", image: "/assets/destinations/vancouver.webp" },
+        ],
+        process: [
+            { step: 1, title: "Prepare Documents", description: "Gather all required personal, financial, and employment documents" },
+            { step: 2, title: "Submit Application", description: "Send to NextPath Global for expert document review" },
+            { step: 3, title: "Processing & Biometrics", description: "We handle your Canadian visa application and biometrics scheduling" },
+            { step: 4, title: "Get Your Visa", description: "Receive your approved Canadian visa in 15-25 working days" },
+        ],
+    },
 
     {
         slug: "east-timor",
