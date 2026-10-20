@@ -910,7 +910,7 @@ export const countries: CountryData[] = [
         coverImage: "/assets/countries/turkey.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "RM 450" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "Application Fees RM250\nService Charge RM450" },
             { icon: <Calendar size={20} />, label: "Validity", value: "180 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Multiple Entry" },
             { icon: <Users size={20} />, label: "Who Can Apply", value: "Those who are living in Malaysia with a Long Term visa" },
