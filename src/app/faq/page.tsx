@@ -140,6 +140,9 @@ const faqData: FAQSection[] = [
                                             <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
                                                 <span>💬 +60 17 296 5249</span>
                                             </a>
+                                            <a href="https://wa.me/601125368220" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline flex items-center gap-1">
+                                                <span>💬 +60 11 2536 8220</span>
+                                            </a>
                                         </div>
                                     </div>
                                     <div>

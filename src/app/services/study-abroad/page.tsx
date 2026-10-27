@@ -209,6 +209,14 @@ const StudyAbroadPage = () => {
                                     <MessageCircle size={20} /> +60 17 296 5249
                                 </a>
                                 <a
+                                    href="https://wa.me/601125368220"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 w-full md:w-auto"
+                                >
+                                    <MessageCircle size={20} /> +60 11 2536 8220
+                                </a>
+                                <a
                                     href="https://wa.me/8801402179802"
                                     target="_blank"
                                     rel="noopener noreferrer"

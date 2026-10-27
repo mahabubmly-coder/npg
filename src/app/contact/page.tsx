@@ -69,6 +69,9 @@ export default function Contact() {
                                             <a href="https://wa.me/60172965249" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1.5 font-medium">
                                                 <span>💬 +60 17 296 5249</span>
                                             </a>
+                                            <a href="https://wa.me/601125368220" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors flex items-center gap-1.5 font-medium">
+                                                <span>💬 +60 11 2536 8220</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

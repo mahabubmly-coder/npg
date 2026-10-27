@@ -227,7 +227,8 @@ export async function submitAppointmentForm(formData: FormData) {
         <p>If you have an urgent query, please contact us at:</p>
         <p>
           Corporate Office: <a href="https://wa.me/601116695249" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 11 1669 5249</strong></a>, 
-          <a href="https://wa.me/60172965249" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 17 296 5249</strong></a><br />
+          <a href="https://wa.me/60172965249" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 17 296 5249</strong></a>, 
+          <a href="https://wa.me/601125368220" style="color: #0c4a6e; text-decoration: underline;"><strong>+60 11 2536 8220</strong></a><br />
           Bangladesh Office: <a href="https://wa.me/8801402179802" style="color: #0c4a6e; text-decoration: underline;"><strong>+880 1402 179802</strong></a>, <a href="https://wa.me/8801410237495" style="color: #0c4a6e; text-decoration: underline;"><strong>+88 014 1023 7495</strong></a>
         </p>
         

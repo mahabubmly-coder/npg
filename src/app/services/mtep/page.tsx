@@ -773,7 +773,7 @@ export default function MTEPPage() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
                         <a
                             href="https://wa.me/601116695249"
                             target="_blank"
@@ -801,6 +801,22 @@ export default function MTEPPage() {
                             </div>
                             <h4 className="font-bold text-lg mb-1">Client Relations</h4>
                             <p className="text-secondary font-mono font-bold text-lg mb-2">+60 17 296 5249</p>
+                            <span className="text-xs text-blue-200 group-hover:underline flex items-center justify-center gap-1">
+                                Chat on WhatsApp <ArrowRight size={14} />
+                            </span>
+                        </a>
+
+                        <a
+                            href="https://wa.me/601125368220"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md p-6 rounded-2xl text-center transition-all hover:-translate-y-1 group"
+                        >
+                            <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white shadow-lg">
+                                <MessageCircle size={24} />
+                            </div>
+                            <h4 className="font-bold text-lg mb-1">Advisory Desk</h4>
+                            <p className="text-secondary font-mono font-bold text-lg mb-2">+60 11 2536 8220</p>
                             <span className="text-xs text-blue-200 group-hover:underline flex items-center justify-center gap-1">
                                 Chat on WhatsApp <ArrowRight size={14} />
                             </span>

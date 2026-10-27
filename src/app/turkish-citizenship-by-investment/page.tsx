@@ -966,7 +966,7 @@ export default function TurkishCitizenshipPage() {
                                 Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, Kampung Datuk Keramat, 50400 Kuala Lumpur
                             </p>
                             <p className="text-gray-400 text-xs">
-                                WhatsApp: +60 11-1669 5249 · +60 17-296 5249 · Hours: 10:00 am – 8:00 pm
+                                WhatsApp: +60 11-1669 5249 · +60 17-296 5249 · +60 11-2536 8220 · Hours: 10:00 am – 8:00 pm
                             </p>
                         </div>
 

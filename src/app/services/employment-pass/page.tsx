@@ -511,7 +511,7 @@ export default function EmploymentPass() {
                             Talk to us before you apply—clarity comes first.
                         </p>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-6 justify-center mb-6">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-6 justify-center mb-6">
                         <motion.a
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -527,6 +527,14 @@ export default function EmploymentPass() {
                             className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                         >
                             <MessageCircle size={24} /> +60 17 296 5249
+                        </motion.a>
+                        <motion.a
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            href="https://wa.me/601125368220"
+                            className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                        >
+                            <MessageCircle size={24} /> +60 11 2536 8220
                         </motion.a>
                         <motion.a
                             whileHover={{ scale: 1.05 }}
