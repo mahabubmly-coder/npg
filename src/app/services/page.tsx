@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {
     GraduationCap, Briefcase, Globe, ShieldCheck, Plane, 
     FileText, Home, Crown, Building2, Ticket, Hotel, 
-    BadgeCheck, FileSignature, ArrowRight, Rocket
+    BadgeCheck, FileSignature, ArrowRight, Rocket, Cpu
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -128,6 +128,43 @@ const serviceCategories: ServiceCategory[] = [
                 description: "Notarization, legalisation, and Ministry of Foreign Affairs (MOFA) attestation for academic degrees, birth/marriage certificates, and commercial contracts.",
                 icon: <FileSignature size={32} className="text-[#c9a84c]" />,
                 link: "/contact"
+            }
+        ]
+    },
+    {
+        categoryName: "Business & Digital Transformation",
+        description: "Connect business goals with modern strategy, AI, scalable technology, and seamless execution.",
+        coverImage: "/assets/business-transformation/hero.jpg",
+        services: [
+            {
+                title: "Strategy & Business Consulting",
+                description: "Practical roadmaps, growth planning, digital strategies, and enterprise innovation advisory.",
+                icon: <Briefcase size={32} className="text-[#c9a84c]" />,
+                link: "/services/business-transformation"
+            },
+            {
+                title: "Digital Transformation & Automation",
+                description: "Align people, processes, and modern tools through intelligent workflow automation and change management.",
+                icon: <Rocket size={32} className="text-[#c9a84c]" />,
+                link: "/services/business-transformation"
+            },
+            {
+                title: "Architecture & Technology Modernization",
+                description: "Application assessments, legacy system modernization, cloud planning, and system integration.",
+                icon: <Globe size={32} className="text-[#c9a84c]" />,
+                link: "/services/business-transformation"
+            },
+            {
+                title: "Artificial Intelligence & Intelligent Automation",
+                description: "Practical AI roadmaps, predictive analytics, intelligent processing, and machine learning use-cases.",
+                icon: <Cpu size={32} className="text-[#c9a84c]" />,
+                link: "/services/business-transformation"
+            },
+            {
+                title: "Cybersecurity & Digital Trust",
+                description: "Comprehensive cybersecurity assessments, data protection, security governance, and digital trust.",
+                icon: <ShieldCheck size={32} className="text-[#c9a84c]" />,
+                link: "/services/business-transformation"
             }
         ]
     }

@@ -73,6 +73,7 @@ export default function Footer() {
                             <li><Link href="/services/study-abroad" className="text-gray-600 hover:text-primary transition-colors">Study Abroad</Link></li>
                             <li><Link href="/services/employment-pass" className="text-gray-600 hover:text-primary transition-colors">Employment Pass</Link></li>
                             <li><Link href="/services/de-rantau-digital-nomad-visa" className="text-gray-600 hover:text-primary transition-colors">De Rantau / Digital Nomad Visa</Link></li>
+                            <li><Link href="/services/business-transformation" className="text-gray-600 hover:text-primary transition-colors">Business Transformation</Link></li>
                             <li><Link href="/services/mtep" className="text-gray-600 hover:text-primary transition-colors">MTEP / Tech Entrepreneur Pass</Link></li>
                         </ul>
                     </div>

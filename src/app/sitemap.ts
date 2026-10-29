@@ -129,6 +129,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/services/business-transformation`,
+            lastModified: new Date('2026-10-29'),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/services/employment-pass`,
             lastModified: new Date('2026-03-14'),
             changeFrequency: 'monthly',

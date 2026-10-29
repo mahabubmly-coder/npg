@@ -31,6 +31,12 @@ const searchData = [
         ]
     },
     {
+        category: "Business & Digital Transformation",
+        items: [
+            { name: "Business & Digital Transformation Services", description: "Strategy consulting, technology advisory, architecture modernization, and AI automation", href: "/services/business-transformation", keywords: ["business transformation", "digital transformation", "ai", "artificial intelligence", "automation", "consulting", "technology advisory", "cybersecurity", "architecture", "strategy"] },
+        ]
+    },
+    {
         category: "Education",
         items: [
             { name: "Study Abroad", description: "Your gateway to world-class education in Malaysia", href: "/services/study-abroad", keywords: ["study", "education", "university", "college", "abroad", "international"] },
