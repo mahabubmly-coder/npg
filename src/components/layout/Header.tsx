@@ -46,8 +46,6 @@ const navLinks: NavLink[] = [
             { name: "Turkey Citizenship", href: "/turkish-citizenship-by-investment" },
         ]
     },
-    { name: "About Us", href: "/about" },
-    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
 ];
 
