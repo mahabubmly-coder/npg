@@ -43,13 +43,7 @@ const navLinks: NavLink[] = [
             { name: "Employment Pass", href: "/services/employment-pass" },
             { name: "De Rantau / Digital Nomad Visa", href: "/services/de-rantau-digital-nomad-visa" },
             { name: "MTEP / Tech Entrepreneur Pass", href: "/services/mtep" },
-        ]
-    },
-    {
-        name: "Citizenship",
-        href: "/turkish-citizenship-by-investment",
-        subMenu: [
-            { name: "Turkey", href: "/turkish-citizenship-by-investment" },
+            { name: "Turkey Citizenship", href: "/turkish-citizenship-by-investment" },
         ]
     },
     { name: "About Us", href: "/about" },
