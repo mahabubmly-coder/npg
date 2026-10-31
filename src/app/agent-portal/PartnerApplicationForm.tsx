@@ -72,7 +72,7 @@ export default function PartnerApplicationForm() {
                 setStatus("error");
                 setErrorMessage(result.error || "Failed to submit your application. Please try again.");
             }
-        } catch (err) {
+        } catch {
             setStatus("error");
             setErrorMessage("An unexpected error occurred. Please contact us directly via WhatsApp.");
         } finally {

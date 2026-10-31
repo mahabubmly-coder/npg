@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Breadcrumbs from "@/components/navigation/Breadcrumbs";
 import PartnerApplicationForm from "./PartnerApplicationForm";
 import PartnerFaq from "./PartnerFaq";
@@ -8,7 +7,6 @@ import {
     CheckCircle2,
     Users,
     GraduationCap,
-    Briefcase,
     DollarSign,
     Clock,
     ArrowRight,
@@ -20,12 +18,12 @@ import {
     Building2,
     BookOpen,
     Compass,
-    TrendingUp,
     Headphones,
     Award,
     BadgePercent,
     CalendarCheck,
     PhoneCall,
+    HelpCircle,
 } from "lucide-react";
 
 export const metadata: Metadata = {
