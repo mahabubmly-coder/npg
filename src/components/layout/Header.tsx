@@ -47,6 +47,7 @@ const navLinks: NavLink[] = [
         ]
     },
     { name: "Business Transformation", href: "/services/business-transformation" },
+    { name: "Become a Partner", href: "/become-a-partner" },
     { name: "Contact", href: "/contact" },
 ];
 
@@ -70,10 +71,10 @@ export default function Header() {
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "py-3.5 glass shadow-sm" : "py-5 bg-transparent"
                 }`}
         >
-            <div className="w-full max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4 lg:gap-8">
+            <div className="w-full max-w-7xl 2xl:max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 lg:gap-6">
                 <Link
                     href="/"
-                    className="relative shrink-0 flex items-center w-48 sm:w-52 h-11 sm:h-12 mr-3 lg:mr-6 xl:mr-8 transition-transform hover:opacity-95"
+                    className="relative shrink-0 flex items-center w-44 sm:w-52 h-11 sm:h-12 mr-2 lg:mr-4 xl:mr-6 transition-transform hover:opacity-95"
                     aria-label="NextPath Global Home"
                 >
                     <Image
@@ -86,7 +87,7 @@ export default function Header() {
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className="hidden xl:flex items-center gap-3.5 2xl:gap-5 text-sm font-medium">
+                <nav className="hidden xl:flex items-center gap-2.5 2xl:gap-4 text-[13px] 2xl:text-sm font-medium">
                     {navLinks.map((link) => (
                         <div
                             key={link.name}

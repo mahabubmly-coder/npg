@@ -53,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
-            url: `${baseUrl}/agent-portal`,
+            url: `${baseUrl}/become-a-partner`,
             lastModified: new Date('2026-10-31'),
             changeFrequency: 'monthly',
             priority: 0.8,

@@ -103,13 +103,13 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/become-a-partner',
-        destination: '/agent-portal',
+        source: '/agent-portal',
+        destination: '/become-a-partner',
         permanent: true,
       },
       {
         source: '/partner',
-        destination: '/agent-portal',
+        destination: '/become-a-partner',
         permanent: true,
       },
     ];

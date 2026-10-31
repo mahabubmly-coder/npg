@@ -588,7 +588,7 @@ export async function submitPartnerApplication(formData: FormData) {
                 <p style="white-space: pre-wrap; background: #f8fafc; padding: 12px; border-left: 4px solid #0256C6; border-radius: 4px;">${why}</p>
                 
                 <hr style="margin: 20px 0; border: none; border-top: 1px solid #e2e8f0;" />
-                <p style="font-size: 13px; color: #64748b;">Submitted via NextPath Global Agent & Partner Portal: <a href="https://nextpathglobal.my/agent-portal">https://nextpathglobal.my/agent-portal</a></p>
+                <p style="font-size: 13px; color: #64748b;">Submitted via NextPath Global Become a Partner: <a href="https://nextpathglobal.my/become-a-partner">https://nextpathglobal.my/become-a-partner</a></p>
             `,
         });
 

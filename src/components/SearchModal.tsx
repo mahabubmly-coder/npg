@@ -58,6 +58,7 @@ const searchData = [
         items: [
             { name: "About Us", description: "Learn more about Next Path Global", href: "/about", keywords: ["about", "company", "who we are"] },
             { name: "Contact", description: "Get in touch with our team", href: "/contact", keywords: ["contact", "email", "phone", "reach us"] },
+            { name: "Become a Partner", description: "B2B education partnership programme for teachers, lecturers, and education consultants", href: "/become-a-partner", keywords: ["partner", "become a partner", "agent", "agent portal", "commission", "teachers", "b2b"] },
             { name: "Blog", description: "Latest news and updates", href: "/blog", keywords: ["blog", "news", "articles", "updates"] },
         ]
     }
