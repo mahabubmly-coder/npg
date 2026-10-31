@@ -87,7 +87,7 @@ export default function Footer() {
                             <li><Link href="/contact" className="text-gray-600 hover:text-primary transition-colors">Contact Us</Link></li>
                             <li><Link href="/student-assessment" className="text-gray-600 hover:text-primary transition-colors">Student Assessment Form</Link></li>
                             <li><Link href="/why-choose-us" className="text-gray-600 hover:text-primary transition-colors">Why Choose Us</Link></li>
-                            <li><Link href="/agent-portal" className="text-gray-600 hover:text-primary transition-colors">Agent Portal</Link></li>
+                            <li><Link href="/agent-portal" className="text-gray-600 hover:text-primary transition-colors">Become a Partner / Agent Portal</Link></li>
                             <li><Link href="/refund-policy" className="text-gray-600 hover:text-primary transition-colors">Refund Policy</Link></li>
                             <li><Link href="/payment-methods" className="text-gray-600 hover:text-primary transition-colors">Payment Methods</Link></li>
                             <li><Link href="/faq" className="text-gray-600 hover:text-primary transition-colors">FAQ</Link></li>

@@ -53,6 +53,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
+            url: `${baseUrl}/agent-portal`,
+            lastModified: new Date('2026-10-31'),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: `${baseUrl}/payment-methods`,
             lastModified: new Date('2026-01-25'),
             changeFrequency: 'monthly',

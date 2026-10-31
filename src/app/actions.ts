@@ -543,3 +543,96 @@ export async function submitTurkishCitizenshipForm(formData: FormData) {
         };
     }
 }
+
+export async function submitPartnerApplication(formData: FormData) {
+    console.log("=== PARTNER APPLICATION SERVER ACTION CALLED ===");
+
+    const name = (formData.get("name") as string)?.trim();
+    const email = (formData.get("email") as string)?.trim();
+    const phone = (formData.get("phone") as string)?.trim();
+    const location = (formData.get("location") as string)?.trim();
+    const role = (formData.get("role") as string)?.trim();
+    const experience = (formData.get("experience") as string)?.trim();
+    const reach = (formData.get("reach") as string)?.trim() || "Not specified";
+    const destinations = (formData.get("destinations") as string)?.trim() || "General Education / All Programs";
+    const why = (formData.get("why") as string)?.trim() || "No additional comments provided";
+
+    if (!name || !email || !phone || !location || !role) {
+        return { 
+            success: false, 
+            error: "Please fill in all required fields (Name, Email, Phone/WhatsApp, Location, and Role)." 
+        };
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
+    try {
+        // 1. Notify NextPath Global Admin
+        const adminEmailResult = await resend.emails.send({
+            from: "Next Path Global <noreply@nextpathglobal.my>",
+            to: "nextpathglobal058@gmail.com",
+            subject: `New Partner / Agent Application: ${name} (${role})`,
+            html: `
+                <h2>New Partner & Agent Application</h2>
+                <h3>Applicant Profile</h3>
+                <p><strong>Full Name:</strong> ${name}</p>
+                <p><strong>Email Address:</strong> <a href="mailto:${email}">${email}</a></p>
+                <p><strong>Phone / WhatsApp:</strong> ${phone}</p>
+                <p><strong>Location (Country & City):</strong> ${location}</p>
+                <p><strong>Professional Role:</strong> ${role}</p>
+                <p><strong>Years of Experience:</strong> ${experience || "Not provided"}</p>
+                <p><strong>Estimated Student / Referral Reach:</strong> ${reach}</p>
+                <p><strong>Programs of Interest:</strong> ${destinations}</p>
+                
+                <h3>Motivation & Background</h3>
+                <p style="white-space: pre-wrap; background: #f8fafc; padding: 12px; border-left: 4px solid #0256C6; border-radius: 4px;">${why}</p>
+                
+                <hr style="margin: 20px 0; border: none; border-top: 1px solid #e2e8f0;" />
+                <p style="font-size: 13px; color: #64748b;">Submitted via NextPath Global Agent & Partner Portal: <a href="https://nextpathglobal.my/agent-portal">https://nextpathglobal.my/agent-portal</a></p>
+            `,
+        });
+
+        if (adminEmailResult.error) {
+            console.error("Admin email error:", adminEmailResult.error);
+        }
+
+        // 2. Send acknowledgment to Applicant
+        if (email) {
+            await resend.emails.send({
+                from: "Next Path Global <noreply@nextpathglobal.my>",
+                to: email,
+                subject: `We have received your partner application - NextPath Global`,
+                html: `
+                    <h2>Dear ${name},</h2>
+                    <p>Thank you for applying to become a B2B Education Partner with <strong>NextPath Global</strong>.</p>
+                    <p>We are thrilled to explore a mutually rewarding partnership with you. Here is a summary of your application:</p>
+                    <ul>
+                        <li><strong>Role:</strong> ${role}</li>
+                        <li><strong>Location:</strong> ${location}</li>
+                        <li><strong>Programs of Interest:</strong> ${destinations}</li>
+                        <li><strong>Estimated Reach:</strong> ${reach}</li>
+                    </ul>
+                    <p>Our Partner Relations team is currently reviewing your details and will reach out to you via WhatsApp (<strong>${phone}</strong>) or email within <strong>24 to 48 business hours</strong> to share our partner prospectus, commission structures, and next steps.</p>
+                    <br />
+                    <p>In the meantime, if you have any urgent queries, feel free to contact our partner desk directly:</p>
+                    <p>
+                        <strong>Corporate Office (Kuala Lumpur):</strong> <a href="https://wa.me/601116695249">+60 11 1669 5249</a> / <a href="https://wa.me/60172965249">+60 17 296 5249</a><br />
+                        <strong>Dhaka Operations Hub:</strong> <a href="https://wa.me/8801402179802">+880 1402 179802</a> / <a href="https://wa.me/8801410237495">+880 1410 237495</a>
+                    </p>
+                    <br />
+                    <p>Warm regards,</p>
+                    <p><strong>NextPath Global Partner Relations Team</strong></p>
+                    <p>NextPath Global Sdn Bhd (ROC: 1637994-A)<br />Level 41, The Intermark, Vista Tower, 384, Jln Tun Razak, 50400 Kuala Lumpur</p>
+                `,
+            });
+        }
+
+        return { success: true };
+    } catch (error) {
+        console.error("=== PARTNER APPLICATION RESEND ERROR ===", error);
+        return {
+            success: false,
+            error: error instanceof Error ? error.message : "An unexpected error occurred. Please reach out to us directly on WhatsApp."
+        };
+    }
+}

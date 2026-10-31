@@ -102,6 +102,16 @@ const nextConfig: NextConfig = {
         destination: '/blog/visa-immigration/turkish-citizenship-by-investment-2026-guide',
         permanent: true,
       },
+      {
+        source: '/become-a-partner',
+        destination: '/agent-portal',
+        permanent: true,
+      },
+      {
+        source: '/partner',
+        destination: '/agent-portal',
+        permanent: true,
+      },
     ];
   },
   async headers() {
