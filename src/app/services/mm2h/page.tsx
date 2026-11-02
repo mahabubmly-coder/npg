@@ -51,7 +51,9 @@ const tiers = [
         borderColor: "border-gray-400",
         bgColor: "bg-gradient-to-br from-gray-800 to-gray-900",
         fixedDeposit: "USD 1,000,000",
+        fixedDepositBdt: "~140,400,000 BDT",
         property: "RM 2,000,000",
+        propertyBdt: "~60,000,000 BDT",
         visaDuration: "20 Years",
         minAge: "25",
         highlights: ["Work & Business Rights", "Domestic Helper", "Premium Status"],
@@ -63,7 +65,9 @@ const tiers = [
         borderColor: "border-yellow-400",
         bgColor: "bg-gradient-to-br from-yellow-600 to-yellow-800",
         fixedDeposit: "USD 500,000",
+        fixedDepositBdt: "~70,200,000 BDT",
         property: "RM 1,000,000",
+        propertyBdt: "~30,000,000 BDT",
         visaDuration: "15 Years",
         minAge: "25",
         highlights: ["Extended Visa", "Property Investment", "Family Inclusion"],
@@ -75,7 +79,9 @@ const tiers = [
         borderColor: "border-gray-300",
         bgColor: "bg-gradient-to-br from-gray-400 to-gray-600",
         fixedDeposit: "USD 150,000",
+        fixedDepositBdt: "~21,000,000 BDT",
         property: "RM 600,000",
+        propertyBdt: "~18,000,000 BDT",
         visaDuration: "5 Years",
         minAge: "25",
         highlights: ["Entry Level", "Renewable Visa", "Family Inclusion"],
@@ -87,7 +93,9 @@ const tiers = [
         borderColor: "border-primary",
         bgColor: "bg-gradient-to-br from-primary to-primary-hover",
         fixedDeposit: "USD 32,000 - 65,000",
+        fixedDepositBdt: "~4,500,000 - 9,150,000 BDT",
         property: "From Developer",
+        propertyBdt: null,
         visaDuration: "10 Years",
         minAge: "21",
         highlights: ["Special Zones", "Lower Entry", "Age-Based Rates"],
@@ -256,13 +264,23 @@ export default function MM2H() {
                             </div>
                             <div className="p-6">
                                 <div className="space-y-4 mb-6">
-                                    <div className="flex justify-between items-center border-b pb-3">
-                                        <span className="text-gray-600">Fixed Deposit</span>
-                                        <span className="font-bold text-gray-900">{tier.fixedDeposit}</span>
+                                    <div className="flex justify-between items-start border-b pb-3 gap-2">
+                                        <span className="text-gray-600 shrink-0">Fixed Deposit</span>
+                                        <div className="text-right">
+                                            <div className="font-bold text-gray-900">{tier.fixedDeposit}</div>
+                                            {tier.fixedDepositBdt && (
+                                                <div className="text-xs font-medium text-primary mt-0.5">{tier.fixedDepositBdt}</div>
+                                            )}
+                                        </div>
                                     </div>
-                                    <div className="flex justify-between items-center border-b pb-3">
-                                        <span className="text-gray-600">Property</span>
-                                        <span className="font-bold text-gray-900">{tier.property}</span>
+                                    <div className="flex justify-between items-start border-b pb-3 gap-2">
+                                        <span className="text-gray-600 shrink-0">Property</span>
+                                        <div className="text-right">
+                                            <div className="font-bold text-gray-900">{tier.property}</div>
+                                            {tier.propertyBdt && (
+                                                <div className="text-xs font-medium text-primary mt-0.5">{tier.propertyBdt}</div>
+                                            )}
+                                        </div>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-600">Min Age</span>
@@ -300,7 +318,7 @@ export default function MM2H() {
                         <div>
                             <h4 className="font-bold text-gray-900 mb-2">SEZ/SFZ Special Zones</h4>
                             <p className="text-gray-600 text-sm">
-                                The SEZ/SFZ category offers lower entry requirements with fixed deposits of <strong>USD 65,000</strong> (ages 21-49) or <strong>USD 32,000</strong> (50+).
+                                The SEZ/SFZ category offers lower entry requirements with fixed deposits of <strong>USD 65,000 (~9,150,000 BDT)</strong> for ages 21-49 or <strong>USD 32,000 (~4,500,000 BDT)</strong> for ages 50+.
                                 Property must be purchased directly from developers in designated zones like Forest City in Johor.
                             </p>
                         </div>
@@ -401,8 +419,8 @@ export default function MM2H() {
                                 <thead>
                                     <tr className="border-b border-gray-700">
                                         <th className="py-4 px-4 text-lg font-semibold text-primary">Tier</th>
-                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Fixed Deposit (USD)</th>
-                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Property Purchase (RM)</th>
+                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Fixed Deposit (USD / BDT)</th>
+                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Property Purchase (RM / BDT)</th>
                                         <th className="py-4 px-4 text-lg font-semibold text-primary">Visa Duration</th>
                                         <th className="py-4 px-4 text-lg font-semibold text-primary">Min Age</th>
                                     </tr>
@@ -416,8 +434,14 @@ export default function MM2H() {
                                         className="border-b border-gray-800 hover:bg-white/5 transition-colors"
                                     >
                                         <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-gray-700 rounded-full text-sm">Platinum</span></td>
-                                        <td className="py-5 px-4 text-gray-300">USD 1,000,000</td>
-                                        <td className="py-5 px-4 text-gray-300">RM 2,000,000</td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>USD 1,000,000</div>
+                                            <div className="text-xs text-gray-400">~140,400,000 BDT</div>
+                                        </td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>RM 2,000,000</div>
+                                            <div className="text-xs text-gray-400">~60,000,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">20 Years</td>
                                         <td className="py-5 px-4 text-gray-300">25</td>
                                     </motion.tr>
@@ -429,8 +453,14 @@ export default function MM2H() {
                                         className="border-b border-gray-800 hover:bg-white/5 transition-colors"
                                     >
                                         <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-yellow-600 rounded-full text-sm">Gold</span></td>
-                                        <td className="py-5 px-4 text-gray-300">USD 500,000</td>
-                                        <td className="py-5 px-4 text-gray-300">RM 1,000,000</td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>USD 500,000</div>
+                                            <div className="text-xs text-gray-400">~70,200,000 BDT</div>
+                                        </td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>RM 1,000,000</div>
+                                            <div className="text-xs text-gray-400">~30,000,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">15 Years</td>
                                         <td className="py-5 px-4 text-gray-300">25</td>
                                     </motion.tr>
@@ -442,8 +472,14 @@ export default function MM2H() {
                                         className="border-b border-gray-800 hover:bg-white/5 transition-colors"
                                     >
                                         <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-gray-500 rounded-full text-sm">Silver</span></td>
-                                        <td className="py-5 px-4 text-gray-300">USD 150,000</td>
-                                        <td className="py-5 px-4 text-gray-300">RM 600,000</td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>USD 150,000</div>
+                                            <div className="text-xs text-gray-400">~21,000,000 BDT</div>
+                                        </td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>RM 600,000</div>
+                                            <div className="text-xs text-gray-400">~18,000,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">5 Years</td>
                                         <td className="py-5 px-4 text-gray-300">25</td>
                                     </motion.tr>
@@ -455,7 +491,10 @@ export default function MM2H() {
                                         className="border-b border-gray-800 hover:bg-white/5 transition-colors"
                                     >
                                         <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-primary rounded-full text-sm">SEZ (21-49)</span></td>
-                                        <td className="py-5 px-4 text-gray-300">USD 65,000</td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>USD 65,000</div>
+                                            <div className="text-xs text-gray-400">~9,150,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">From Developer</td>
                                         <td className="py-5 px-4 text-gray-300">10 Years</td>
                                         <td className="py-5 px-4 text-gray-300">21</td>
@@ -468,7 +507,10 @@ export default function MM2H() {
                                         className="hover:bg-white/5 transition-colors"
                                     >
                                         <td className="py-5 px-4 font-medium"><span className="px-3 py-1 bg-primary rounded-full text-sm">SEZ (50+)</span></td>
-                                        <td className="py-5 px-4 text-gray-300">USD 32,000</td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>USD 32,000</div>
+                                            <div className="text-xs text-gray-400">~4,500,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">From Developer</td>
                                         <td className="py-5 px-4 text-gray-300">10 Years</td>
                                         <td className="py-5 px-4 text-gray-300">50</td>
