@@ -223,7 +223,7 @@ export const bangladeshCountries: BangladeshCountryData[] = [
         coverImage: "/assets/countries/malaysia.webp",
         quickFacts: [
             { icon: <Clock size={20} />, label: "Processing Time", value: "3-5 Working Days (Estimated only)" },
-            { icon: <DollarSign size={20} />, label: "Fee", value: "4,500 BDT" },
+            { icon: <DollarSign size={20} />, label: "Fee", value: "6,500 BDT" },
             { icon: <Calendar size={20} />, label: "Validity", value: "180 Days" },
             { icon: <Plane size={20} />, label: "Entry Type", value: "Single Entry / Multiple Entry" },
         ],
