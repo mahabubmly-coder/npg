@@ -54,6 +54,8 @@ const tiers = [
         fixedDepositBdt: "~140,400,000 BDT",
         property: "RM 2,000,000",
         propertyBdt: "~60,000,000 BDT",
+        participationFee: "RM 200,000",
+        participationFeeBdt: "~6,000,000 BDT",
         visaDuration: "20 Years",
         minAge: "25",
         highlights: ["Work & Business Rights", "Domestic Helper", "Premium Status"],
@@ -68,6 +70,8 @@ const tiers = [
         fixedDepositBdt: "~70,200,000 BDT",
         property: "RM 1,000,000",
         propertyBdt: "~30,000,000 BDT",
+        participationFee: "RM 3,000",
+        participationFeeBdt: "~90,000 BDT",
         visaDuration: "15 Years",
         minAge: "25",
         highlights: ["Extended Visa", "Property Investment", "Family Inclusion"],
@@ -82,6 +86,8 @@ const tiers = [
         fixedDepositBdt: "~21,000,000 BDT",
         property: "RM 600,000",
         propertyBdt: "~18,000,000 BDT",
+        participationFee: "RM 1,000",
+        participationFeeBdt: "~30,000 BDT",
         visaDuration: "5 Years",
         minAge: "25",
         highlights: ["Entry Level", "Renewable Visa", "Family Inclusion"],
@@ -96,6 +102,8 @@ const tiers = [
         fixedDepositBdt: "~4,500,000 - 9,150,000 BDT",
         property: "From Developer",
         propertyBdt: null,
+        participationFee: "RM 1,000",
+        participationFeeBdt: "~30,000 BDT",
         visaDuration: "10 Years",
         minAge: "21",
         highlights: ["Special Zones", "Lower Entry", "Age-Based Rates"],
@@ -154,7 +162,7 @@ export default function MM2H() {
                             transition={{ delay: 0.2, duration: 0.5 }}
                             className="inline-block py-1.5 px-4 rounded-full bg-white/15 text-white font-semibold text-sm mb-6 backdrop-blur-sm border border-white/20"
                         >
-                            New 2024/2025 Tiered Programme
+                            Official MOTAC Tiered Programme (2025/2026)
                         </motion.span>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-lg leading-tight">
                             MM2H – Malaysia <span className="text-secondary">My Second Home</span>
@@ -197,10 +205,10 @@ export default function MM2H() {
                         >
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">What is MM2H?</h2>
                             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                Malaysia My Second Home (MM2H) is a government initiative introduced in 2002 to attract foreigners to live and retire in Malaysia. The programme has been restructured with a new tiered system for 2024/2025.
+                                Malaysia My Second Home (MM2H) is a federal government initiative administered by the Ministry of Tourism, Arts and Culture (MOTAC) and the Immigration Department of Malaysia to attract global citizens to live, invest, and retire in Malaysia under a structured 4-tier framework.
                             </p>
                             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                The new structure offers four categories: <strong>Platinum</strong> (20-year visa), <strong>Gold</strong> (15-year visa), <strong>Silver</strong> (5-year visa), and <strong>Special Economic/Financial Zone</strong> (10-year visa) – each with different financial requirements and benefits.
+                                Under current MOTAC regulations, there are <strong>no minimum offshore monthly income requirements</strong>. The structure offers four categories: <strong>Platinum</strong> (20-year visa), <strong>Gold</strong> (15-year visa), <strong>Silver</strong> (5-year visa), and <strong>Special Economic/Financial Zone (SEZ/SFZ)</strong> (10-year visa).
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 <span className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-medium">Platinum</span>
@@ -279,6 +287,15 @@ export default function MM2H() {
                                             <div className="font-bold text-gray-900">{tier.property}</div>
                                             {tier.propertyBdt && (
                                                 <div className="text-xs font-medium text-primary mt-0.5">{tier.propertyBdt}</div>
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="flex justify-between items-start border-b pb-3 gap-2">
+                                        <span className="text-gray-600 shrink-0">Participation Fee</span>
+                                        <div className="text-right">
+                                            <div className="font-bold text-gray-900">{tier.participationFee}</div>
+                                            {tier.participationFeeBdt && (
+                                                <div className="text-xs font-medium text-primary mt-0.5">{tier.participationFeeBdt}</div>
                                             )}
                                         </div>
                                     </div>
@@ -408,19 +425,20 @@ export default function MM2H() {
 
                     <div className="container mx-auto px-6 relative z-10">
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Financial Requirements (2024/2025)</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Official MOTAC Financial Requirements</h2>
                             <p className="text-gray-400 max-w-2xl mx-auto">
-                                The new tiered structure with USD-based fixed deposits and mandatory property purchase.
+                                Current tiered structure with USD-based fixed deposits, mandatory property purchase, and one-off government participation fees (RM 0 participation fee for dependents).
                             </p>
                         </div>
 
                         <div className="overflow-x-auto">
-                            <table className="w-full max-w-5xl mx-auto text-left border-collapse">
+                            <table className="w-full max-w-6xl mx-auto text-left border-collapse">
                                 <thead>
                                     <tr className="border-b border-gray-700">
                                         <th className="py-4 px-4 text-lg font-semibold text-primary">Tier</th>
                                         <th className="py-4 px-4 text-lg font-semibold text-primary">Fixed Deposit (USD / BDT)</th>
                                         <th className="py-4 px-4 text-lg font-semibold text-primary">Property Purchase (RM / BDT)</th>
+                                        <th className="py-4 px-4 text-lg font-semibold text-primary">Participation Fee (Principal)</th>
                                         <th className="py-4 px-4 text-lg font-semibold text-primary">Visa Duration</th>
                                         <th className="py-4 px-4 text-lg font-semibold text-primary">Min Age</th>
                                     </tr>
@@ -442,6 +460,10 @@ export default function MM2H() {
                                             <div>RM 2,000,000</div>
                                             <div className="text-xs text-gray-400">~60,000,000 BDT</div>
                                         </td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>RM 200,000</div>
+                                            <div className="text-xs text-gray-400">~6,000,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">20 Years</td>
                                         <td className="py-5 px-4 text-gray-300">25</td>
                                     </motion.tr>
@@ -460,6 +482,10 @@ export default function MM2H() {
                                         <td className="py-5 px-4 text-gray-300">
                                             <div>RM 1,000,000</div>
                                             <div className="text-xs text-gray-400">~30,000,000 BDT</div>
+                                        </td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>RM 3,000</div>
+                                            <div className="text-xs text-gray-400">~90,000 BDT</div>
                                         </td>
                                         <td className="py-5 px-4 text-gray-300">15 Years</td>
                                         <td className="py-5 px-4 text-gray-300">25</td>
@@ -480,6 +506,10 @@ export default function MM2H() {
                                             <div>RM 600,000</div>
                                             <div className="text-xs text-gray-400">~18,000,000 BDT</div>
                                         </td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>RM 1,000</div>
+                                            <div className="text-xs text-gray-400">~30,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">5 Years</td>
                                         <td className="py-5 px-4 text-gray-300">25</td>
                                     </motion.tr>
@@ -496,6 +526,10 @@ export default function MM2H() {
                                             <div className="text-xs text-gray-400">~9,150,000 BDT</div>
                                         </td>
                                         <td className="py-5 px-4 text-gray-300">From Developer</td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>RM 1,000</div>
+                                            <div className="text-xs text-gray-400">~30,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">10 Years</td>
                                         <td className="py-5 px-4 text-gray-300">21</td>
                                     </motion.tr>
@@ -512,6 +546,10 @@ export default function MM2H() {
                                             <div className="text-xs text-gray-400">~4,500,000 BDT</div>
                                         </td>
                                         <td className="py-5 px-4 text-gray-300">From Developer</td>
+                                        <td className="py-5 px-4 text-gray-300">
+                                            <div>RM 1,000</div>
+                                            <div className="text-xs text-gray-400">~30,000 BDT</div>
+                                        </td>
                                         <td className="py-5 px-4 text-gray-300">10 Years</td>
                                         <td className="py-5 px-4 text-gray-300">50</td>
                                     </motion.tr>
@@ -524,21 +562,21 @@ export default function MM2H() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.6 }}
-                            className="max-w-5xl mx-auto mt-8 p-6 bg-white/10 rounded-xl border border-white/10 backdrop-blur-sm"
+                            className="max-w-6xl mx-auto mt-8 p-6 bg-white/10 rounded-xl border border-white/10 backdrop-blur-sm"
                         >
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="flex items-start gap-4">
                                     <div className="text-primary mt-1"><Award size={24} /></div>
                                     <div>
                                         <p className="font-bold text-white mb-1">Fixed Deposit Withdrawal</p>
-                                        <p className="text-gray-400 text-sm">Up to 50% can be withdrawn after 1 year for approved purposes (property, medical, education).</p>
+                                        <p className="text-gray-400 text-sm">Up to 50% can be withdrawn after 1 year for approved purposes (property purchase, medical expenses, education, and domestic tourism in Malaysia).</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
                                     <div className="text-primary mt-1"><UserCheck size={24} /></div>
                                     <div>
-                                        <p className="font-bold text-white mb-1">Stay Requirement</p>
-                                        <p className="text-gray-400 text-sm">Applicants under 50 must stay 90 cumulative days per year in Peninsula Malaysia.</p>
+                                        <p className="font-bold text-white mb-1">Stay Requirement (Age 25–49 vs 50+)</p>
+                                        <p className="text-gray-400 text-sm">Applicants aged 25–49 (or their dependents) must stay a cumulative 90 days per year in Malaysia. Applicants aged 50 and above are exempt from any minimum annual stay requirement.</p>
                                     </div>
                                 </div>
                             </div>
@@ -747,7 +785,9 @@ export default function MM2H() {
                             <motion.a
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                href="https://wa.me/1234567890"
+                                href="https://wa.me/601116695249"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                             >
                                 <MessageCircle size={24} /> WhatsApp Us Now

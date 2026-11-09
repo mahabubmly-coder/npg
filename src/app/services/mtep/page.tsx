@@ -189,7 +189,7 @@ export default function MTEPPage() {
                         <div className="p-5 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center">
                             <DollarSign className="text-primary mb-2" size={32} />
                             <h4 className="font-bold text-gray-900 text-lg">Proof of Funds</h4>
-                            <p className="text-sm text-gray-600">Min. RM 50,000 for 3 consecutive months</p>
+                            <p className="text-sm text-gray-600">Min. RM 50,000 (~1,500,000 BDT) for 3 mos</p>
                         </div>
                         <div className="p-5 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center">
                             <Building2 className="text-primary mb-2" size={32} />
@@ -326,11 +326,11 @@ export default function MTEPPage() {
                                         <ul className="space-y-3 text-gray-700">
                                             <li className="flex items-start gap-3">
                                                 <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                                                <span><strong>Financial Proof:</strong> Minimum RM 50,000 personal bank balance held for 3 consecutive months in savings or current account.</span>
+                                                <span><strong>Financial Proof:</strong> Minimum RM 50,000 (~1,500,000 BDT) personal bank balance held for 3 consecutive months in savings or current account.</span>
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                                                <span><strong>Digital Hub Tenancy:</strong> Tenancy agreement signed with an MDEC-approved Malaysia Digital Hub (e.g., Common Ground, WORQ).</span>
+                                                <span><strong>Digital Hub Tenancy:</strong> Tenancy agreement signed with an MDEC-approved Malaysia Digital Hub (e.g., Common Ground, WORQ) or MRANTI.</span>
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
@@ -338,7 +338,11 @@ export default function MTEPPage() {
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                                                <span><strong>Pitch Deck & Roadmap:</strong> Comprehensive pitch deck articulating digital product, problem-solution fit, market size, and roadmap.</span>
+                                                <span><strong>Pitch Deck &amp; Roadmap:</strong> Comprehensive pitch deck articulating digital product, problem-solution fit, market size, and roadmap.</span>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
+                                                <span><strong>Official MDEC &amp; Pass Fees:</strong> RM 540 (~16,200 BDT) application fee + RM 2,520 (~75,600 BDT) pass &amp; processing fee upon approval (incl. 8% SST).</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -396,7 +400,7 @@ export default function MTEPPage() {
                                         <ul className="space-y-3 text-gray-700">
                                             <li className="flex items-start gap-3">
                                                 <div className="w-2 h-2 rounded-full bg-amber-600 mt-2 shrink-0" />
-                                                <span><strong>Financial Proof:</strong> Minimum RM 50,000 personal liquid bank balance held for 3 consecutive months.</span>
+                                                <span><strong>Financial Proof:</strong> Minimum RM 50,000 (~1,500,000 BDT) personal liquid bank balance held for 3 consecutive months.</span>
                                             </li>
                                             <li className="flex items-start gap-3">
                                                 <div className="w-2 h-2 rounded-full bg-amber-600 mt-2 shrink-0" />
@@ -409,6 +413,10 @@ export default function MTEPPage() {
                                             <li className="flex items-start gap-3">
                                                 <div className="w-2 h-2 rounded-full bg-amber-600 mt-2 shrink-0" />
                                                 <span><strong>Good Standing:</strong> Valid Certificate of Good Conduct (CGC) from your home country or country of residence.</span>
+                                            </li>
+                                            <li className="flex items-start gap-3">
+                                                <div className="w-2 h-2 rounded-full bg-amber-600 mt-2 shrink-0" />
+                                                <span><strong>Official MDEC &amp; Pass Fees:</strong> RM 540 (~16,200 BDT) application fee + RM 5,360 (~160,800 BDT) pass &amp; processing fee upon approval (incl. 8% SST).</span>
                                             </li>
                                         </ul>
                                     </div>

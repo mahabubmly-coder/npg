@@ -218,7 +218,7 @@ export default function PVIP() {
                         {
                             icon: <Users size={32} />,
                             title: "Dependents",
-                            desc: "Bring spouse, children, parents, and parents-in-laws."
+                            desc: "Bring spouse, unmarried children (up to age 25), parents, and parents-in-law."
                         },
                         {
                             icon: <ShieldCheck size={32} />,
@@ -262,7 +262,7 @@ export default function PVIP() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold mb-2 text-white">Offshore Income</h3>
-                                        <p className="text-gray-400">Proof of monthly offshore income above <span className="text-white font-semibold">RM 40,000</span> (monthly) or <span className="text-white font-semibold">RM 480,000</span> (annually).</p>
+                                        <p className="text-gray-400">Proof of monthly offshore income of at least <span className="text-white font-semibold">RM 40,000 (~1,200,000 BDT)</span> per month or <span className="text-white font-semibold">RM 480,000 (~14,400,000 BDT)</span> annually.</p>
                                     </div>
                                 </div>
 
@@ -272,8 +272,8 @@ export default function PVIP() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold mb-2 text-white">Fixed Deposit</h3>
-                                        <p className="text-gray-400 mb-2"><span className="text-white font-semibold">RM 1,000,000</span> upon approval.</p>
-                                        <p className="text-gray-500 text-sm">Withdrawal of up to RM 500,000 allowed after 1 year for property, medical, or education.</p>
+                                        <p className="text-gray-400 mb-2"><span className="text-white font-semibold">RM 1,000,000 (~30,000,000 BDT)</span> placed at a licensed Malaysian bank upon approval.</p>
+                                        <p className="text-gray-500 text-sm">Updated JIM Policy: Up to 50% (RM 500,000) withdrawal is permitted after 6 months (or 1 year) for approved real estate, medical, or education expenses in Malaysia.</p>
                                     </div>
                                 </div>
 
@@ -282,9 +282,10 @@ export default function PVIP() {
                                         <FileText size={24} />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold mb-2 text-white">Participation Fee</h3>
-                                        <p className="text-gray-400">RM 200,000 (Main Applicant)</p>
-                                        <p className="text-gray-400">RM 100,000 (Each Dependent)</p>
+                                        <h3 className="text-xl font-bold mb-2 text-white">Participation & Pass Fees</h3>
+                                        <p className="text-gray-400">RM 200,000 (~6,000,000 BDT) – Principal Applicant</p>
+                                        <p className="text-gray-400">RM 100,000 (~3,000,000 BDT) – Each Dependent</p>
+                                        <p className="text-gray-500 text-sm mt-1">Annual pass fee: RM 2,000/year (~60,000 BDT/year). Must be submitted via a JIM-licensed agency.</p>
                                     </div>
                                 </div>
                             </div>
@@ -439,7 +440,9 @@ export default function PVIP() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <a
-                                href="https://wa.me/1234567890"
+                                href="https://wa.me/601116695249"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                             >
                                 <MessageCircle size={24} /> WhatsApp Us Now

@@ -111,7 +111,7 @@ export default function DeRantauDigitalNomadVisa() {
                         </h1>
 
                         <p className="text-lg md:text-2xl text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto drop-shadow-md font-light">
-                            Live, travel, and work remotely in Malaysia for up to 2 years under MDEC&apos;s official DE Rantau Nomad Pass program for digital professionals and freelancers worldwide.
+                            Live, travel, and work remotely in Malaysia for up to 24 months (with MDEC&apos;s enhanced pathway up to 4 years) under the official DE Rantau Nomad Pass for digital and non-digital professionals worldwide.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -145,22 +145,22 @@ export default function DeRantauDigitalNomadVisa() {
                         <div className="p-4 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center">
                             <Clock className="text-primary mb-2" size={32} />
                             <h4 className="font-bold text-gray-900 text-lg">Pass Validity</h4>
-                            <p className="text-sm text-gray-600">3 to 12 months (Renewable up to 2 years)</p>
+                            <p className="text-sm text-gray-600">3–12 months (Renewable up to 2–4 years)</p>
                         </div>
                         <div className="p-4 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center">
                             <Globe className="text-primary mb-2" size={32} />
                             <h4 className="font-bold text-gray-900 text-lg">Work Remotely</h4>
-                            <p className="text-sm text-gray-600">Serve foreign or local clients freely</p>
+                            <p className="text-sm text-gray-600">Serve foreign or Malaysian clients freely</p>
                         </div>
                         <div className="p-4 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center">
                             <Users className="text-primary mb-2" size={32} />
                             <h4 className="font-bold text-gray-900 text-lg">Bring Family</h4>
-                            <p className="text-sm text-gray-600">Spouse & children eligible as dependents</p>
+                            <p className="text-sm text-gray-600">Spouse, children & parents eligible</p>
                         </div>
                         <div className="p-4 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center">
                             <DollarSign className="text-primary mb-2" size={32} />
                             <h4 className="font-bold text-gray-900 text-lg">Income Threshold</h4>
-                            <p className="text-sm text-gray-600">USD 24,000 / year (Digital Pro)</p>
+                            <p className="text-sm text-gray-600">USD 24k/yr (Tech) | USD 60k/yr (Non-Tech)</p>
                         </div>
                     </div>
                 </div>
@@ -375,8 +375,11 @@ export default function DeRantauDigitalNomadVisa() {
                                                     <span className="text-2xl font-black text-emerald-700">
                                                         USD 24,000
                                                     </span>
+                                                    <span className="block text-xs font-semibold text-emerald-700 mt-0.5">
+                                                        (~3,370,000 BDT / year)
+                                                    </span>
                                                     <span className="block text-xs text-emerald-600 mt-1">
-                                                        Minimum annual income (per year)
+                                                        Minimum annual income (USD 2,000/month)
                                                     </span>
                                                 </div>
                                                 <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-center">
@@ -386,9 +389,33 @@ export default function DeRantauDigitalNomadVisa() {
                                                     <span className="text-2xl font-black text-amber-700">
                                                         USD 60,000
                                                     </span>
-                                                    <span className="block text-xs text-amber-600 mt-1">
-                                                        Minimum annual income (per year)
+                                                    <span className="block text-xs font-semibold text-amber-700 mt-0.5">
+                                                        (~8,420,000 BDT / year)
                                                     </span>
+                                                    <span className="block text-xs text-amber-600 mt-1">
+                                                        Minimum annual income (USD 5,000/month)
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    {/* Row 5: Official MDEC Fees & Dependents */}
+                                    <tr className="hover:bg-blue-50/40 transition-colors">
+                                        <td className="py-6 px-6 font-bold text-gray-900 bg-gray-50/80 border-r border-gray-200">
+                                            Official MDEC Fee &amp; Dependents
+                                        </td>
+                                        <td className="py-6 px-6 border-r border-gray-200" colSpan={2}>
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+                                                <div className="p-4 rounded-xl bg-gray-50 border border-gray-200">
+                                                    <span className="font-bold text-gray-900 block mb-1">MDEC Processing Fees (incl. 8% SST):</span>
+                                                    <p>Main Applicant: <strong>RM 1,080 (~32,400 BDT)</strong> (RM 1,000 + SST)</p>
+                                                    <p>Each Dependent: <strong>RM 540 (~16,200 BDT)</strong> (RM 500 + SST)</p>
+                                                </div>
+                                                <div className="p-4 rounded-xl bg-gray-50 border border-gray-200">
+                                                    <span className="font-bold text-gray-900 block mb-1">Eligible Dependents &amp; Validity:</span>
+                                                    <p>Legal spouse, children under 18, disabled children, and biological parents of main applicant.</p>
+                                                    <p className="text-xs text-gray-500 mt-1">Initial 3–12 months pass; renewable for another 12 months (up to 4 years total under MDEC&apos;s enhanced framework).</p>
                                                 </div>
                                             </div>
                                         </td>

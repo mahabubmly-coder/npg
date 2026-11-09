@@ -46,7 +46,7 @@ const serviceCategories: ServiceCategory[] = [
                 title: "PVIP (Premium Visa Program)",
                 description: "Residency consultation for Malaysia's Premium Visa Program. Secure up to 20 years of elite residency for global investors, entrepreneurs, and high-net-worth individuals.",
                 icon: <Crown size={32} className="text-[#c9a84c]" />,
-                link: "/contact"
+                link: "/services/pvip"
             }
         ]
     },
@@ -63,7 +63,7 @@ const serviceCategories: ServiceCategory[] = [
             },
             {
                 title: "De Rantau / Digital Nomad Visa",
-                description: "Official MDEC Malaysia Nomad Pass processing for digital freelancers, independent contractors, and remote workers to live and work in Malaysia for up to 24 months.",
+                description: "Official MDEC Malaysia Nomad Pass processing for digital and non-digital remote workers and freelancers to live and work in Malaysia for up to 24 months (renewable up to 4 years).",
                 icon: <Globe size={32} className="text-[#c9a84c]" />,
                 link: "/services/de-rantau-digital-nomad-visa"
             },
