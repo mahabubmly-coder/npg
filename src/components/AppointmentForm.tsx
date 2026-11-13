@@ -55,8 +55,9 @@ const timeSlots = [
 ];
 
 const meetingModes = [
-    { value: "in-person", label: "In-Person" },
-    { value: "zoom", label: "Zoom Call" },
+    { value: "in-person-kl", label: "In-Person (Kuala Lumpur Office)" },
+    { value: "in-person-dhaka", label: "In-Person (Dhaka Office)" },
+    { value: "zoom", label: "Zoom Meeting / Google Meet" },
     { value: "phone", label: "Phone Call" },
 ];
 
@@ -443,7 +444,7 @@ export default function AppointmentForm() {
                             <label className="block text-sm font-medium text-gray-600 mb-2">
                                 Mode of Meeting <span className="text-red-500">*</span>
                             </label>
-                            <div className="grid grid-cols-3 gap-3">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                 {meetingModes.map((mode) => (
                                     <button
                                         key={mode.value}

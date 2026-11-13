@@ -136,7 +136,9 @@ const serviceLabels: Record<string, string> = {
 
 const meetingModeLabels: Record<string, string> = {
     "in-person": "In-Person",
-    "zoom": "Zoom Call",
+    "in-person-kl": "In-Person (Kuala Lumpur Office)",
+    "in-person-dhaka": "In-Person (Dhaka Office)",
+    "zoom": "Zoom Meeting / Google Meet",
     "phone": "Phone Call",
 };
 
